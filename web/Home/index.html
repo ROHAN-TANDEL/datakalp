@@ -428,6 +428,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+nav {
+	background-color: transparent;
+}
+.nav-after-scroll {
+	transform: scale(1,0.8) translateY(-16%);
+	background-color: white;
+	-webkit-transition: .25s ease-in-out 3s;
+   	transition: .25s ease-in-out 0s; 
+}
 </style>
 
 <div class="parallax"></div>
@@ -993,6 +1002,15 @@
     </footer>
     <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+        	$(document).ready(function(){
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
+                        $('nav').addClass('nav-after-scroll');
+                    } else {
+                        $('nav').removeClass('nav-after-scroll');
+                    }
+                });
+            });
 
         $(document).ready(function(){       
             $('.slider').slick({

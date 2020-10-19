@@ -5,3 +5,7 @@
 {
     border: double 5px #1f94de;
 }
+
+.card-footer {
+    cursor: pointer;
+}
