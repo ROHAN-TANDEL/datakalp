@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    </script>
+    <style>
+        /* --------------------------------------------------------------------------------------- */
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0275d8;
+            border-radius: 10px
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0275d8
+        }
+
+        /* scroll bar END*/
+
+        /*navbar */
+        :root {
+            --rt-min-width-100: 100px;
+            --rt-min-width-150: 150px;
+            --rt-min-width-200: 200px;
+            --rt-min-width-dynamic: 0px;
+            --rt-width-40: 40% !important;
+            --rt-filter-black: drop-shadow(2px 4px 6px black);
+            --rt-filter-blue-1: drop-shadow(2px 4px 6px blue);
+            --rt-filter-blue-2: drop-shadow(2px 4px 16px blue);
+            --rt-filter-grey-1: drop-shadow(0px 0px 2px grey);
+            --rt-color-blue: #0167cc;
+            --rt-box-grey-1: inset 0 0 5px grey;
+        }
+
+        .min-w-120 {
+            min-width: var(--rt-min-width-150);
+        }
+
+        .w-40 {
+            width: var(--rt-width-40);
+        }
+
+        .filter-1 {
+            filter: var(--rt-filter-grey-1);
+        }
+
+        .light-transparent-grey {
+            background: white;
+        }
+
+        .nav-link>span {
+            color: #0275d8;
+            font-size: 1rem;
+            /* filter: var(--rt-filter-grey-1); */
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.2);
+            -webkit-transition: .30s ease-in-out 3s;
+            transition: .30s ease-in-out 0s;
+        }
+
+        .nav-link>span:hover {
+            border-bottom: 2px solid;
+        }
+
+        /** h7 tag*/
+        h7 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        h7 {
+            font-size: 2em;
+            margin: .67em 0;
+        }
+
+        h7,
+        h8 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+
+        .h7,
+        .h8,
+        h7,
+        h8 {
+            margin-bottom: .5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit;
+        }
+
+        .h7,
+        h7 {
+            font-size: 3.5rem;
+        }
+
+        .white {
+            color: white;
+
+        }
+
+        .blue-1 {
+            color: #0167cc;
+        }
+
+        .white-border {
+            border: solid 2px white;
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .border-0 {
+            border: 0px;
+        }
+
+        .translateY-40-bar {
+            transform: translateY(-40%);
+        }
+
+        .translateY-100-bar {
+            transform: translateY(-100%);
+        }
+
+        .translateY-200-bar {
+            transform: translateY(-200%);
+        }
+
+        .translateY-70-bar {
+            transform: translateY(-70%);
+        }
+
+        .translateY-100 {
+            transform: translateY(100%);
+        }
+
+        .translateY-20 {
+            transform: translateY(20%);
+        }
+
+        .border-radius-40 {
+            border-radius: 40px;
+        }
+
+        .border-double-2-white {
+            border: double 2px white;
+        }
+
+        .contact-button-1:hover {
+            background-color: white;
+            color: darkblue;
+            border: solid 2px darkblue;
+            filter: var(--rt-filter-black);
+        }
+
+        .form-all-inputs-contact>.form-group>input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid;
+            border-radius: 0;
+        }
+
+        .form-all-inputs-contact {
+            padding: 4%;
+        }
+
+        .form-contact {
+            background-image: linear-gradient(45deg, #01010d, #1e1c43);
+            filter: drop-shadow(2px 4px 6px black);
+            color: white;
+        }
+
+        .footer-main {
+            background: #080000;
+        }
+
+        /* --------------------------------------------------------------------------------------- */
+
+        a:not([href]):not([tabindex]) {
+            color: white;
+        }
+
+        li[data-filter="products"]>.nav-link>span {
+            border-bottom: 2px solid;
+        }
+
+        li[data-filter="products"] {
+            transform: scale(1.2);
+        }
+
+        /* Header Parallax Element Style*/
+        .paral {
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 10%;
+            background-image: url(../../asset/team7.jpg);
+            background-size: 100% 100%;
+            min-height: 500px;
+            transform: scale(1.5);
+            width: 80%;
+            margin-left: 0%;
+        }
+
+        /* ------------------------------------------------------------------------------------------ */
+        /* Remove Bottom Margin from Jumbotron */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        .parent:hover .child,
+        .parent:focus .child {
+            -ms-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .parent:hover .child:before,
+        .parent:focus .child:before {
+            display: block;
+        }
+
+        .parent:hover a,
+        .parent:focus a {
+            display: block;
+        }
+
+        .child:before {
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(52, 73, 94, 0.75);
+        }
+
+
+        /* Image zoom on hover + Overlay colour */
+        .parent {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .child {
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .team-name-hover {
+            color: var(--rt-color-blue);
+
+        }
+
+        .filter-2 {
+            filter: drop-shadow(0px 0px 10px lightblue);
+        }
+
+        .team-read-more-no-panel:hover .team-member-detail {
+            max-height: 1000px;
+            overflow: hidden;
+            transition: 1.0s ease-in-out 0.1s;
+        }
+
+        .team-member-detail {
+            max-height: 120px;
+            overflow: hidden;
+        }
+
+        .team-read-more-no-panel:hover>.team-read-more {
+            font-size: 0.1rem;
+            transition: 2.0s ease-in-out 1s;
+        }
+
+        .team-read-more:hover {
+            display: block;
+        }
+
+        .slider-bottom-choice *>img {
+            height: 200px;
+            max-width: 250px;
+        }
+
+        .float {
+            position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #130501;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 14px white;
+    z-index: 12;
+    font-size: 20px;
+        }
+
+        .float:hover {
+            transform: scale(1.5);
+            -webkit-transition: .30s ease-in-out 3s;
+            transition: .30s ease-in-out 0s;
+        }
+        .float:hover .my-float {
+            color: white;
+        }
+        .my-float {
+    margin-top: 22px;
+}
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar fixed-top navbar-toggleable-lg light-transparent-grey">
+
+                    <!--brand-->
+                    <a class="col-md-4 navbar-brand mr-auto filter-1" href="../../Home/index.html">
+                        <img class="navbar-brand w-40 min-w-120" src="../../asset/logo.png">
+                    </a>
+
+                    <!--collapse button-->
+                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNav">
+
+                        <!--align left-->
+                        <ul class="navbar-nav ml-auto nav-fill w-100">
+
+                            <li class="nav-item navbar-element navbar-home" data-filter="home">
+                                <a class="nav-link" href="../../Home/index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-products" data-filter="products">
+                                <a class="nav-link" href="../../Products/index.html">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-services" data-filter="services">
+                                <a class="nav-link" href="../../Services/index.html">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-team" data-filter="teams">
+                                <a class="nav-link" href="../../Team/index.html">
+                                    <span>Team</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-blogs" data-filter="blogs">
+                                <a class="nav-link" href="../../Blogs/index.html">
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-contacts" data-filter="contactus">
+                                <a class="nav-link navlink-active" href="../../Contacts/index.html">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--navbar ending-->
+
+
+
+    <!-- <div class="row jumbotron paral" style="filter: brightness(0.5);"></div> -->
+    <a href="https://www.datakalp.com/contact-us" class="float">
+        <i class="fa my-float">demo</i>
+        </a>
+
+    <!--lets connect ends-->
+    <br>
+    <br>
+
+    <!--form and and map-->>
+    <div class="container-fluid  filter-1">
+        <div class="row">
+            <div class="col">
+                <h2 id="product-title" class="text-center blue-1">
+                    title
+                </h2>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center filter-1">
+                <h4 id="product-tagline">
+                    Our team
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <div id="youtube-video">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <h2>
+                Features 
+                </h2>
+                <hr>
+                <div id="features-list">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <h2 id="who-needs-it-title">
+                    Who needs It
+                </h2>
+                <hr>
+                <div id="who-needs-it">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <div id="youtube-video">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <div id="youtube-video">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-8">
+                <h4>
+                    
+                </h4>
+                <hr>
+                <div id="features">
+
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    </style>
+
+
+
+
+
+
+    <!--form and and map end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer-main white">
+        <br>
+
+        <br>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center blue-1">
+                            <h3>
+                                We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Know Us
+                            </h3>
+                            <p>
+                                Datakalp LLP is providing cutting edge services and products in the field of Artificial
+                                Technologies,
+                                Machine Learning, Computer vision and NLP.
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Address
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli,
+                                Bangalore –
+                                560035<br />
+                            </address>
+                        </div>
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Contact
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)6355762814">+91
+                                    63557
+                                    62814</a>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)8861636197">+91
+                                    88616
+                                    36197</a>
+                            </address>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>
+                                <div class=" roof-social style-two  roof-socials-5f838225a3331">
+
+                                    <h6>FOLLOW US ON:</h6>
+
+
+                                    <a href="http://www.facebook.com/datakalp" target="_blank"
+                                        class="icon-fa-facebook-official">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+
+
+                                    <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+
+                                    <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber"
+                                        target="_blank" class="icon-fa-youtube-play">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+
+
+                                    <a href="https://www.linkedin.com/company/datakalp" target="_blank"
+                                        class="icon-fa-linkedin"><i class="fa fa-linkedin"></i>
+                                    </a>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h6>
+                                Copyright © 2020. datakalp.com All rights reserved.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="../../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var title = 'Keeping the air and the hands safe';
+            var name = 'Datakalp HygieneAI';
+            var features = '<ul style="font-size: 1.7rem;"> <li class="list-item">Detect if people are wearing a face mask </li><li class="list-item">Detect if people are keeping safe social distance (using CCTV) </li><li class="list-item">Detect if people are washing their hands properly </li> </ul>';
+            var who_needs_it = '<ul style="font-size: 1.7rem;"> <li class="list-item">Hospitals </li><li class="list-item">Schools </li><li class="list-item">Food Processing Plants, Kitchens </li><li class="list-item">Medicine Mfg & Packaging Plants </li> </ul>';
+            var video_img = '<div class="embed-responsive embed-responsive-16by9 mx-auto"> <iframe width="560" height="315" src="https://www.youtube.com/embed/zBniOwsI628" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>';
+
+            $('#product-title').html(name);
+            $('#product-tagline').html(title);
+            $('#features-list').html(features);
+            $('#youtube-video').html(video_img);
+            $('#who-needs-it').hide();
+            $('#who-needs-it-title').hide();
+
+            $('.slider-gallary').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                asNav: '.slider-gallary-weist',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+                ]
+            });
+
+
+            $('.slider-gallary-weist').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNav: '.slider-gallary',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+
+                ]
+            });
+
+        });
+
+    </script>
+    <script src="../../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+
+</body>
+
+</html>

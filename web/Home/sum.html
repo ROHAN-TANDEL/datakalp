@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../packages/Glider.js-master/Glider.js-master/glider.css">
+	
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script> -->
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/scripts.js"></script>
+
+  </head>
+  <body style="background-image:url(../asset/bg111.jpg)">
+
+<section class="lazy slider" data-sizes="25vw">
+    <div>
+		<img class="img-fluid mx-auto" style="width: 99%; max-height: 125px" data-lazy="../asset/partner1.png" data-srcset="../asset/partner1.png 650w, ../asset/partner1.png 960w" >
+    </div>
+    <div >
+      <img class="img-fluid mx-auto" style="width: 99%; max-height: 125px;" data-lazy="../asset/partner2.jpg" data-srcset="../asset/partner2.jpg 650w, ../asset/partner2.jpg 960w" >
+	</div>
+	<img class="img-fluid mx-auto" style="width: 99%; max-height: 125px;" data-lazy="../asset/partner2.jpg" data-srcset="../asset/partner2.jpg 650w, ../asset/partner2.jpg 960w" >
+</div>
+  </section>
+
+
+	  <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){       
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+    
+        });
+	  </script>
+	  <script src="../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+	  
+  </body>
+</html>

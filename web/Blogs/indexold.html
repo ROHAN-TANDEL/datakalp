@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../packages/Glider.js-master/Glider.js-master/glider.css">
+	
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script> -->
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/scripts.js"></script>
+
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/> -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="packages/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
+	<script type="text/javascript" src="packages/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script> -->
+	<script>
+        
+	// 	 $(document).on('ready', function () {
+    //         $(".regular").slick({
+    //             dots: true,
+    // infinite: true,
+    // speed: 700,
+    // autoplay:true,
+    // autoplaySpeed: 2000,
+    // arrows:true,
+    // slidesToShow: 1,
+    // slidesToScroll: 1
+    //         });
+    //     });
+	</script>
+	<style>
+		    @media (min-width: 992px) {
+      .modal-xlg {
+        max-width: 1200px;
+      }
+    }
+
+        
+    .btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .filter {
+      border: solid 1px white;
+    }
+
+    .active-filter {
+      color: white;
+      border-bottom: solid 2px darkblue !important;
+    }
+
+    a:focus {
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      /* color:transparent; */
+    }
+
+    #parallax {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  /* background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%; */
+
+    }
+    .mh-450,
+    video {
+      min-height: calc(350px + 10vh);
+    }
+
+    video {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .navbar-buttons {
+      min-width: 100px;
+      max-width: 100px;
+      border-radius: 10px;
+      margin: 3px 3px;
+      padding: 7px;
+
+    }
+
+    .nav-item>a:hover {
+      transform: scale(1.2);
+      font-weight: 600;
+      -webkit-transition: transform 0.3s ease-in-out;
+      border-bottom: solid 1px #0275d8;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-500%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes speedbreak {
+      0% {
+        transform: translateX(-500%);
+      }
+
+      70% {
+        transform: translateX(10%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+    .slide-from-left {
+      transition-delay: 8s;
+      animation: 3s ease-out 0s 1 speedbreak;
+    }
+
+    .slide-from-top {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+    }
+
+    .case-studies {
+      animation: 1s ease-out 0s 1 slideInFromTop;
+    }
+
+    .products {
+      animation: 3s ease-out 0s 1 slideInFromTop;
+    }
+
+    .portfolio {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+
+    }
+
+    .filter-buttons>.btn-group>.btn {
+
+      border: none;
+      background: transparent;
+    }
+
+
+    .hover-logic:hover {
+      box-shadow: 0 0 10px white;
+      border: solid 1px white;
+      scale: (1.5)
+    }
+
+    .what-we-do-cols {
+            background-color: white;
+        }
+
+  @media (min-width: 771px)
+{
+  /* .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
+
+  .navbar {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: .5rem 1rem;
+  }
+  article, aside, footer, header, nav, section {
+      display: block;
+  }
+
+  .navbar-brand {
+      display: inline-block;
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+      color: rgba(0,0,0,.9);
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg .navbar-collapse {
+      display: -webkit-box!important;
+      display: -webkit-flex!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+      width: 100%;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+      background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E);
+  }
+  .navbar-toggleable-lg .navbar-toggler {
+      display: none;
+  }
+
+  .navbar-toggler-right {
+      position: absolute;
+      right: 1rem;
+  }
+
+  .navbar-toggler {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      padding: .25rem .75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background: 0 0;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+  }
+
+  .navbar-brand {
+    max-width: 60%;
+  } */
+}
+
+.navbar-brand {
+    max-width: 40%;
+  }
+  .nav-pages {
+    color: #00004c;
+    font-size: 100%;
+  }
+
+  @media (min-width: 350px) and (max-width: 699px) {
+    .navbar-brand {
+    max-width: 70%;
+  }
+
+  .nav-pages {
+        font-size: 140%;
+      }
+
+  }
+
+  @media (min-width: 100px) and (max-width: 349px) {
+      .navbar-brand {
+      max-width: 100%;
+    }
+    .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+  @media (min-width: 2000px) {
+        .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+.filter-image {
+    padding: 10%; 
+    width: 100%; 
+    max-height: 200px; 
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 100px;
+    min-height: 100px;
+
+}
+
+.filter-parent {
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0275d8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#0275d8; 
+}
+
+.nav-pages>a, .nav-link {
+  color: #0275d8;
+}
+.blue {
+  color: #00004c;
+}
+.navbar-active > a {
+  border-bottom: solid 1px #0275d8;
+}
+
+
+/** flaoitn button*/
+    /* .filter-buttons > .btn-group > .btn:active {
+
+border-bottom: solid 2px darkblue;
+} */
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+  position: fixed;
+    width: 60px;
+    height: 62px;
+    bottom: 15px;
+    right: 28px;
+    background-color: #002360;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #999;
+    z-index: 1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+.ul-float{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+.ul-float, .li-float{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.ul-float, .li-float, .a-float{
+	background-color:#0275d8;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:60px;
+	height:60px;
+	display:block;
+}
+
+.hear-from-us {
+  color:#0275d8;
+}
+
+.ul-float:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.my-float{
+	font-size: 130%;
+	margin-top:18px;
+}
+
+.a-float#menu-share + ul{
+  visibility: hidden;
+}
+
+.a-float#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.a-float#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.a-float#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+.filter-parent:hover{
+  transform: scale(0.95);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-image:hover {
+  transform: scale(1);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.all-filter-text:hover {
+  transform: scale(1.4);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.card-image:hover {box-shadow: inset 0 0 3px blue;}
+
+a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+ .modal-view-filter > button:hover {
+  cursor: pointer;
+}
+
+.card-header {
+  color: black;
+  background: white;
+  border-top: solid 1px #0275d8;
+}
+
+.dk-navbar-title {
+    color: blue;
+	-webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.what-we-do-all-texts:hover {
+	transform: scale(1,1.0333);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+.what-we-do-cols:hover {
+	transform: scale(1,0.9555);
+	padding: 5px;
+	background: #0396ff2e;
+  -webkit-transition: .25s ease-in-out 3s;
+   transition: .25s ease-in-out 0s; 
+}
+
+.testimonials-texts:hover {
+	transform: scale(1,0.9555);
+	-webkit-transition: .25s ease-in-out 3s;
+   transition: .25s ease-in-out 0s; 
+
+}
+
+.intro-team {
+    display: none;
+    padding: 4%;
+}
+.what-we-do-cols:hover .intro-team {
+    display: block;
+    background-color: #121935a6;
+    color: white;
+    transition: .25s ease-in-out 0s; 
+}
+
+	</style>
+
+	<style>
+		.navlinks-white {
+			color: darkblue;
+		}
+
+    </style>
+                <style>
+                    .parent:hover .child, .parent:focus .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+    .parent:hover .child:before, .parent:focus .child:before {
+        display: block;
+    }
+    
+    .parent:hover a, .parent:focus a {
+        display: block;
+    }
+    
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52,73,94,0.75);
+    }
+    
+    
+                                    /* Image zoom on hover + Overlay colour */
+                    .parent {
+                        overflow: hidden;
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+    
+                    .child {
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                        -o-transition: all .5s;
+                        transition: all .5s;
+                    }
+    
+                    /* Several different images */
+                    .bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg);}
+                    .bg-two {background-image: url(http://s1.it.atcdn.net/wp-content/uploads/2015/08/2-London.jpg);}
+                    .bg-three {background-image: url(https://media.timeout.com/images/101484105/image.jpg);}
+                    .bg-four {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg);}
+                    .bg-five {background-image: url(http://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc);}
+                    .bg-six {background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);}
+                </style>
+    
+  </head>
+  <body style="background-image:url(../asset/bg111.jpg)">
+    <!--navbar start-->
+    <div class="container-fluid" id="homepage-dynamic-container">
+      <div class="row">
+          <div class="col-md-12">
+              <nav class="navbar fixed-top navbar-toggleable-lg navbar-light bg-light" id="dk-navbar-title">
+                  <a class="col-md-4 navbar-brand" href="../Home/index.html"> <img class="navbar-brand" src="../asset/logo.png"></a>
+                  <button class="navbar-toggler navbar-toggler-right" style="padding: 0; border: none;" type="button"
+                      data-toggle="collapse" data-target="#navbarNav">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav text-center col-md-order-2">
+                      </ul>
+                      <ul class="navbar-nav text-center ml-auto col-md-order-1 navbar-active-parent">
+                          <li class="nav-item  navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="home">
+                              <a class="nav-link blue " href="../Home/index.html"><span
+                                      class="navlinks-white">Home</span></a>
+                          </li>
+                          <li class="nav-item active navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="products">
+                              <a class="nav-link blue" href="../Products/index.html"><span
+                                      class="navlinks-white">Products</span><span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="services">
+                              <a class="nav-link blue" href="../Services/index.html"><span
+                                      class="navlinks-white">Services</span></a>
+                          </li>
+                          <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="terms">
+                              <a class="nav-link blue" href="../Team/index.html"><span class="navlinks-white">Team</span></a>
+                          </li>
+                          <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="blogs">
+                              <a class="nav-link navlink-active blue" href="../Blogs/index.html"><span class="navlinks-white">Blogs</span></a>
+                          </li>
+                          <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                              data-filter="contactus">
+                              <a class="nav-link blue" href="../Contacts/index.html"> <span class="navlinks-white">Contact</span></a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </div>
+  <!--navbar ends-->
+
+<br>
+<br>
+<br>
+
+
+
+
+<style>
+    /* Header Parallax Element Style*/ 
+.paral {
+min-height: 600px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+/* Paragrapgh for Parallax Section */ 
+.paral p {
+font-size: 24px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+
+/* Heading for Parallax Section */ 
+.paral h1 {
+color: rgba(255, 255, 255, 0.8);
+font-size: 60px;
+text-align: center;
+padding-top: 60px;
+line-height: 100px;
+}
+
+/* Image for Parallax Section */ 
+.paralsec {
+background-image: url("https://img.webnots.com/2017/05/parallax.jpg");
+}
+
+.paralsec1 {
+background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");}
+
+.paralsec2 {
+background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+}
+
+/* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+
+/* Footer */
+.wn-footer {
+padding: 2.5rem 0;
+text-align: center;
+color: white;
+background-color: #607D8B;
+border-top: .05rem solid #e5e5e5;
+}
+
+.wn-footer a {
+color: yellow;
+}
+</style>
+<!-- First Parallax Section -->
+<!-- <div class="jumbotron paral paralsec"> -->
+    <!-- <h1 class="display-3"></h1> -->
+    <!-- <p class="lead"></p>
+    <p class="lead"> -->
+    <!-- <a class="btn btn-info btn-lg btn-md" href="#" role="button"></a>
+    </p> -->
+    <!-- </div> -->
+    
+    <!-- Second Parallax Section -->
+    <!-- <div class="jumbotron paral paralsec1">
+    <h1 class="display-3">Here is a heading 2</h1>
+    <p class="lead">Here is a short description 2</p>
+    <p class="lead">
+    <a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">Here is a button 2</a>
+    </p>
+    </div> -->
+    
+    <!-- Third Parallax Section -->
+    <!-- <div class="jumbotron paral paralsec2">
+    <h1 class="display-3">Here is a heading 3</h1>
+    <p class="lead">Here is a short description 2</p>
+    <p class="lead">
+    <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+    </p>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row jumbotron paral paralsec" style="background-image: url(../asset/Innovation_Coimbatore_IESS_Stage.jpeg); background-size: 100% 100%; min-height: 500px; transform: scale(0.95); "></div>
+<div class="rowa jumbotron paral paralsec" id="parallax" style="background-image: url(../asset/team.jpg); background-size: 100% 100%; min-height: 100px;background-attachment: fixed; filter: opacity(0.4);filter: blur(4);"></div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--blogs and search item-->
+
+  <div class="container full-blog" style="border: solid 1px white;
+  box-shadow: 0px 0px 12px black;
+  width: 96%;
+  border-radius: 10px;
+  margin-top: -4%;
+  background-color: white;">
+  <br>
+              <div class="col-md-3 pull-right">
+                  <form action="" class="">
+                      <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                      <div class="input-group">
+                          <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light" style="background: lightgrey;
+                          border-radius: 120px;
+                      ">
+                          <div class="input-group-append">
+                          <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                          </div>
+                      </div>
+                      </div>
+                      <style>
+                          .form-control:focus {
+                                  box-shadow: none;
+                              }
+  
+                              .form-control-underlined {
+                              border-width: 0;
+                              border-bottom-width: 1px;
+                              border-radius: 20px;
+                              padding-left: 0;
+                              }
+                      </style>
+                      <div class="form-group">
+                      <label for="exampleFormControlSelect1"><h5>Category</h5></label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                          <option><h6>Select Vertical</h6></option>
+                          <option>Aerospace</option>
+                          <option>HealthCare</option>
+                          <option>Retail</option>
+                          <option>Top</option>
+                          <option>Latest</option>
+                      </select>
+                      </div>
+                  </form>
+  
+                  <br>
+  
+                  <h5>
+                      Tags
+                  </h5>
+                  <div class="blue">
+                      <small> <a><strong> All </strong> </a> <a><strong>Defense </strong></a> <a><strong>object </strong></a>
+                      </small>
+                  </div>
+  
+   
+              </div>
+  
+         
+          <br>
+          
+          <div class="col-md-8">
+              <div class="container-fluid">
+                  <div class="row">
+                    <div class="row">
+                      <div class="col-md-4" style="padding: 3%;">
+                          <div class="parent blog-inner-image" style="background-image:url(../asset/image3.jpg); min-height: 200px; min-width: 100px; width: 100%; border-radius: 10px; box-shadow: 0px 0px 5px black">
+                              <div  class="child" style="background-image:url(../asset/main2.jpg); min-height: 200px; min-width: 100px; width: 100%;">
+                              </div>
+                          </div>
+                      </div>
+      
+                      <div class="col" style="padding-left: 4%; padding-right: 4%;">
+                          <div class="category-item blue">
+                              <small><strong>Defence</strong></small>
+                          </div>
+                          <div class="blog-header blue">
+                              <a style="cursor:pointer">
+                                  <h3>
+                                      Privacy by Design – Tally Solutions Case Study
+                                  </h3>
+                              </a>
+                          </div>
+                          <div class="blog-short-content blue">
+                              <em>
+                                  We at Datakalp strongly believe that Privacy by Design is a durable competitive advantage for any company handling customer’s data, whether they perform analytics on that data or not. For the companies that do perform analytics on such data, Privacy by Design[…]
+                              </em>
+                              <style>
+                                  .read-more:hover {
+                                      transform: scale(1, 1.2);
+                                          -webkit-transition: .25s ease-in-out 3s;
+                                      transition: .25s ease-in-out 0s;
+                                  }
+                              </style>
+      
+                              <div class="read-more">
+                                  <a type="button" href="../Blogs/blog1/index.html" style="
+                                  border-bottom: solid; cursor: pointer;
+                              ">read more...</a>
+                              </div>
+                              <small> __ <strong>Rohan,</strong> 6 days ago</small>
+                          </div>
+      
+                      </div>
+                  </div>
+  
+                  <br>
+                  
+                  <div class="row">
+    
+                    <div class="col" style="padding-left: 4%; padding-right: 4%;">
+                        <div class="category-item blue">
+                            <small><strong>Defence</strong></small>
+                        </div>
+                        <div class="blog-header blue">
+                            <a style="cursor:pointer">
+                                <h3>
+                                    Privacy by Design – Tally Solutions Case Study
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="blog-short-content blue">
+                            <em>
+                                We at Datakalp strongly believe that Privacy by Design is a durable competitive advantage for any company handling customer’s data, whether they perform analytics on that data or not. For the companies that do perform analytics on such data, Privacy by Design[…]
+                            </em>
+                            <style>
+                                .read-more:hover {
+                                    transform: scale(1, 1.2);
+                                        -webkit-transition: .25s ease-in-out 3s;
+                                    transition: .25s ease-in-out 0s;
+                                }
+                            </style>
+    
+                            <div class="read-more">
+                                <a type="button" style="
+                                border-bottom: solid; cursor: pointer;
+                            ">read more...</a>
+                            </div>
+                            <small> __ <strong>Rohan,</strong> 6 days ago</small>
+                        </div>
+    
+                    </div>
+  
+  
+                    <div class="col-md-4" style="padding: 3%;">
+                      <div class="parent blog-inner-image" style="background-image:url(../asset/image3.jpg); min-height: 200px; min-width: 100px; width: 100%; border-radius: 10px; box-shadow: 0px 0px 5px black">
+                          <div  class="child" style="background-image:url(../asset/main2.jpg); min-height: 200px; min-width: 100px; width: 100%;">
+                          </div>
+                      </div>
+                  </div>
+  
+  
+                </div>
+  
+  
+  
+  
+                  </div>
+              </div>
+  
+      
+              </div>
+              <br>
+          <br>
+      </div>
+      <br>
+      <br>
+      <br>
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <footer>
+      <div style="min-height: 50px; background-color: #1573d0;">
+
+      </div>
+	<div class="container-fluid" style="display: none;">
+	  <div class="row">
+		<div class="col-md-12" style=" background-color: #0167cc; color: #00004c;">
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h3>
+				We are AI Algorithm Experts
+			  </h3>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-4 text-center">
+			  <h3>
+				Know Us
+			  </h3>
+			  <p style="color: white">
+				Datakalp LLP is providing cutting edge services and products in the field of Artificial Technologies,
+				Machine Learning, Computer vision and NLP.
+			  </p>
+			</div>
+			<div class="col-md-4 text-center">
+			  <h3>
+				Address
+			  </h3>
+			  <address style="color : white">
+				<strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli, Bangalore –
+				560035<br />
+			  </address>
+			</div>
+			<div class="col-md-4 text-center">
+			  <h3>
+				Contact
+			  </h3>
+			  <address style="color: white;">
+				<strong>India, Inc.</strong>
+				<br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)6355762814">+91 63557
+				  62814</a>
+				<br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)8861636197">+91 88616
+				  36197</a>
+			  </address>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h3>
+				<div class=" roof-social style-two  roof-socials-5f838225a3331"><h6>FOLLOW US ON:</h6>
+				  <a href="http://www.facebook.com/datakalp" target="_blank" class="icon-fa-facebook-official"><i style="color: white" class="fa fa-facebook-official"></i></a>
+				  <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter"><i style="color: white" class="fa fa-twitter"></i></a>
+				  <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber" target="_blank" style="color: white" class="icon-fa-youtube-play"><i class="fa fa-youtube-play"></i></a>
+  <a href="https://www.linkedin.com/company/datakalp" target="_blank" style="color: white" class="icon-fa-linkedin"><i class="fa fa-linkedin"></i></a></div>
+			  </h3>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h6>
+				Copyright © 2020. datakalp.com All rights reserved.
+			  </h6>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  </div>
+  
+  </footer>
+  
+  
+	<style>
+		.mh-450, video {
+			min-height: calc(350px + 10vh);
+		}
+		video {
+			width: 100%;
+			max-height: 100%;
+		}
+		.navbar-buttons {
+			min-width: 100px;
+			max-width: 100px;
+			border-radius: 10px;
+			margin: 3px 3px;
+			padding: 7px;
+			
+		}
+
+    .navlink-active {
+            transform: scale(1.2);
+            font-weight: 600;
+            -webkit-transition: transform 0.3s ease-in-out;
+            border-bottom: solid 1px #0275d8;
+        }
+		
+	</style>
+	  <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  		  $("#dk-navbar-title").fadeIn(2000).css('background-color', 'white'); // if yes, then change the color of class "navbar-toggler " to white (#f8f8f8)
+		  $(".navlinks-white").css('color', '#00004c');
+		  $(".navlink-active").css({'border-bottom': 'solid 1px #00004c'});
+
+		// $(document).ready(function(){
+    //   $(window).scroll(function() { // check if scroll event happened
+    //     if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
+    //       console.log("aa");
+
+		//   $("#dk-navbar-title").fadeIn(2000).css('background-color', 'white'); // if yes, then change the color of class "navbar-toggler " to white (#f8f8f8)
+		//   $(".navlinks-white").css('color', '#00004c');
+		//   $(".navlink-active").css({'border-bottom': 'solid 1px #00004c'});
+    //     } else {
+    //       console.log("cc");
+		//   $("#dk-navbar-title").css('background-color', 'white'); //css("background-color", "transparent"); // if not, change it back to transparent
+		//   $(".navlinks-white").css('color', '#00004c');
+		//   $(".navlink-active").css({'border-bottom': 'solid 1px #fff'});
+    //     }
+    //   });
+    // });
+
+	window.addEventListener('load', function(){
+		new Glider(document.querySelector('.glider'), {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			draggable: true,
+			dots: '.dots',
+			arrows: {
+				prev: '.glider-prev',
+				next: '.glider-next'
+			}
+			});
+		});
+
+		window.addEventListener('load', function(){
+		new Glider(document.querySelector('.glider-2'), {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			draggable: true,
+			dots: '.dots',
+			arrows: {
+				prev: '.glider-prev',
+				next: '.glider-next'
+			}
+			});
+		});
+
+	$(document).ready(function(){       
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 700,
+    autoplay:false,
+    autoplaySpeed: 2000,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev blue" style="background-color: rgb(1 103 204);border-radius: 30px;border: solid 1px #184fea;width: 3%;height: 23%;"><i class="fa fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next blue" style="background-color: rgb(1 103 204);border-radius: 30px;border: solid 1px #184fea;width: 3%;height: 23%;"><i class="fa fa-arrow-left"></i></button>',
+    slidesToScroll: 1,
+	responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+  ]
+ });
+    
+        });
+
+        $('.left').click(function(){
+  $('.slider').slick('slickPrev');
+})
+
+$('.right').click(function(){
+  $('.slider').slick('slickNext');
+});
+
+(function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#parallax");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+
+})();
+
+$("#dk-navbar-title").fadeIn(2000).css('background-color', 'white'); // if yes, then change the color of class "navbar-toggler " to white (#f8f8f8)
+                    $(".navlinks-white").css('color', '#00004c');
+                    $(".navlink-active").css({ 'border-bottom': 'solid 1px #00004c' });
+
+
+	  </script>
+	  <script src="../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+	  
+  </body>
+</html>

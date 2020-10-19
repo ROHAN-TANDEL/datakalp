@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../packages/Glider.js-master/Glider.js-master/glider.css">
+	
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script> -->
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/scripts.js"></script>
+
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/> -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="packages/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
+	<script type="text/javascript" src="packages/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script> -->
+	<script>
+	// 	 $(document).on('ready', function () {
+    //         $(".regular").slick({
+    //             dots: true,
+    // infinite: true,
+    // speed: 700,
+    // autoplay:true,
+    // autoplaySpeed: 2000,
+    // arrows:false,
+    // slidesToShow: 1,
+    // slidesToScroll: 1
+    //         });
+    //     });
+	</script>
+	<style>
+		    @media (min-width: 992px) {
+      .modal-xlg {
+        max-width: 1200px;
+      }
+    }
+
+    .btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .filter {
+      border: solid 1px white;
+    }
+
+    .active-filter {
+      color: white;
+      border-bottom: solid 2px darkblue !important;
+    }
+
+    a:focus {
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      /* color:transparent; */
+    }
+
+    .mh-450,
+    video {
+      min-height: calc(350px + 10vh);
+    }
+
+    video {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .navbar-buttons {
+      min-width: 100px;
+      max-width: 100px;
+      border-radius: 10px;
+      margin: 3px 3px;
+      padding: 7px;
+
+    }
+
+    .nav-item>a:hover {
+      transform: scale(1.2);
+      font-weight: 600;
+      -webkit-transition: transform 0.3s ease-in-out;
+      border-bottom: solid 1px #0275d8;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-500%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes speedbreak {
+      0% {
+        transform: translateX(-500%);
+      }
+
+      70% {
+        transform: translateX(10%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+    .slide-from-left {
+      transition-delay: 8s;
+      animation: 3s ease-out 0s 1 speedbreak;
+    }
+
+    .slide-from-top {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+    }
+
+    .case-studies {
+      animation: 1s ease-out 0s 1 slideInFromTop;
+    }
+
+    .products {
+      animation: 3s ease-out 0s 1 slideInFromTop;
+    }
+
+    .portfolio {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+
+    }
+
+    .filter-buttons>.btn-group>.btn {
+
+      border: none;
+      background: transparent;
+    }
+
+
+    .hover-logic:hover {
+      box-shadow: 0 0 10px white;
+      border: solid 1px white;
+      scale: (1.5)
+    }
+
+  @media (min-width: 771px)
+{
+  /* .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
+
+  .navbar {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: .5rem 1rem;
+  }
+  article, aside, footer, header, nav, section {
+      display: block;
+  }
+
+  .navbar-brand {
+      display: inline-block;
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+      color: rgba(0,0,0,.9);
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg .navbar-collapse {
+      display: -webkit-box!important;
+      display: -webkit-flex!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+      width: 100%;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+      background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E);
+  }
+  .navbar-toggleable-lg .navbar-toggler {
+      display: none;
+  }
+
+  .navbar-toggler-right {
+      position: absolute;
+      right: 1rem;
+  }
+
+  .navbar-toggler {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      padding: .25rem .75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background: 0 0;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+  }
+
+  .navbar-brand {
+    max-width: 60%;
+  } */
+}
+
+.navbar-brand {
+    max-width: 40%;
+  }
+  .nav-pages {
+    color: #00004c;
+    font-size: 100%;
+  }
+
+  @media (min-width: 350px) and (max-width: 699px) {
+    .navbar-brand {
+    max-width: 70%;
+  }
+
+  .nav-pages {
+        font-size: 140%;
+      }
+
+  }
+
+  @media (min-width: 100px) and (max-width: 349px) {
+      .navbar-brand {
+      max-width: 100%;
+    }
+    .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+  @media (min-width: 2000px) {
+        .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+.filter-image {
+    padding: 10%; 
+    width: 100%; 
+    max-height: 200px; 
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 100px;
+    min-height: 100px;
+
+}
+
+.filter-parent {
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0275d8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#0275d8; 
+}
+
+.nav-pages>a, .nav-link {
+  color: #0275d8;
+}
+.blue {
+  color: #00004c;
+}
+.navbar-active > a {
+  border-bottom: solid 1px #0275d8;
+}
+
+
+/** flaoitn button*/
+    /* .filter-buttons > .btn-group > .btn:active {
+
+border-bottom: solid 2px darkblue;
+} */
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+  position: fixed;
+    width: 60px;
+    height: 62px;
+    bottom: 15px;
+    right: 28px;
+    background-color: #002360;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #999;
+    z-index: 1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+.ul-float{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+.ul-float, .li-float{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.ul-float, .li-float, .a-float{
+	background-color:#0275d8;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:60px;
+	height:60px;
+	display:block;
+}
+
+.hear-from-us {
+  color:#0275d8;
+}
+
+.ul-float:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.my-float{
+	font-size: 130%;
+	margin-top:18px;
+}
+
+.a-float#menu-share + ul{
+  visibility: hidden;
+}
+
+.a-float#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.a-float#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.a-float#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+.filter-parent:hover{
+  transform: scale(0.95);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-image:hover {
+  transform: scale(1);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.all-filter-text:hover {
+  transform: scale(1.4);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.card-image:hover {box-shadow: inset 0 0 3px blue;}
+
+a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+ .modal-view-filter > button:hover {
+  cursor: pointer;
+}
+
+.card-header {
+  color: black;
+  background: white;
+  border-top: solid 1px #0275d8;
+}
+
+.dk-navbar-title {
+	-webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.what-we-do-all-texts:hover {
+	transform: scale(1,1.0333);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+.what-we-do-cols:hover {
+	transform: scale(1,0.9555);
+	padding: 5px;
+	background: #0396ff2e;
+  -webkit-transition: .25s ease-in-out 3s;
+   transition: .25s ease-in-out 0s; 
+}
+
+.testimonials-texts:hover {
+	transform: scale(1,0.9555);
+	-webkit-transition: .25s ease-in-out 3s;
+   transition: .25s ease-in-out 0s; 
+}
+	</style>
+
+	<style>
+		.navlinks-white {
+			color: white;
+		}
+		.navlink-active {
+			border-bottom: solid 1px #fff;
+		}
+		.dk-navbar-title {
+			background-color: white;
+		}
+		.navlink-active {
+            transform: scale(1.2);
+            font-weight: 600;
+            -webkit-transition: transform 0.3s ease-in-out;
+            border-bottom: solid 1px white;
+        }
+        
+	</style>
+  </head>
+  <body style="background-image:url(../asset/bg111.jpg)">
+<!--navbar start-->
+<div class="container-fluid" id="homepage-dynamic-container">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar fixed-top navbar-toggleable-lg navbar-light bg-light" id="dk-navbar-title">
+				<a class="col-md-4 navbar-brand" href="../Home/index.html"> <img class="navbar-brand" src="../asset/logo.png"></a>
+				<button class="navbar-toggler navbar-toggler-right" style="padding: 0; border: none;" type="button"
+					data-toggle="collapse" data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav text-center col-md-order-2">
+					</ul>
+					<ul class="navbar-nav text-center ml-auto col-md-order-1 navbar-active-parent">
+						<li class="nav-item  navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="home">
+							<a class="nav-link navlink-active blue" href="../Home/index.html"><span
+									class="navlinks-white">Home</span></a>
+						</li>
+						<li class="nav-item active navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="products">
+							<a class="nav-link blue" href="../Products/index.html"><span
+									class="navlinks-white">Products</span><span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="services">
+							<a class="nav-link blue" href="../Services/index.html"><span
+									class="navlinks-white">Services</span></a>
+						</li>
+						<li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="terms">
+							<a class="nav-link blue" href="../Team/index.html"><span class="navlinks-white">Team</span></a>
+						</li>
+						<li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="blogs">
+							<a class="nav-link blue" href="../Blogs/index.html"><span class="navlinks-white">Blogs</span></a>
+						</li>
+						<li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+							data-filter="contactus">
+							<a class="nav-link blue" href="../Contacts/index.html"> <span class="navlinks-white">Contact</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+<!--navbar ends-->
+<div class="container-fluida">
+	<div class="rowa">
+		<div class="acol-md-12">
+
+<!-- <div class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide"><img class="" src="http://localhost/datakalp/src/asset/image4.png" alt="Second slide"></li>
+			<li class="splide__slide"><img class="" src="http://localhost/datakalp/src/asset/image4.png" alt="Second slide"></li>
+			<li class="splide__slide"><img class="" src="http://localhost/datakalp/src/asset/image4.png" alt="Second slide"></li>
+		</ul>
+	</div>
+</div> -->
+
+<!-- <div class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<div class="splide__slide__container">
+					<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+				</div>
+				Lorem Ipsum Dolor Sit Amet
+			</li>
+			<li class="splide__slide">
+				<div class="splide__slide__container">
+					<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+				</div>
+				Lorem Ipsum Dolor Sit Amet
+			</li>
+		</ul>
+	</div>
+</div> -->
+
+<!-- <div id="image-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+			</li>
+			<li class="splide__slide">
+				<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+			</li>
+			<li class="splide__slide">
+				<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+			</li>
+		</ul>
+	</div>
+</div> -->
+<!-- <div id="card-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+				<h4>Heading 01</h4>
+				<div>
+					Description 01
+				</div>
+			</li>
+			<li class="splide__slide">
+				<img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide">
+				<h4>Heading 02</h4>
+				<div>
+					Description 02
+				</div>
+			</li>
+		</ul>
+	</div>
+</div> -->
+
+	<!--slick design now-->
+	<!-- <div class="your-class">
+		<div><img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide"></div>
+		<div><img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide"></div>
+		<div><img class="" src="http://localhost/datakalp/src/asset/image2.jpg" alt="Second slide"></div>
+	  </div> -->
+
+	  
+	</div>
+	</div>
+	</div>
+<div class="containera-fluida">
+	<div class="rowa">
+		<div class="acol-md-12a">
+			<div id="carouselExampleControls" class="carousel slide" data-interval="100000" data-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<div class="video mh-450">
+					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+						<source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+					  </video>					
+					</div>
+					<!-- <img class="d-block w-100 mh-450 video-add" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_174fa49c227%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_174fa49c227%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3125%22%20y%3D%22217.7%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true"> -->
+				  </div>
+				  <div class="carousel-item">
+					<!-- <img class="d-block w-100 mh-450" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_174fa49c227%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_174fa49c227%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3125%22%20y%3D%22217.7%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true"> -->
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"></iframe>
+					  </div>
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100 mh-450" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_174fa49c227%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_174fa49c227%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3125%22%20y%3D%22217.7%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+				  </div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+		</div>
+	</div>
+</div>
+<!--how different we are-->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="col-md-12 text-center">
+	<h3 style="color: #00004c">
+		What We Do 
+	</h3>
+</div>
+<br>
+<br>
+<div class="container">
+	<div class="row">
+
+		<div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
+
+			<div style="background-image: url(../asset/diff1.jpg); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
+
+			</div>
+			<!-- <img alt="Bootstrap Image Preview" src="../asset/diff1.jpg" style="max-width: 250px; max-height: 250px;"/> -->
+
+			<div class="what-we-do-all-texts">
+				<h6 class="text-center blue" style="
+						padding-top: 10px;
+					">
+					COMPUTER VISION
+				</h6>
+
+			<div>
+				<p class="">
+					Hot-zone Breach Detection
+				</p>
+				<p class="">
+					Real-time Face Recognition
+				</p>
+				<p class="">
+					Suspicious Activity Detection
+				</p>
+				<p class="">
+					Manufacturing Defect Detection
+				</p>
+				<p class="">
+					Object Detection and Tracking
+				</p>
+			</div>
+			</div>
+
+</div>
+
+
+<div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
+
+	<div style="background-image: url(../asset/diff2.png); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
+
+	</div>
+	<!-- <img alt="Bootstrap Image Preview" src="../asset/diff2.png" style="max-width: 250px; max-height: 250px;"/> -->
+	<div class="what-we-do-all-texts">
+		<h6 class="text-center blue" style="
+    padding-top: 10px;
+">
+			TEXT MINING/ NLP
+		</h6>
+
+	<div>
+		<p class="">
+			Natural Language Query Interface to Large DB
+		</p>
+		<p class="">
+			Text Classification
+		</p>
+		<p class="">
+			Document Clustering
+		</p>
+		<p class="">
+			Sentiment Mining
+		</p>
+
+	</div>
+
+</div>
+</div>
+
+
+<div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
+
+	<div style="background-image: url(../asset/diff3.jpg); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
+
+	</div>
+	<!-- <img alt="Bootstrap Image Preview" src="../asset/diff3.jpg" style="max-width: 250px; max-height: 250px;"/> -->
+	<div class="what-we-do-all-texts">
+		<h6 class="text-center blue" style="
+    padding-top: 10px;
+">
+			SENSORS INTELL
+		</h6>
+
+	<div>
+		<p class="">
+			Insights from IoT sensors
+		</p>
+		<p class="">
+			Machine Fault Prognostics
+		</p>
+		<p class="">
+			Vibration Analytics
+		</p>
+		<p class="">
+			Optimal Process Control
+		</p>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
+
+			<div style="background-image: url(../asset/diff4.jpg); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
+
+			</div>
+						<!-- <img alt="Bootstrap Image Preview" src="../asset/diff4.jpg" style="max-width: 250px; max-height: 250px;"/> -->
+						<div class="what-we-do-all-texts">
+							<h6 class="text-center blue" style="
+    padding-top: 10px;
+">
+								STATISTICS AND OPTIMIZATION
+							</h6>
+
+						<div>
+							<p class="">
+								Market Basket Analysis
+							</p>
+							<p class="">
+								Market Segmentation
+							</p>
+							<p class="">
+								Propensity Analysis
+							</p>
+							<p class="">
+								Hypothesis Testing
+							</p>
+							</div>
+						</div>
+
+		</div>
+
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col">
+
+			<h5 class="text-center">
+				Projects (Large)
+			</h5>
+			<br>
+			<h1 class="text-center">
+				13
+			</h1>
+		</div>
+		<div class="col">
+			<h5 class="text-center">
+				Project Experience (Man-months)
+			</h5>
+			<br>
+			<h1 class="text-center">
+				34
+			</h1>
+		</div>
+
+		<div class="col">
+			<h5 class="text-center">
+				Positive Feedback & Accolades
+			</h5>
+			<br>
+			<h1 class="text-center">
+				2
+			</h1>
+		</div>
+		
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div style="visibility: hidden;">
+				<p>lorieiam ipsum</p>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>
+						Why We are Different Demo
+					</h2>
+				</div>
+			</div>
+			<div style="visibility: hidden;">
+				<p>lorieiam ipsum</p>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3" style="border: solid 1px lightgrey; padding: 8px; border-left:hidden; border-top:hidden">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+				<div class="col-md-3" style="border: solid 1px lightgrey; padding: 8px; border-top:hidden">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+				<div class="col-md-3" style="border: solid 1px lightgrey; padding: 8px; border-top:hidden">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+				<div class="col-md-3" style="border: solid 1px lightgrey; padding: 8px; border-right:hidden; border-top:hidden">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4" style="border: solid 1px lightgrey; padding: 8px;border-bottom:hidden; border-left: hidden;">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+				<div class="col-md-4" style="border: solid 1px lightgrey; padding: 8px;border-bottom:hidden;">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+				<div class="col-md-4" style="border: solid 1px lightgrey; padding: 8px;border-bottom:hidden;">
+					<h5>
+						h5. Lorem ipsum dolor sit amet.
+					</h5><div class="text-center mx-auto" style="padding: 4px; max-width:300px; max-height:400px;"><img style="max-width:300px; max-height:400px;" src="http://placehold.it/450x300?text=1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+</div>
+ -->
+
+<!--how different we are-->
+
+<br>
+<br>
+<br>
+
+<div class="col-md-12 text-center">
+	<h3 style="color: #00004c">
+		Awards and Achievement 
+	</h3>
+</div>
+
+<br>
+<br>
+
+
+<section class="lazy slider" data-sizes="25vw">
+    <div>
+		<h5 class="text-center"> Promising StartUp </h5> <br>
+		<img class="img-fluid mx-auto" style="width: 99%; max-height: 225px" data-lazy="../asset/award1.jpg" data-srcset="../asset/award1.jpg 650w, ../asset/award1.jpg 960w" >
+    </div>
+    <div>
+		<h5 class="text-center"> Defence India StartUp Chanllenge </h5> <br>
+
+      <img class="img-fluid mx-auto" style="width: 99%; max-height: 225px;" data-lazy="../asset/award2.jpeg" data-srcset="../asset/award2.jpeg 650w, ../asset/award2.jpeg 960w" >
+	</div>
+	<div>
+		<h5 class="text-center"> Karnataka Eleveted - II </h5> <br>
+
+		<img class="img-fluid mx-auto" style="width: 99%; max-height: 225px;" data-lazy="../asset/award3.jpeg" data-srcset="../asset/award3.jpeg 650w, ../asset/award3.jpeg 960w" >
+	</div>
+</div>
+  </section>
+
+<div class="container text-center img-fluid mx-auto" style="width: 90%; display: none;">
+	<div class="row">
+		<div class="col text-center text-center img-fluid mx-auto" style="padding: 4px;">
+			<h5> Promising StartUp </h5> <br>
+			<div class="text-center img-fluid mx-auto"
+				style="background-image: url(../asset/award1.jpg);min-width: 350px;min-height: 320px;background-size: 100% 100%;">
+				<!-- <img src="../asset/award1.jpg" style="max-width: 400px; max-height: auto;"> -->
+			</div>
+		</div>
+		<div class="col text-center text-center img-fluid mx-auto" style="padding: 4px;">
+			<h5>Defence India StartUp Chanllenge</h5><br>
+			<div class="text-center img-fluid mx-auto"
+				style="background-image: url(../asset/award2.jpeg);min-width: 350px;min-height: 320px;background-size: 100% 100%;">
+				<!-- <img src="../asset/award1.jpg" style="max-width: 400px; max-height: auto;"> -->
+			</div>
+		</div>
+		<div class="col text-center text-center img-fluid mx-autor" style="padding: 4px;">
+			<h5>Karnataka Eleveted - II</h5> <br>
+			<div class="text-center img-fluid mx-auto"
+				style="background-image: url(../asset/award3.jpeg);min-width: 350px;min-height: 320px;background-size: 100% 100%;">
+				<!-- <img src="../asset/award1.jpg" style="max-width: 400px; max-height: auto;"> -->
+			</div>
+		</div>
+		<!-- <div class="text-center" style="padding: 4px;">
+		Tesla Demo <br>
+		<img src="http://placehold.it/450x300?text=4"></div> -->
+	</div>
+
+	<!-- <button aria-label="Previous" class="glider-prev" style="top:40%">«</button>
+	<button aria-label="Next" class="glider-next" style="top:40%">»</button> -->
+	<!-- <div role="tablist" class="dots"></div> -->
+</div>
+
+<!-- testinmol start-->
+<!-- <div class="container-fluid">
+	<div class="rowa">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>
+						Testimonial Demo
+					</h3>
+				</div>
+			</div>
+			<div style="visibility: hidden;">
+				<p>lorieiam ipsum</p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mx-auto">
+					<img style="max-height: 200px;" src="http://placehold.it/450x300?text=4">
+				</div>
+				<div class="col-md-8">
+					<div class="jumbotron" style="min-height: calc(100px + 19vh);">
+						<p>
+							This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+						</p>
+						</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mx-auto">
+					<img style="max-height: 200px;" src="http://placehold.it/450x300?text=4">
+				</div>
+				<div class="col-md-8">
+					<div class="jumbotron" style="min-height: calc(100px + 19vh);">
+		
+						<p>
+							This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div> -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="col-md-12 text-center" style="color: #00004c">
+	<h3>
+		Testimonial 
+	</h3>
+</div>
+
+
+<!--testimonial end-->
+<br>
+<br>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="row">
+				<div class="col-md-4 img text-center img-fluid mx-auto blue">
+					<blockquote class="blockquote">
+						S. Saravana N Reddy, Co-Founder
+						<h3>&quot;StarBeat&quot;</h3>
+					</blockquote>
+					<!-- <img class="" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="img-thumbnail" /> -->
+				</div>
+				<div class="col-md-8 img text-center img-fluid mx-auto">
+					<p>
+						<em>We hired Datakalp to solve a set of problems with News Articles - <strong>clustering, classification, related</strong> 
+							article search, duplicate article identification etc. Datakalp were quick to understand the problem
+							statement from business value lens, and translate the same to AI/Machine Learning problem
+							statement. While our data was unique and challenging, they built cutting-edge algorithms from
+							ground up in a very reasonable time yet achieved nearly the state-of-art results (where such
+							comparison was available). They operated with transparency and excellent, proactive
+							communication to ensure the success of the project. We felt they were our partners towards
+							building the product, and not vendors. We wish them all the best, and would highly recommend
+							them for any complex text mining or NLP development work.</em>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="row">
+				<div class="col-md-4 img text-center img-fluid mx-auto blue">
+					<!-- <img class="" alt="Bootstrap Image Preview" src="../asset/testi1.webp" class="img-thumbnail" /> -->
+					<blockquote class="blockquote">
+						Indrayudh Ghoshal, Founder
+						<h3>&quot;Scribble Data&quot;</h3>
+					</blockquote>
+				</div>
+
+				<div class="col-md-8 img text-center img-fluid mx-auto">
+					<p>
+						<em>Kalpit and his team at Datakalp have been excellent <strong>partners for Scribble Data</strong>. in tackling a
+						variety of data science problems. Their depth of understanding of each problem, as well as
+						their thought-throughness, pragmatism and attention to detail were key in building
+						production-ready data models, and we appreciated not just their diligence, but also their
+							sense of working together with their clients as a team to deal with challenges that would
+							crop up.
+						</em>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+
+<div class="col-md-12 text-center" style="color: #00004c">
+	<h3>
+		Our Leadership 
+	</h3>
+</div>
+
+
+
+<div style="visibility: hidden;">
+	<p>lorieiam ipsum</p>
+</div>
+<!--testimonial end-->
+<br>
+<div class="container">
+  <div class="row text-center">
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border: solid 1px white;
+			box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px;" alt="Bootstrap Image Preview " src="../asset/kalpit.png"  />
+			<h5> DR. KALPIT DESAI</h5>
+			<h6 style="min-height: 35px;"> FOUNDER, CEO & CHIEF DATA SCIENTIST</h6>
+			<style>
+				.leader-text:hover {
+					transform: scale(1.0345);
+					-webkit-transition: transform 0.3s ease-in-out;
+			      	/* border-bottom: solid 1px #0275d8;		 */
+				}
+			</style>
+			<hr style="border-top: solid 1px darkblue">
+			<p class="leader-text">
+				Kalpit has <strong>14+ years of industry experience post PhD from the UNC-Chapel Hill USA.</strong>Passionate about people, data and algorithms. Known to build high-performance “data” teams and innovative products in organizations ranging from a 3-people pre-seed startup to a 400k strong global conglomerate. Ex GE Research, Bidgely, Tally Analytics.</em>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border: solid 1px white;
+			box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px;" alt="Bootstrap Image Preview " src="../asset/jayesh.png"  />
+			<h5>JAYESH JAIN</h5>
+			<h6 style="min-height: 35px;"> HEAD – ENTERPRISE DIGITAL SOLUTIONS DEVELOPMENT & SALES</h6>
+			<hr style="border-top: solid 1px darkblue">
+			<p class="leader-text">
+				Jayesh brings <strong>15 years of rich experience in developing technology and products</strong>at varying setups from global conglomerates to an agile start-up. Known to solve problems by “Making complex simple” using the power of People & Digital. Ex IISc, GE, Lennox</em>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <!-- <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+          
+        </small>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <div class="col img-fluid mx-auto">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;"  alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+				<p>
+					Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+			
+			</small>
+				</p>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="col img-fluid mx-auto">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;"  alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+				<p>
+					Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+			
+			</small>
+				</p>
+			</div>
+		</div>
+		</div>
+	</div> -->
+
+	<div class="col img-fluid mx-auto">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="rounded-circle img-fluid" style="border: solid 1px white;
+				box-shadow: 0px 0px 12px white;width: 100%; border:solid 2px white; max-width: 200px; max-height: 250px;" alt="Bootstrap Image Preview " src="../asset/payal.jpg" />
+				<h5>PAYAL SHAH</h5>
+				<h6 style="min-height: 35px;"> CO-FOUNDER & CFO</h6>
+				<hr style="border-top: solid 1px darkblue">
+				<p class="leader-text">
+					Payal <strong>has done MBA in Finance and has 3+ years and </strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em> industry experience in banking and insurance sector. Ex KSBM, ICICI-Prudential.</em>
+				</p>
+			</div>
+		</div>
+		</div>
+	</div>
+  </div>
+</div>
+
+
+
+<!--how different we are-->
+<div style="visibility: hidden;">
+	<p>lorieiam ipsum</p>
+</div>
+<div style="visibility: hidden;">
+	<p>lorieiam ipsum</p>
+</div>
+<div class="col-md-12 text-center" style="color: #00004c">
+	<h3>
+		Our Partners
+	</h3>
+</div>
+
+<div style="visibility: hidden;">
+	<p>lorieiam ipsum</p>
+</div>
+<!--testimonial end-->
+<br>
+<!-- <div class="glider-contain" style="width: 90%;">
+	<div class="glider-2">
+	  <div class="text-center" style="padding: 4px;">
+
+		<img src="http://placehold.it/550x300?text=1">
+	</div>
+	  <div class="text-center" style="padding: 4px;">
+
+		<img src="http://placehold.it/550x300?text=2">
+		</div>
+	  <div class="text-center" style="padding: 4px;">
+
+		<img src="http://placehold.it/550x300?text=3"></div>
+	  <div class="text-center" style="padding: 4px;">
+
+		<img src="http://placehold.it/550x300?text=4"></div>
+	</div>
+  
+	<button aria-label="Previous" class="glider-prev" style="top:40%">«</button>
+	<button aria-label="Next" class="glider-next" style="top:40%">»</button>
+	<div role="tablist" class="dots"></div>
+  </div> -->
+  
+<!-- <div style="visibility: hidden;">
+	<p>lorieiam ipsum</p>
+</div> -->
+
+<section class="lazy slider" data-sizes="25vw">
+    <div>
+		<img class="img-fluid mx-auto" style="width: 99%; max-height: 125px" data-lazy="../asset/partner1.png" data-srcset="../asset/partner1.png 650w, ../asset/partner1.png 960w" >
+    </div>
+    <div >
+      <img class="img-fluid mx-auto" style="width: 99%; max-height: 125px;" data-lazy="../asset/partner2.jpg" data-srcset="../asset/partner2.jpg 650w, ../asset/partner2.jpg 960w" >
+	</div>
+	<img class="img-fluid mx-auto" style="width: 99%; max-height: 125px;" data-lazy="../asset/partner2.jpg" data-srcset="../asset/partner2.jpg 650w, ../asset/partner2.jpg 960w" >
+</div>
+  </section>
+
+
+  <footer>
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-md-12" style=" background-color: #0167cc; color: #00004c;">
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h3>
+				We are AI Algorithm Experts
+			  </h3>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-4 text-center">
+			  <h3>
+				Know Us
+			  </h3>
+			  <p style="color: white">
+				Datakalp LLP is providing cutting edge services and products in the field of Artificial Technologies,
+				Machine Learning, Computer vision and NLP.
+			  </p>
+			</div>
+			<div class="col-md-4 text-center">
+			  <h3>
+				Address
+			  </h3>
+			  <address style="color : white">
+				<strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli, Bangalore –
+				560035<br />
+			  </address>
+			</div>
+			<div class="col-md-4 text-center">
+			  <h3>
+				Contact
+			  </h3>
+			  <address style="color: white;">
+				<strong>India, Inc.</strong>
+				<br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)6355762814">+91 63557
+				  62814</a>
+				<br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)8861636197">+91 88616
+				  36197</a>
+			  </address>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h3>
+				<div class=" roof-social style-two  roof-socials-5f838225a3331"><h6>FOLLOW US ON:</h6>
+				  <a href="http://www.facebook.com/datakalp" target="_blank" class="icon-fa-facebook-official"><i style="color: white" class="fa fa-facebook-official"></i></a>
+				  <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter"><i style="color: white" class="fa fa-twitter"></i></a>
+				  <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber" target="_blank" style="color: white" class="icon-fa-youtube-play"><i class="fa fa-youtube-play"></i></a>
+  <a href="https://www.linkedin.com/company/datakalp" target="_blank" style="color: white" class="icon-fa-linkedin"><i class="fa fa-linkedin"></i></a></div>
+			  </h3>
+			</div>
+		  </div>
+		  <div style="visibility: hidden;">
+			<p>lorieiam ipsum</p>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h6>
+				Copyright © 2020. datakalp.com All rights reserved.
+			  </h6>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
+  
+  
+	<style>
+		.mh-450, video {
+			min-height: calc(350px + 10vh);
+		}
+		video {
+			width: 100%;
+			max-height: 100%;
+		}
+		.navbar-buttons {
+			min-width: 100px;
+			max-width: 100px;
+			border-radius: 10px;
+			margin: 3px 3px;
+			padding: 7px;
+			
+		}
+		
+	</style>
+	  <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
+          console.log("aa");
+
+		  $("#dk-navbar-title").fadeIn(2000).css('background-color', 'white'); // if yes, then change the color of class "navbar-toggler " to white (#f8f8f8)
+		  $(".navlinks-white").css('color', '#00004c');
+		  $(".navlink-active").css({'border-bottom': 'solid 1px #00004c'});
+        } else {
+          console.log("cc");
+		  $("#dk-navbar-title").css('background-color', 'transparent'); //css("background-color", "transparent"); // if not, change it back to transparent
+		  $(".navlinks-white").css('color', 'white');
+		  $(".navlink-active").css({'border-bottom': 'solid 1px #fff'});
+        }
+      });
+    });
+
+	// $("#dk-navbar-title").css('background-color', 'white'); //css("background-color", "transparent"); // if not, change it back to transparent
+	// $(".navlinks-white").css('color', 'white');
+	// $(".navlink-active").css({'border-bottom': 'solid 1px #fff'});
+
+	window.addEventListener('load', function(){
+		new Glider(document.querySelector('.glider'), {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			draggable: true,
+			dots: '.dots',
+			arrows: {
+				prev: '.glider-prev',
+				next: '.glider-next'
+			}
+			});
+		});
+
+		window.addEventListener('load', function(){
+		new Glider(document.querySelector('.glider-2'), {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			draggable: true,
+			dots: '.dots',
+			arrows: {
+				prev: '.glider-prev',
+				next: '.glider-next'
+			}
+			});
+		});
+
+	$(document).ready(function(){       
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 700,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    arrows:false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+	responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+  ]
+ });
+    
+        });
+	  </script>
+	  <script src="../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+	  
+  </body>
+</html>

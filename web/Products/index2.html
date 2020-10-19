@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>datakalp</title>
+
+  <meta name="description" content="Source code generated using datakalp.com">
+  <meta name="author" content="datakalp!">
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="../packages/Glider.js-master/Glider.js-master/glider.css">
+
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scripts.js"></script>
+  <style>
+    @media (min-width: 992px) {
+      .modal-xlg {
+        max-width: 1200px;
+      }
+    }
+
+    .btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .filter {
+      border: solid 1px white;
+    }
+
+    .active-filter {
+      border-bottom: solid 2px darkblue !important;
+    }
+
+    a:focus {
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      /* color:transparent; */
+    }
+
+    .mh-450,
+    video {
+      min-height: calc(350px + 10vh);
+    }
+
+    video {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .navbar-buttons {
+      min-width: 100px;
+      max-width: 100px;
+      border-radius: 10px;
+      margin: 3px 3px;
+      padding: 7px;
+
+    }
+
+    .nav-item>a:hover {
+      transform: scale(1.4);
+      font-weight: 600;
+      -webkit-transition: transform 0.3s ease-in-out;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-500%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes speedbreak {
+      0% {
+        transform: translateX(-500%);
+      }
+
+      70% {
+        transform: translateX(10%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+    .slide-from-left {
+      transition-delay: 8s;
+      animation: 3s ease-out 0s 1 speedbreak;
+    }
+
+    .slide-from-top {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+    }
+
+    .case-studies {
+      animation: 1s ease-out 0s 1 slideInFromTop;
+    }
+
+    .products {
+      animation: 3s ease-out 0s 1 slideInFromTop;
+    }
+
+    .portfolio {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+
+    }
+
+    .filter-buttons>.btn-group>.btn {
+
+      border: none;
+      background: transparent;
+    }
+
+
+    .hover-logic:hover {
+      box-shadow: 0 0 10px white;
+      border: solid 1px white;
+      scale: (1.5)
+    }
+
+    /* .filter-buttons > .btn-group > .btn:active {
+
+border-bottom: solid 2px darkblue;
+} */
+  </style>
+
+  </style>
+</head>
+
+<body style="
+  background: #63009614;
+">
+
+
+
+  <div class="container-fluid" id="homepage-dynamic-container">
+    <div class="row">
+      <div class="col-md-*">
+        <nav class="navbar fixed-top navbar-toggleable-lg navbar-light bg-light" id="dk-navbar-title"
+          style="background-color: white">
+          <a class="navbar-brand" href="#"> <img src="../asset/logo.png" style="max-width: 25%;"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center col-md-order-2">
+            </ul>
+            <ul class="navbar-nav text-center ml-auto col-md-order-1">
+              <li class="nav-item  navbar-buttons">
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item active navbar-buttons">
+                <a class="nav-link " href="{{ url('/rohan') }}">Products <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item navbar-buttons">
+                <a class="nav-link " href="{{ url('/rohan') }}">Services</a>
+              </li>
+              <li class="nav-item navbar-buttons">
+                <a class="nav-link " href="#">Team</a>
+              </li>
+              <li class="nav-item navbar-buttons">
+                <a class="nav-link " href="#">Blogs</a>
+              </li>
+              <li class="nav-item navbar-buttons">
+                <a class="nav-link " href="#">ContactUs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- <div class="row">
+		<div class="col-md-12">
+		</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+	</div> -->
+  </div>
+  <br>
+  <br><br><br>
+  <!-- <div class="container-fluid" style="background-image: url(../asset/bg.png);background-position: center;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="jumbotron slide-from-top" style="background-image:url(../asset/bg1.png);background-position: top;color: #252525;">
+
+            <div class="container-fluid">
+              <div class="row">
+                    
+                <div class="col-md-12">
+                  <div class="row">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="col-md-4 slide-from-left">
+                      <br>
+                      <br>
+                      <br>
+                      <h1 class style="color: #00004c; border-bottom: solid 2px #00004c;">
+                        DATA <span style="color: white">KALP</span>
+                      </h1>
+                    </div>
+                    <div class="col-md-8">
+                      <h1 style="color: #00004c">
+                        <div class="slide-from-top">CASE STUDIES</span> <span style="color: white"> | </span>PRODUCTS<span style="color: white"> | </span>PORTFOLIO
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h6 class style="color: #00004f;">
+                        We are AI Algorithm Experts. We are here to invigorate your businesses through AI tech
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid">
+              <div class="row ">
+                <div class="col-md-6 mx-auto text-center">
+                  <h3 style="color: #00004c">
+                    <i style="color: rgb(5, 0, 26); font-size: 70%;"> We Create Awesome stuff</i>
+                  </h3>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                
+
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">All</a>
+                </div>
+
+                
+                
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">Heath Care</a>
+                </div>
+
+
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">Process & Manufacturing</a>
+                </div>
+
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">Defence & Aerospace</a>
+                </div>
+
+
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">Retails</a>
+                </div>
+
+
+
+                <div class="col-md-2 text-center">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img alt="Bootstrap Image Preview" src="../asset/healthcare.png"  style=" padding: 10%; width: 100%; max-height: 200px; max-height: 500px;
+                      max-width: 500px;" />
+                    </div>
+                  </div> 
+                  <a href="javascript:void(0)" class="" data-filter="HealthCare"
+                  type="button">Best Products</a>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--old giksy-->
+
+        <!-- <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 filter-buttons mx-auto text-center">
+                  <div class="flex-wrap" role="group">
+                    <button class="btn btn-secondary filter-button" data-filter="all" type="button" style="min-width: 212px;">
+                      <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+                        <img src="../asset/healthcare.png" style="max-height: 100px; max-width: 100px;">
+                        <a href="javascript:void(0)" class="btn  btn-block " data-filter="all" type="button">
+                          All Products <i style="color: #00004c" class="fa fa-clone" aria-hidden="true"></i>
+                        </a>
+                      </div>
+
+                    </button>
+
+
+                    <button data-filter="HealthCare" class="btn btn-secondary filter-button" type="button" style="min-width: 270px;">
+                      <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+                        <img src="../asset/healthcare.png" style="max-height: 100px; max-width: 100px;">
+                        <a href="javascript:void(0)" class="btn btn-block " data-filter="HealthCare"
+                          type="button">HealthCare <i style="color: #00004c" class="fa fa-h-square"
+                            aria-hidden="true"></i></a>
+                      </div>
+
+                    </button>
+
+
+                    <button data-filter="Manufacturing" class="btn btn-secondary filter-button" type="button" style="min-width: 270px;">
+                      <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+                        <img src="../asset/healthcare.png" style="max-height: 100px; max-width: 100px;">
+                        <a href="javascript:void(0)" class="btn btn-block " data-filter="Manufacturing"
+                          type="button">Process & Manufacturing <i style="color: #00004c" class="fa fa-industry"
+                            aria-hidden="true"></i></a>
+                      </div>
+
+                    </button>
+
+                    <button class="btn btn-secondary filter-button" data-filter="Aerospace" type="button" style="min-width: 270px;">
+                      <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+                        <img src="../asset/healthcare.png" style="max-height: 100px; max-width: 100px;">
+                        <a href="javascript:void(0)" class="btn btn-block" data-filter="Aerospace"
+                          type="button">Aerospace & Defence <i style="color: #00004c" class=" fa fa-plane"></i></a>
+                      </div>
+                    </button>
+                    <button class="btn btn-secondary filter-button" data-filter="Retail" type="button" style="min-width: 270px;">
+                      <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+                        <img src="../asset/healthcare.png" style="max-height: 100px; max-width: 100px;">
+                        <a href="javascript:void(0)" class="btn btn-block" data-filter="Retail" type="button">Retail <i
+                            style="color: #00004c" class="fa fa-address-card" aria-hidden="true"></i></a>
+                      </div>
+                    </button> -->
+                    <!-- <button class="btn btn-secondary" type="button">
+                        <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+          
+                          <a href="javascript:void(0)" 
+                          class="btn btn-block filter-button" 
+                          data-filter="HealthCare" type="button" >Upcoming Products <i style="color: #00004c" class="fa fa-h-square" aria-hidden="true"></i></a>
+                       </div>
+                      </button> -->
+                  <!-- </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container-fluid" >
+      <div class="row ">
+        <div class="col-md-6 mx-auto text-center">
+              <h3 style="color: #00004c">
+                <i style="color: rgb(5, 0, 26); font-size: 70%;"> We Create Awesome stuff</i>
+              </h3>
+
+        </div>
+      </div>
+    </div>
+
+    <br> -->
+  <!-- 
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 mx-auto text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h6 class style="color: #00004f;">
+                  We Create Awesome Products
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br> -->
+
+  <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12 mx-auto text-center " style="margin-top: 12px">
+              <h5>
+                Product List Demo
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- <br> -->
+
+  <!--
+  old filter points
+-->
+  <!-- 
+       <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+
+            <!- <div class="col-md-3 mx-auto text-center">
+              <button class="btn btn-secondary" type="button" style="border-radius: 20px; border-top: none; border-left: none; border-right: none; box-shadow: 0px 0px 1px blue;">
+
+                <a href="javascript:void(0)" class="btn  btn-block filter-button" data-filter="all" role="button" data-filter="HealthCare" type="button" style="border-right: solid 0px blue;">All Products <i style="color: #00004c" class="fa fa-clone" aria-hidden="true"></i></a>
+             </button> 
+
+            </div> -->
+
+  <!-- 
+            <div class="col-md-3" style="border-right: solid 1px blue;">
+               <a href="javascript:void(0)" class="btn  btn-block filter-button" data-filter="all" type="button" >All Products <i style="color: #00004c" class="fa fa-clone" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-3" style="border-left: solid 1px blue; border-right: solid 1px blue;">
+
+               <a href="javascript:void(0)" 
+               class="btn btn-block filter-button" 
+               data-filter="HealthCare" type="button" >HealthCare <i style="color: #00004c" class="fa fa-h-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-3" style="border-left: solid 1px blue; border-right: solid 1px blue;">
+               <a 
+                href="javascript:void(0)"
+                 class="btn btn-block filter-button" 
+                 data-filter="Manufacturing" type="button" >Process & Manufacturing <i style="color: #00004c" class="fa fa-industry" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-3" style="border-left: solid 1px blue;">
+               <a 
+               href="javascript:void(0)" 
+               class="btn btn-block filter-button" data-filter="spray" type="button">Upcoming Products <i style="color: #00004c" class="fa fa-bell" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+               <a href="javascript:void(0)" class="btn btn-block filter-button" data-filter="all" type="button" style="visibility: hidden;">Filter 1</a>
+            </div>
+            <div class="col-md-3" style="border-right: solid 1px blue;">
+               <a href="javascript:void(0)" class="btn btn-block filter-button" data-filter="Aerospace" type="button" >Aerospace & Defence <i style="color: #00004c" class=" fa fa-plane"></i></a>
+            </div>
+            <div class="col-md-3" style="border-left: solid 1px blue;">
+               <a href="javascript:void(0)" class="btn btn-block filter-button" data-filter="Retail" type="button">Retail <i style="color: #00004c" class="fa fa-address-card" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-3">
+               <a href="javascript:void(0)" class="btn btn-block filter-button" data-filter="spray" type="button"  style="visibility: hidden;">Filter 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br> -->
+
+  <!--old filter end-->
+
+  <!-- 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 filter-buttons mx-auto text-center">
+          <div class="btn-group" role="group">
+
+            <button class="btn btn-secondary filter-button" data-filter="all" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a href="javascript:void(0)" class="btn  btn-block " data-filter="all" type="button" >
+                  All Products <i style="color: #00004c" class="fa fa-clone" aria-hidden="true"></i>
+                </a>
+             </div>
+
+            </button> 
+
+
+            <button data-filter="HealthCare" class="btn btn-secondary filter-button" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a href="javascript:void(0)" 
+                class="btn btn-block " 
+                data-filter="HealthCare" type="button" >HealthCare <i style="color: #00004c" class="fa fa-h-square" aria-hidden="true"></i></a>
+             </div>
+              
+            </button> 
+
+
+            <button data-filter="Manufacturing"  class="btn btn-secondary filter-button" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a 
+                href="javascript:void(0)"
+                 class="btn btn-block " 
+                 data-filter="Manufacturing" type="button" >Process & Manufacturing <i style="color: #00004c" class="fa fa-industry" aria-hidden="true"></i></a>
+             </div>
+              
+            </button> 
+
+            <button class="btn btn-secondary filter-button" data-filter="Aerospace" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a href="javascript:void(0)" class="btn btn-block" data-filter="Aerospace" type="button" >Aerospace & Defence <i style="color: #00004c" class=" fa fa-plane"></i></a>
+             </div>
+            </button> 
+            <button class="btn btn-secondary filter-button" data-filter="Retail" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a href="javascript:void(0)" class="btn btn-block" data-filter="Retail" type="button">Retail <i style="color: #00004c" class="fa fa-address-card" aria-hidden="true"></i></a>
+             </div>
+            </button> -->
+  <!-- <button class="btn btn-secondary" type="button">
+              <div class="col-md-2" style="border-left: solid 0px blue; border-right: solid 0px blue;">
+
+                <a href="javascript:void(0)" 
+                class="btn btn-block filter-button" 
+                data-filter="HealthCare" type="button" >Upcoming Products <i style="color: #00004c" class="fa fa-h-square" aria-hidden="true"></i></a>
+             </div>
+            </button> -->
+  <!-- </div>
+        </div>
+      </div>
+    </div> -->
+
+
+<!-- </div> -->
+
+  <br>
+
+  <div style="border-top: solid 3px white;" class="container-fluid">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <br>
+          <br>
+          <div class="col-md-12" style="
+                  max-height: 1000px;
+                  scroll-behavior: smooth;
+                  overflow-y: scroll;
+                  
+              ">
+            <div class="row">
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;
+                  padding: 0px;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  ">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;
+                  padding: 0px;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  ">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;
+                  padding: 0px;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  ">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;
+                  padding: 0px;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  ">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;
+                  padding: 0px;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  ">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                  padding-top: 3%;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="">
+                                Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                              </h5>
+                              Detect deviations in the trajectory of an aircraft
+                            </div>
+                            <div class="card-body">                    
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <img src="../asset/maargan.gif"
+                                    style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                    class="img-responsive img-fluid">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="padding: 0px">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                      <div class="col-md-4" style="padding: 0px">                                         
+                                        <button type="button" class="btn btn-success btn-block">
+                                          Button
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Vajra <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Border Security from thermal and optical cameras</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/vajra.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      Maargan <i style="color: #00004c" class=" fa fa-plane"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/maargan.gif"
+                      style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col-md-4 hover-logic image-fluid text-center filter HealthCare">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h5>
+                      HygieneAI - SafeAir <i style="color: #00004c" class="fa fa-h-square" aria-hidden="true"></i>
+                    </h5>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <h6>Detect deviations in the trajectory of an aircraft</h6>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 mx-auto img-fluid">
+                    <img src="../asset/hygieneai2.gif"
+                      style="max-width: 332px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                      class="img-responsive img-fluid">
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 img-fluid text-center">
+                      <div class="btn-group btn-group-md flex-wrap" data-toggle="buttons" role="group"
+                        style="padding: 4%">
+
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            view
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            case studies
+                          </a>
+                        </button>
+                        <button class="btn btn-secondary" type="button"
+                          style="border-radius: 20px; border-top: none; border-left: none; border-right: none;">
+                          <a id="modal-513404" href="#modal-container-513404" role="button" data-toggle="modal">
+                            demo
+                          </a>
+                        </button>
+                        <!-- <button class="btn btn-secondary" type="button">
+                            Justify
+                          </button> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" style="background-color: #9091ea;">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="page-header">
+              <h1>
+                <small>Let's discuss about your new </small> Project ?
+              </h1>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3 mx-auto text-center">
+            <button type="button" class="btn btn-block" style="
+                background: #292b2c;
+                color: #f2ebf6;
+                cursor: pointer;
+            ">
+              Yes Project !
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <a id="modal-513404" href="#modal-container-513404" role="button" class="btn" data-toggle="modal">Launch demo modal</a> -->
+
+        <div class="modal fade" id="modal-container-513404" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xlg" role="document">
+            <div class="modal-content">
+
+
+              <div class="modal-header">
+
+                <div class="acontainer-fluid">
+                  <div class="arow">
+                    <div class="col-md-12">
+                      <h1 class="modal-title" id="myModalLabel">
+                        Maargan
+                      </h1>
+                    </div>
+                    <div class="col-md-12">
+                      <h3 class="modal-title" id="myModalLabel">
+                        Detect deviations in the trajectory of an aircraft
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">×</span>
+                </button>
+
+              </div>
+
+
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9 mx-auto"
+                  style="max-width:900px; max-height: 320px;">
+                  <iframe width="553" height="380" src="https://www.youtube.com/embed/Rryn97EqiVQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="container-fluid">
+                <h3>
+                  Points
+                </h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul>
+                          <li class="list-item">
+                            Real-time alerts
+                          </li>
+                          <li class="list-item">
+                            Learn ‘normal’ routes from past flights data
+                          </li>
+                          <li class="list-item">
+                            Determine if a given fighter jet is an imposter (IFF) based on its trajectory
+                          </li>
+                          <li class="list-item">
+                            Determine if the observed deviation in a transport aircraft could be due to weather
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <dl>
+                          <dt>
+                            Description lists
+                          </dt>
+                          <dd>
+                            A description list is perfect for defining terms.
+                          </dd>
+                          <dt>
+                            Euismod
+                          </dt>
+                          <dd>
+                            Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                          </dd>
+                          <dd>
+                            Donec id elit non mi porta gravida at eget metus.
+                          </dd>
+                          <dt>
+                            Malesuada porta
+                          </dt>
+                          <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                          </dd>
+                          <dt>
+                            Felis euismod semper eget lacinia
+                          </dt>
+                          <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+                            justo sit amet risus.
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+
+                <!-- <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>  -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Demo
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+
+    $(document).ready(function () {
+
+      $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+        $(".filter-button").removeClass("active-filter");
+
+        $(".filter-button[data-filter=" + value + "]").addClass("active-filter");
+        if (value == "all") {
+          //$('.filter').removeClass('hidden');
+          $('.filter').delay('500').show('500');
+        }
+        else {
+
+          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+          $(".filter").not('.' + value).delay('500').fadeOut('500');
+          $('.filter').filter('.' + value).delay('500').fadeIn('2000');
+
+        }
+      });
+
+      if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+
+    });
+  </script>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" style="border-top: solid 50px #0066cc; background-color: #9091ea; color: #00004c;">
+          <div style="visibility: hidden;">
+            <p>lorieiam ipsum</p>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3>
+                We are AI Algorithm Experts
+              </h3>
+            </div>
+          </div>
+          <div style="visibility: hidden;">
+            <p>lorieiam ipsum</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <h3>
+                Know Us
+              </h3>
+              <p style="color: white">
+                Datakalp LLP is providing cutting edge services and products in the field of Artificial Technologies,
+                Machine Learning, Computer vision and NLP.
+              </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <h3>
+                Address
+              </h3>
+              <address style="color : white">
+                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli, Bangalore –
+                560035<br />
+              </address>
+            </div>
+            <div class="col-md-4 text-center">
+              <h3>
+                Contact
+              </h3>
+              <address style="color: white;">
+                <strong>India, Inc.</strong>
+                <br /> <abbr title="Phone">P:</abbr> <a style="color: white" href="tel:(91)6355762814">+91 63557
+                  62814</a>
+                <br /> <abbr title="Phone">P:</abbr> <a style="color: white" href="tel:(91)8861636197">+91 88616
+                  36197</a>
+              </address>
+            </div>
+          </div>
+          <div style="visibility: hidden;">
+            <p>lorieiam ipsum</p>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3>
+                Social Links
+              </h3>
+            </div>
+          </div>
+          <div style="visibility: hidden;">
+            <p>lorieiam ipsum</p>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h4>
+                Copyright © 2020. datakalp.com All rights reserved.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>

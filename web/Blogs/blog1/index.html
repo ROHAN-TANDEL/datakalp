@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    </script>
+    <style>
+        /* --------------------------------------------------------------------------------------- */
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0275d8;
+            border-radius: 10px
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0275d8
+        }
+
+        /* scroll bar END*/
+
+        /*navbar */
+        :root {
+            --rt-min-width-100: 100px;
+            --rt-min-width-150: 150px;
+            --rt-min-width-200: 200px;
+            --rt-min-width-dynamic: 0px;
+            --rt-width-40: 40% !important;
+            --rt-filter-black: drop-shadow(2px 4px 6px black);
+            --rt-filter-blue-1: drop-shadow(2px 4px 6px blue);
+            --rt-filter-blue-2: drop-shadow(2px 4px 16px blue);
+            --rt-filter-grey-1: drop-shadow(0px 0px 2px grey);
+            --rt-color-blue:  #0167cc;
+            --rt-box-grey-1: inset 0 0 5px grey;
+        }
+
+        .min-w-120 {
+            min-width: var(--rt-min-width-150);
+        }
+
+        .w-40 {
+            width: var(--rt-width-40);
+        }
+
+        .filter-1 {
+            filter: var(--rt-filter-grey-1);
+        }
+
+        .light-transparent-grey {
+            background: white;
+        }
+
+        .nav-link>span {
+            color: #0275d8;
+            font-size: 1rem;
+            /* filter: var(--rt-filter-grey-1); */
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.2);
+            -webkit-transition: .30s ease-in-out 3s;
+            transition: .30s ease-in-out 0s;
+        }
+
+        .nav-link>span:hover {
+            border-bottom: 2px solid;
+        }
+
+        /** h7 tag*/
+        h7 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        h7 {
+            font-size: 2em;
+            margin: .67em 0;
+        }
+
+        h7,
+        h8 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+
+        .h7,
+        .h8,
+        h7,
+        h8 {
+            margin-bottom: .5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit;
+        }
+
+        .h7,
+        h7 {
+            font-size: 3.5rem;
+        }
+
+        .white {
+            color: white;
+
+        }
+
+        .blue-1 {
+            color: #0167cc;
+        }
+
+        .white-border {
+            border: solid 2px white;
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .border-0 {
+            border: 0px;
+        }
+
+        .translateY-40-bar {
+            transform: translateY(-40%);
+        }
+
+        .translateY-100-bar {
+            transform: translateY(-100%);
+        }
+
+        .translateY-200-bar {
+            transform: translateY(-200%);
+        }
+
+        .translateY-500-bar {
+            transform: translateY(-700%);
+        }
+
+
+        .translateY-70-bar {
+            transform: translateY(-70%);
+        }
+
+        .translateY-100 {
+            transform: translateY(100%);
+        }
+
+        .translateY-20 {
+            transform: translateY(20%);
+        }
+
+        .border-radius-40 {
+            border-radius: 40px;
+        }
+
+        .border-double-2-white {
+            border: double 2px white;
+        }
+
+        .contact-button-1:hover {
+            background-color: white;
+            color: darkblue;
+            border: solid 2px darkblue;
+            filter: var(--rt-filter-black);
+        }
+
+        .form-all-inputs-contact>.form-group>input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid;
+            border-radius: 0;
+        }
+
+        .form-all-inputs-contact {
+            padding: 4%;
+        }
+
+        .form-contact {
+            background-image: linear-gradient(45deg, #01010d, #1e1c43);
+            filter: drop-shadow(2px 4px 6px black);
+            color: white;
+        }
+
+        .footer-main {
+            background: #080000;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        /* --------------------------------------------------------------------------------------- */
+
+        a:not([href]):not([tabindex]) {
+            color: white;
+        }
+
+        li[data-filter="blogs"]>.nav-link>span  {
+            border-bottom: 2px solid;
+        }
+        li[data-filter="blogs"] {
+            transform: scale(1.2);
+        }
+
+        /* Header Parallax Element Style*/
+        .paral {
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 10%;
+            background-image: url(../../asset/team7.jpg);
+            background-size: 100% 100%;
+            min-height: 500px;
+            transform: scale(1.5);
+            width: 80%;
+            margin-left: 0%;
+        }
+
+/* ------------------------------------------------------------------------------------------ */
+        /* Remove Bottom Margin from Jumbotron */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+                            .parent:hover .child, .parent:focus .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+    .parent:hover .child:before, .parent:focus .child:before {
+        display: block;
+    }
+    
+    .parent:hover a, .parent:focus a {
+        display: block;
+    }
+    
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52,73,94,0.75);
+    }
+    
+    
+    /* Image zoom on hover + Overlay colour */
+    .parent {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+    .child {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+
+    .team-name-hover {
+        color: var(--rt-color-blue);
+
+    }
+.filter-2 {
+    filter: drop-shadow(0px 0px 10px lightblue);
+}
+
+.team-read-more-no-panel:hover .team-member-detail {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: 1.0s ease-in-out 0.1s;
+}
+
+.team-member-detail {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.team-read-more-no-panel:hover > .team-read-more {
+    font-size: 0.1rem;
+    transition: 2.0s ease-in-out 1s;
+}
+.team-read-more:hover {
+    display: block;
+}
+
+.slider-bottom-choice * > img {
+    height: 200px;
+    max-width: 250px;
+}
+
+.translateY-30-bar {
+    transform: translateY(-30%);
+}
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar fixed-top navbar-toggleable-lg light-transparent-grey">
+
+                    <!--brand-->
+                    <a class="col-md-4 navbar-brand mr-auto filter-1" href="../../Home/index.html">
+                        <img class="navbar-brand w-40 min-w-120" src="../../asset/logo.png">
+                    </a>
+
+                    <!--collapse button-->
+                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNav">
+
+                        <!--align left-->
+                        <ul class="navbar-nav ml-auto nav-fill w-100">
+
+                            <li class="nav-item navbar-element navbar-home" data-filter="home">
+                                <a class="nav-link" href="../../Home/index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-products" data-filter="products">
+                                <a class="nav-link" href="../../Products/index.html">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-services" data-filter="services">
+                                <a class="nav-link" href="../../Services/index.html">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-team" data-filter="teams">
+                                <a class="nav-link" href="../../Team/index.html">
+                                    <span>Team</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-blogs" data-filter="blogs">
+                                <a class="nav-link" href="../../Blogs/index.html">
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-contacts" data-filter="contactus">
+                                <a class="nav-link navlink-active" href="../../Contacts/index.html">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--navbar ending-->
+
+
+
+    <!-- <div class="row jumbotron paral" style="filter: brightness(0.5);"></div> -->
+
+
+    <!--lets connect ends-->
+
+
+    <!--form and and map-->
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("../../asset/blog1.jpg");
+  filter: brightness(0.4);
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<div class="parallax"></div>
+
+    <div class="container-fluid translateY-500-bar filter-1 white">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center black">
+                    How can a data scientist bring value?
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container full-blog translateY-30-bar" style="border: solid 1px white;
+    box-shadow: 0px 0px 12px black;
+    width: 96%;
+    border-radius: 10px;
+    transform: translateY(-10%);
+    background-color: white;">
+    <br>
+                <div class="col-md-3 pull-right">
+                    <form action="" class="" id="selected-form">
+                        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                        <div class="input-group">
+                            <input id="search-input" type="search" placeholder="What're you searching for?" aria-describedby="search-button" class="form-control border-0 bg-light" style="background: lightgrey;
+                            border-radius: 120px;
+                        ">
+                            <div class="input-group-append cursor-pointer">
+                            <a id="search-button" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                        <style>
+                            .form-control:focus {
+                                    box-shadow: none;
+                                }
+    
+                                .form-control-underlined {
+                                border-width: 0;
+                                border-bottom-width: 1px;
+                                border-radius: 20px;
+                                padding-left: 0;
+                                }
+                        </style>
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1"><h5>Category</h5></label>
+                        <select class="form-control" id="blog-form-select-options">
+                            
+                            <option id="Vertical" class="blue-1"><h6>Select Vertical</h6></option>
+                            <option id="Aerospace" class="blue-1">Aerospace</option>
+                            <option id="HealthCare" class="blue-1">HealthCare</option>
+                            <option id="Retail" class="blue-1">Retail</option>
+                            <option id="Manufactoring" class="blue-1">Manufactoring</option>
+                        </select>
+                        </div>
+                    </form>
+    
+                    <br>
+    
+                    <h5>
+                        Tags
+                    </h5>
+                    <div class="blue-1 cursor-pointer">
+                        <small> <a><strong class="blue-1" id="major-tags-all"> All </strong> </a> <a><strong id="major-tags-defense" class="blue-1">Defense </strong></a>
+                        </small>
+                    </div>
+    
+     
+                </div>
+    
+           
+            <br>
+            
+            <div class="col-md-8" style="min-height:300px;">
+                <div class="container-fluid">
+                    <div class="row">
+                      <div id="blog1" class="row">
+
+                        
+
+
+
+
+                        <div class="">
+                            <h3>
+                                How can a data scientist bring value?
+                            </h3>
+                            <p>
+                                I often get asked this wonderful question by aspiring minds: “how can a data scientist bring value?” , and often a more explicit variant “isn’t data science quickly getting commoditised?”
+                            </p>
+                            <p>
+                                <strong>Outermost layer of the onion:</strong> You are given a standard problem. You use off-the-shelf tools to churn out standard analytics and run-of-the-mill reports with minimal coding or algorithmic intervention. This layer is already commoditised, and as a DS you add little value if your work is restricted to this layer. Although, this isn’t a bad place to start your career as a DS.
+
+                            </p>
+                            <p>
+                               <strong>Second layer:</strong> You are given a unique data-science problem along with the data necessary to solve it. You unleash your creativity and build a solution for it after iterative experimentation, good dose of learning, common sense, perseverance and disciplined coding. You may draw upon your existing technical skills, or you may pick up anew along the way. The end result may be an algorithm that goes into a product, or may be an insight that forms core of a sought-after report. The core value you bring is through deep technical experiments in developing the algorithm or extracting the valuable insights or both. Majority of data science projects would fall in this category. Upwork, Elance, Experfy and their kinds have began commoditising this layer in last few years.
+                            </p>
+                            <p>
+                                <strong>Third layer:</strong> You are given a business problem, or often you discover a business problem yourself after talking with customers and domain experts. You translate the business problem to a DS problem. You gather, clean, format and prepare the data (this is almost always the longest step in the process). You build solution for the problem using data science wizardry. You translate the solution / insights back to the business context. You communicate the solution with the right people in the right way, which help make your solution go live. You follow through until it delivers the impact it was designed to deliver to the end user. In this layer, in addition to your tech wizardry (as in Layer 2), you draw upon your domain knowledge, communication skills, attention to detail and discipline. The core value you bring here is in translating from and to the business context, data munging, and following the solution through till the end.  This layer isn’t at risk of getting commoditised any time soon.
+                            </p>
+                            <p>
+                                <strong>Fourth layer:</strong> You may have been given a business problem, or you discover it yourself. You may have gotten shining clean data on a silver platter, or you toil through the data gathering and preparation exercise as usual. You may know very well the data science technique that need to be applied, or you may pick them up on the fly.
+                            </p>
+                            <h3>
+                                Those are mere details.
+                            </h3>
+                            <hr>
+
+                            <p>
+                                What makes this layer most valuable is the fact that the insights / outcomes of your work clash in powerful ways with your stakeholders' expectations / world view. Example: Your company culture takes pride in doing things a certain way, but your experiments show conclusively that an alternative is more beneficial to the company. Your client has plotted the manufacturing strategy while implicitly betting on success of material/process A but looking at the data you find that the alternative B works much better. You are a statistician auditor hired by a Big Pharma to get an external evaluation of effectiveness a new pill that they have invented, but when you crunch the numbers its proves no more effective than a placebo. You are told to quantify impact of a proposed acquisition that the CEO is very gung-ho about, but your forecast indicates that the acquisition may be a bad move.
+                            </p>
+
+                            <p>
+                                The opportunity for you is not only in communicating the troublesome findings, but in ensuring that they are embraced by the people at the helm and result in appropriate action. To achieve that you need to draw upon not only your technical and communication skills, but also on your courage, compassion, perseverance and faith in your ability to bring good. The very qualities that make us human. Here you deliver your value more by emotional labor and less by technical / skilled labor. Also, while most people and companies want to be data driven, they are usually driven by stories crafted around the data than the data itself. <strong>If you just show the data, smart people will quickly craft a story around it that fits their existing world view.</strong> So you need to tell the right stories at the right time and in the right way to drive the message home. Of course this is art not science and of course you may often fail in driving the message home. The inherent conflict, friction, uncertainty, risk, emotional labor is what makes this opportunity least pursued and yet this layer the most valuable. I will assert that this layer is *never* getting commoditised -- at least not until robots have the same EQ as humans.
+                            </p>
+                             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+    
+                    <br>
+                    
+    
+    
+    
+    
+                    </div>
+                </div>
+                
+
+                
+
+
+
+
+
+
+
+
+
+                
+    <div class="container-fluida">
+      <div class="rowa">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              tags
+              <br>
+              <span class="badge badge-default">data scientist</span>
+              <span class="badge badge-default">tech</span>
+              <span class="badge badge-default">2016</span>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+              Social Links
+              <br>
+              <span style="padding: 2%; border-radius: 50px;" class="fa fa-facebook-official  fa-3x"></span>
+              <span style="padding: 2%; border-radius: 50px;" class="fa fa-linkedin  fa-3x"> </span>
+              <span style="padding: 2%; border-radius: 50px;" class="fa fa-twitter  fa-3x"> </span>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="col-md-4">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <style>
+          .blogger-name:before {
+            border: solid 1px red;
+          }
+        </style>
+        <strong class="blogger-name"> Dr Kalpit Desai </strong>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                </div>
+                <br>
+            <br>
+        </div>
+    
+
+
+
+
+<script>
+
+
+// search
+
+$(document).ready(function() {
+
+    $('#search-button').click(function(event) {
+        event.preventDefault();
+
+        var searched = $("#search-input").val();
+        console.log(searched);
+        if(searched !='') {
+            searchingBlog(searched);
+        }
+    });
+
+    console.log('boom');
+
+    $('#Vertical').click(function() {
+        searchingBlog('all');
+        console.log('boom');
+    });
+
+    $('#major-tags-defense').click(function() {
+        searchingBlog('efense');
+    });
+
+    $('#major-tags-all').click(function() {
+        searchingBlog('all');
+    });
+
+    $('#Aerospace').click(function() {
+        searchingBlog('erospace');
+    });
+
+    $('#HealthCare').click(function() {
+        searchingBlog('ealth');
+    });
+
+    $('#Retail').click(function() {
+        searchingBlog('etail');
+    });
+
+    $('#Manufactoring').click(function() {
+        searchingBlog('anufactoring');
+    });
+
+
+    $('.blog-search').click(function() {
+        var val = $('.blog-search').val();
+        searchingBlog(val);
+    });
+
+
+	$('#blog-form-select-options').change(function(){
+  		var myselectedtxt = $(this).find("option:selected").text();
+          console.log(myselectedtxt);
+          switch (myselectedtxt) {
+
+                  case 'Manufactoring':
+                  searchingBlog('anufactoring');
+                  break;
+                  case 'Retail':
+                  searchingBlog('etail');
+                  break;
+                  case 'HealthCare':
+                  searchingBlog('ealth');
+                  break;
+                  case 'Aerospace':
+                  searchingBlog('defense');
+                  break;
+                  case 'Select Vertical':
+                  searchingBlog('all');
+                  break;
+
+              default:
+                  break;
+          }
+  	});
+
+});
+
+function searchingBlog(searchText)
+{
+    var bloglist = ['blog1'];
+    console.log(searchText);
+
+    for(var i=0; i<bloglist.length; i++) {
+
+        var blog = '#'+bloglist[i];
+        
+        if(searchable == 'all') {
+
+            $(blog).show();
+
+        } else {
+
+
+            var searchable = $(blog).children().find('.blog-author').html() + $(blog).children().find('.blog-tags').html() + $(blog).children().find('.blog-title').html();
+
+            if(searchable.search(searchText) > 0) {
+                $(blog).show(1000).delay(1000).fadeIn(1000);
+            } else {
+                $(blog).hide(1000).delay(1000).fadeOut(1000);
+            }
+
+            searchable = '';
+        }
+
+        blog = '';
+    }
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--form and and map end-->
+    
+    <footer class="footer-main white">
+        <br>
+
+        <br>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center blue-1">
+                            <h3>
+                                We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Know Us
+                            </h3>
+                            <p>
+                                Datakalp LLP is providing cutting edge services and products in the field of Artificial
+                                Technologies,
+                                Machine Learning, Computer vision and NLP.
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Address
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli,
+                                Bangalore –
+                                560035<br />
+                            </address>
+                        </div>
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Contact
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)6355762814">+91
+                                    63557
+                                    62814</a>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)8861636197">+91
+                                    88616
+                                    36197</a>
+                            </address>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>
+                                <div class=" roof-social style-two  roof-socials-5f838225a3331">
+
+                                    <h6>FOLLOW US ON:</h6>
+
+
+                                    <a href="http://www.facebook.com/datakalp" target="_blank"
+                                        class="icon-fa-facebook-official">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+
+
+                                    <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+
+                                    <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber"
+                                        target="_blank" class="icon-fa-youtube-play">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+
+
+                                    <a href="https://www.linkedin.com/company/datakalp" target="_blank"
+                                        class="icon-fa-linkedin"><i class="fa fa-linkedin"></i>
+                                    </a>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h6>
+                                Copyright © 2020. datakalp.com All rights reserved.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="../../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+        $(document).ready(function(){       
+            $('.slider-gallary').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                asNav:'.slider-gallary-weist',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+
+
+            $('.slider-gallary-weist').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNav: '.slider-gallary',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+    
+        });
+
+	  </script>
+	  <script src="../../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+	  
+  </body>
+</html>

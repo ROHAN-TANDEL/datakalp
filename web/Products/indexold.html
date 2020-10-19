@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>datakalp</title>
+
+  <meta name="description" content="Source code generated using datakalp.com">
+  <meta name="author" content="datakalp!">
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="../packages/Glider.js-master/Glider.js-master/glider.css">
+
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scripts.js"></script>
+  <style>
+    @media (min-width: 992px) {
+      .modal-xlg {
+        max-width: 1200px;
+      }
+    }
+
+    .btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .filter {
+      border: solid 1px white;
+    }
+
+    .active-filter {
+      color: white;
+      border-bottom: solid 2px darkblue !important;
+    }
+
+    a:focus {
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      /* color:transparent; */
+    }
+
+    .mh-450,
+    video {
+      min-height: calc(350px + 10vh);
+    }
+
+    video {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .navbar-buttons {
+      min-width: 100px;
+      max-width: 100px;
+      border-radius: 10px;
+      margin: 3px 3px;
+      padding: 7px;
+
+    }
+
+    .nav-item>a:hover {
+      transform: scale(1.2);
+      font-weight: 600;
+      -webkit-transition: transform 0.3s ease-in-out;
+      border-bottom: solid 1px #0275d8;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-500%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes speedbreak {
+      0% {
+        transform: translateX(-500%);
+      }
+
+      70% {
+        transform: translateX(10%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+    .slide-from-left {
+      transition-delay: 8s;
+      animation: 3s ease-out 0s 1 speedbreak;
+    }
+
+    .slide-from-top {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+    }
+
+    .case-studies {
+      animation: 1s ease-out 0s 1 slideInFromTop;
+    }
+
+    .products {
+      animation: 3s ease-out 0s 1 slideInFromTop;
+    }
+
+    .portfolio {
+      animation: 2s ease-out 0s 1 slideInFromTop;
+
+    }
+
+    .filter-buttons>.btn-group>.btn {
+
+      border: none;
+      background: transparent;
+    }
+
+
+    .hover-logic:hover {
+      box-shadow: 0 0 10px white;
+      border: solid 1px white;
+      scale: (1.5)
+    }
+
+  @media (min-width: 771px)
+{
+  /* .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
+
+  .navbar {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: .5rem 1rem;
+  }
+  article, aside, footer, header, nav, section {
+      display: block;
+  }
+
+  .navbar-brand {
+      display: inline-block;
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+      color: rgba(0,0,0,.9);
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .navbar-toggleable-lg .navbar-collapse {
+      display: -webkit-box!important;
+      display: -webkit-flex!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+      width: 100%;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-toggleable-lg .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+      background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E);
+  }
+  .navbar-toggleable-lg .navbar-toggler {
+      display: none;
+  }
+
+  .navbar-toggler-right {
+      position: absolute;
+      right: 1rem;
+  }
+
+  .navbar-toggler {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      padding: .25rem .75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background: 0 0;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+  }
+
+  .navbar-brand {
+    max-width: 60%;
+  } */
+}
+
+.navbar-brand {
+    max-width: 40%;
+  }
+  .nav-pages {
+    color: #00004c;
+    font-size: 100%;
+  }
+
+  @media (min-width: 350px) and (max-width: 699px) {
+    .navbar-brand {
+    max-width: 70%;
+  }
+
+  .nav-pages {
+        font-size: 140%;
+      }
+
+  }
+
+  @media (min-width: 100px) and (max-width: 349px) {
+      .navbar-brand {
+      max-width: 100%;
+    }
+    .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+  @media (min-width: 2000px) {
+        .nav-pages {
+        font-size: 120%;
+      }
+  }
+
+.filter-image {
+    padding: 10%; 
+    width: 100%; 
+    max-height: 200px; 
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 100px;
+    min-height: 100px;
+
+}
+
+.filter-parent {
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0275d8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#0275d8; 
+}
+
+.nav-pages>a, .nav-link {
+  color: #0275d8;
+}
+.blue {
+  color: #00004c;
+}
+.navbar-active > a {
+  border-bottom: solid 1px #0275d8;
+}
+
+
+/** flaoitn button*/
+    /* .filter-buttons > .btn-group > .btn:active {
+
+border-bottom: solid 2px darkblue;
+} */
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+  position: fixed;
+    width: 60px;
+    height: 62px;
+    bottom: 15px;
+    right: 28px;
+    background-color: #002360;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #999;
+    z-index: 1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+.ul-float{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+.ul-float, .li-float{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.ul-float, .li-float, .a-float{
+	background-color:#0275d8;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:60px;
+	height:60px;
+	display:block;
+}
+
+.hear-from-us {
+  color:#0275d8;
+}
+
+.ul-float:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.my-float{
+	font-size: 130%;
+	margin-top:18px;
+}
+
+.a-float#menu-share + ul{
+  visibility: hidden;
+}
+
+.a-float#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.a-float#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.a-float#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+.filter-parent:hover{
+  transform: scale(0.95);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-image:hover {
+  transform: scale(1);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.all-filter-text:hover {
+  transform: scale(1.4);
+  -webkit-transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.card-image:hover {box-shadow: inset 0 0 3px blue;}
+
+a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+ .modal-view-filter > button:hover {
+  cursor: pointer;
+}
+
+.card-header {
+  color: black;
+  background: white;
+  border-top: solid 1px #0275d8;
+}
+
+.navlinks-white {
+            color: darkblue;
+        }
+
+.navlink-active {
+            transform: scale(1.2);
+            font-weight: 600;
+            -webkit-transition: transform 0.3s ease-in-out;
+            border-bottom: solid 1px #0275d8;
+        }
+
+  </style>
+
+</head>
+<body>
+
+
+<!--navbar start-->
+    <div class="container-fluid" id="homepage-dynamic-container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar fixed-top navbar-toggleable-lg navbar-light bg-light" id="dk-navbar-title">
+                    <a class="col-md-4 navbar-brand" href="../Home/index.html"> <img class="navbar-brand" src="../asset/logo.png"></a>
+                    <button class="navbar-toggler navbar-toggler-right" style="padding: 0; border: none;" type="button"
+                        data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center col-md-order-2">
+                        </ul>
+                        <ul class="navbar-nav text-center ml-auto col-md-order-1 navbar-active-parent">
+                            <li class="nav-item  navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="home">
+                                <a class="nav-link blue " href="../Home/index.html"><span
+                                        class="navlinks-white">Home</span></a>
+                            </li>
+                            <li class="nav-item active navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="products">
+                                <a class="nav-link navlink-active blue" href="../Products/index.html"><span
+                                        class="navlinks-white">Products</span><span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="services">
+                                <a class="nav-link blue" href="../Services/index.html"><span
+                                        class="navlinks-white">Services</span></a>
+                            </li>
+                            <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="terms">
+                                <a class="nav-link blue" href="../Team/index.html"><span class="navlinks-white">Team</span></a>
+                            </li>
+                            <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="blogs">
+                                <a class="nav-link blue" href="../Blogs/index.html"><span class="navlinks-white">Blogs</span></a>
+                            </li>
+                            <li class="nav-item navbar-buttons nav-pages mx-auto navbar-active-child"
+                                data-filter="contactus">
+                                <a class="nav-link blue" href="../Contacts/index.html"> <span class="navlinks-white">Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--navbar ends-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="#" class="d-sm-block d-md-block float" id="menu-share">
+  <i class="fa my-float">demo</i>
+  </a>
+
+<!--main filter starting-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+
+      <!--we create awesome stuff start-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container-fluid">
+            <div class="row ">
+              <div class="col-md-6 mx-auto text-center">
+                <h3 style="color: #0275d8">
+                  <span style="color: #00004c; font-size: 100%;"> We Create Awesome stuff</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--we create awesome stuff ends-->
+
+      <!-- filters starts -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- <div class="col bg-success"><img  class="filter-image" alt="Bootstrap Image Preview" src="../asset/healthcare.png" /></div> -->
+
+          <div class="col bg-primary text-center filter-parent filter-button" data-filter="all" style="background-image: url(../asset/retail4.png);">
+            <a href="javascript:void(0)">
+              <div class="col-md-12">
+                <img  class="filter-image" alt="Bootstrap Image Preview" src="../asset/healthcare.png" />
+              </div>
+              <div class="col-md-12 text-white all-filter-text">
+                All          
+              </div>
+              <br>
+            </a>
+          </div>
+
+          <div class="col bg-primary text-center filter-parent filter-button" data-filter="HealthCare" style="background-image: url(../asset/retail4.png);">
+            <a href="javascript:void(0)">
+              <div class="col-md-12">
+                <img  class="filter-image" alt="Bootstrap Image Preview" src="../asset/healthcare.png" />
+              </div>
+              <div class="col-md-12 text-white all-filter-text">
+                Health Care          
+              </div>
+              <br>
+            </a>
+          </div>
+
+
+          <div class="col bg-primary text-center filter-parent filter-button"  data-filter="Manufacturing" style="background-image: url(../asset/retail4.png);">
+            <a href="javascript:void(0)">
+              <div class="col-md-12">
+                <img  class="filter-image" alt="Bootstrap Image Preview" src="../asset/healthcare.png" />
+              </div>
+              <div class="col-md-12 text-white all-filter-text">
+                Process & Manufacturing          
+              </div>
+              <br>
+            </a>
+          </div>
+
+
+          <div class="col bg-primary text-center filter-parent filter-button" data-filter="Aerospace" style="background-image: url(../asset/retail4.png);">
+            <a href="javascript:void(0)">
+              <div class="col-md-12">
+                <img style="visibility:hidden; "  class="filter-image" alt="Bootstrap Image Preview" src="../asset/healthcare.png" />
+              </div>
+              <div class="col-md-12 text-white all-filter-text">
+                <strong style="color: blue">Aerospace & Defence</strong>          
+              </div>
+              <br>
+            </a>
+          </div>
+
+          <div class="col bg-primary text-center filter-parent filter-button" data-filter="Retail" style="background-image: url(../asset/retail4.png);">
+            <a href="javascript:void(0)">
+              <div class="col-md-12">
+                <img  class="filter-image" alt="Bootstrap Image Preview" src="../asset/retail4.png" />
+              </div>
+              <div class="col-md-12 text-white all-filter-text">
+                Retail          
+              </div>
+              <br>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!--filters ends -->
+    </div>
+  </div>
+</div>
+<!--main filter ending-->
+
+
+
+
+
+
+<!-- filter elements start-->
+<div style="border-top: solid 3px white;" class="container-fluid">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <br>
+        <br>
+        <div class="col-md-12" style="
+                max-height: 1000px;
+                scroll-behavior: smooth;
+                overflow-y: scroll;
+                
+            ">
+          <div class="row">
+
+
+
+          <!--product 1 start-->
+            <div class="col-md-4 hover-logic image-fluid text-center filter Aerospace">
+              <div class="row">
+                <div class="col-md-12 mx-auto img-fluid" style="padding: 0px;
+                    padding-top: 3%;
+                    padding: 0px;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    ">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card-header" style="background-color: #0275d8; color: white">
+                            <h5 class="">
+                              Maargan <i style="color: white" class=" fa fa-plane"></i>
+                            </h5>
+                            Detect deviations in the trajectory of an aircraft
+                          </div>
+                          <div class="card-body">                    
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12 card-image" style="background: url(../asset/maargan.gif);
+                                min-height: 175px;
+                                background-size: 100% 100%;
+                              background-repeat: no-repeat;">
+                                  <!-- <img src="../asset/maargan.gif"
+                                  style="max-width: 350px; max-height: 174px; box-shadow: 2px 0px 20px #635aff40;border-radius: 40px;padding: 1px;"
+                                  class="img-responsive img-fluid"> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer" style="padding: 0px; border: none">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="row">
+                                    <div class="col-md-4" style="padding: 0px">
+                                      <a id="modal-513404" href="#modal-container-513404" class="modal-view-filter" data-filter="maarganViewFilter" role="button" data-toggle="modal">
+                                      <button type="button" class="btn btn-primary btn-block" style="border-radius: 0px;">
+                                          view
+                                        </button>
+                                      </a>
+                                    </div>
+                                    <div class="col-md-4" style="padding: 0px">
+                                      <a id="modal-513404" href="#modal-container-513404" class="modal-view-filter" data-filter="maarganCaseStudiesFilter" role="button" data-toggle="modal">
+                                        <button type="button" class="btn btn-primary btn-block" style="border-radius: 0px;">
+                                          case studies
+                                        </button>
+                                      </a>
+                                    </div>
+                                    <div class="col-md-4" style="padding: 0px">
+                                      <a id="modal-513404" href="#modal-container-513404" class="modal-view-filter" data-filter="maarganDemoFilter" role="button" data-toggle="modal">
+                                      <button type="button" class="btn btn-primary btn-block" style="border-radius: 0px;">
+                                        demo
+                                      </button>
+                                    </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--starting the modal data start-->
+                      
+                      <!--starting the modal data end-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="maargan-view-filter"><div class="add-modal-test"> <div class="modal-dialog modal-xlg" role="document"> <div class="modal-content"> <div class="modal-header"> <div class="acontainer-fluid"> <div class="arow"> <div class="col-md-12"> <h1 class="modal-title" id="myModalLabel"> Maargan </h1> </div> <div class="col-md-12"> <h3 class="modal-title" id="myModalLabel"> Detect deviations in the trajectory of an aircraft </h3> </div> </div> </div> <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button> </div> <div class="modal-body"> <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width:900px; max-height: 320px;"> <iframe width="553" height="380" src="https://www.youtube.com/embed/Rryn97EqiVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> </div> <div class="container-fluid"> <h3> Points </h3> <div class="row"> <div class="col-md-12"> <div class="row"> <div class="col-md-12"> <ul> <li class="list-item"> Real-time alerts </li> <li class="list-item"> Learn ‘normal’ routes from past flights data </li> <li class="list-item"> Determine if a given fighter jet is an imposter (IFF) based on its trajectory </li> <li class="list-item"> Determine if the observed deviation in a transport aircraft could be due to weather </li> </ul> </div> </div> <div class="row"> <div class="col-md-12"> <dl> <dt> Description lists </dt> <dd> A description list is perfect for defining terms. </dd> <dt> Euismod </dt> <dd> Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. </dd> <dd> Donec id elit non mi porta gravida at eget metus. </dd> <dt> Malesuada porta </dt> <dd> Etiam porta sem malesuada magna mollis euismod. </dd> <dt> Felis euismod semper eget lacinia </dt> <dd> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </dd> </dl> </div> </div> </div> </div> </div> <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"> Demo </button> <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button> </div> </div> </div> </div></div>
+          <!--product 1 ends-->
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+        </div>
+
+	</div>
+</div>
+<!-- filter elements ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--demo modal start-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <a id="modal-513404" href="#modal-container-513404" role="button" class="btn" data-toggle="modal">Launch demo modal</a> -->
+
+      <div class="modal fade" id="modal-container-513404" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div id="subtle">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="add-modal-test">
+  <div class="modal-dialog modal-xlg" role="document">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="modal-title" id="myModalLabel">
+                Hear From Us
+              </h1>
+            </div>
+            <div class="col-md-12">
+              <h3 class="modal-title" id="myModalLabel">
+                
+              </h3>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">×</span>
+        </button>
+
+      </div>
+
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Your Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="DataKalp">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Our Product</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleFormControlSelect2">Example multiple select</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div> -->
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+
+        <!-- <button type="button" class="btn btn-primary">
+            Save changes
+          </button>  -->
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+          Submit
+        </button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--demo modal end-->
+
+
+
+
+
+
+<br>
+<br>
+
+<div class="container-fluid text-center">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="blue">
+				Testimonials
+			</h3>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row text-center">
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;" alt="Bootstrap Image Preview " src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+          
+        </small>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;"  alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+          
+        </small>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+          
+        </small>
+			</p>
+		</div>
+	</div>
+</div></div>
+    <div class="col img-fluid mx-auto"><div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="rounded-circle img-fluid" style="border:solid 2px #00004c;"  alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, 
+          
+        </small>
+			</p>
+		</div>
+	</div>
+</div></div>
+  </div>
+</div>
+<br><br><br>
+
+
+
+
+<!--forum close-->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" style=" background-color: #0167cc; color: #00004c;">
+        <div style="visibility: hidden;">
+          <p>lorieiam ipsum</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>
+              We are AI Algorithm Experts
+            </h3>
+          </div>
+        </div>
+        <div style="visibility: hidden;">
+          <p>lorieiam ipsum</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h3>
+              Know Us
+            </h3>
+            <p style="color: white">
+              Datakalp LLP is providing cutting edge services and products in the field of Artificial Technologies,
+              Machine Learning, Computer vision and NLP.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>
+              Address
+            </h3>
+            <address style="color : white">
+              <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli, Bangalore –
+              560035<br />
+            </address>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>
+              Contact
+            </h3>
+            <address style="color: white;">
+              <strong>India, Inc.</strong>
+              <br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)6355762814">+91 63557
+                62814</a>
+              <br /> <abbr title="Phone"></abbr> <a style="color: white" href="tel:(91)8861636197">+91 88616
+                36197</a>
+            </address>
+          </div>
+        </div>
+        <div style="visibility: hidden;">
+          <p>lorieiam ipsum</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>
+              <div class=" roof-social style-two  roof-socials-5f838225a3331"><h6>FOLLOW US ON:</h6>
+                <a href="http://www.facebook.com/datakalp" target="_blank" class="icon-fa-facebook-official"><i style="color: white" class="fa fa-facebook-official"></i></a>
+                <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter"><i style="color: white" class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber" target="_blank" style="color: white" class="icon-fa-youtube-play"><i class="fa fa-youtube-play"></i></a>
+<a href="https://www.linkedin.com/company/datakalp" target="_blank" style="color: white" class="icon-fa-linkedin"><i class="fa fa-linkedin"></i></a></div>
+            </h3>
+          </div>
+        </div>
+        <div style="visibility: hidden;">
+          <p>lorieiam ipsum</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h6>
+              Copyright © 2020. datakalp.com All rights reserved.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    $('.add-modal-test').hide();
+    $('.maargan-view-filter').hide();
+    $(".demo-modal-success-message").hide();
+    var maarganViewFilter = '<div class="add-modal-test"> <div class="modal-dialog modal-xlg" role="document"> <div class="modal-content"> <div class="modal-header text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <h3 class="modal-title" id="myModalLabel"> Maargan </h3> </div> <div class="col-md-12"> <h5 class="modal-title" id="myModalLabel"> Detect deviations in the trajectory of an aircraft </h5  > </div> </div> </div> <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button> </div> <div class="modal-body"> <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width:900px; max-height: 320px;"> <iframe width="553" height="380" src="https://www.youtube.com/embed/Rryn97EqiVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> </div> <div class="container-fluid"> <h3> Points </h3> <div class="row"> <div class="col-md-12"> <div class="row"> <div class="col-md-12"> <ul> <li class="list-item"> Real-time alerts </li> <li class="list-item"> Learn ‘normal’ routes from past flights data </li> <li class="list-item"> Determine if a given fighter jet is an imposter (IFF) based on its trajectory </li> <li class="list-item"> Determine if the observed deviation in a transport aircraft could be due to weather </li> </ul> </div> </div> <div class="row"> <div class="col-md-12"> <dl> <dt> Description lists </dt> <dd> A description list is perfect for defining terms. </dd> <dt> Euismod </dt> <dd> Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. </dd> <dd> Donec id elit non mi porta gravida at eget metus. </dd> <dt> Malesuada porta </dt> <dd> Etiam porta sem malesuada magna mollis euismod. </dd> <dt> Felis euismod semper eget lacinia </dt> <dd> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </dd> </dl> </div> </div> </div> </div> </div> <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"> Demo </button> <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button> </div> </div> </div> </div>';
+    var maarganCaseStudiesFilter = '<div class="add-modal-test"> <div class="modal-dialog modal-xlg" role="document"> <div class="modal-content"> <div class="modal-header text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <h3 class="modal-title" id="myModalLabel"> MaarganCaseStudies </h3> </div> <div class="col-md-12"> <h5 class="modal-title" id="myModalLabel"> Detect deviations in the trajectory of an aircraft </h5> </div> </div> </div> <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button> </div> <div class="modal-body"> <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width:900px; max-height: 320px;"> <iframe width="553" height="380" src="https://www.youtube.com/embed/Rryn97EqiVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> </div> <div class="container-fluid"> <h3> Points </h3> <div class="row"> <div class="col-md-12"> <div class="row"> <div class="col-md-12"> <ul> <li class="list-item"> Real-time alerts </li> <li class="list-item"> Learn ‘normal’ routes from past flights data </li> <li class="list-item"> Determine if a given fighter jet is an imposter (IFF) based on its trajectory </li> <li class="list-item"> Determine if the observed deviation in a transport aircraft could be due to weather </li> </ul> </div> </div> <div class="row"> <div class="col-md-12"> <dl> <dt> Description lists </dt> <dd> A description list is perfect for defining terms. </dd> <dt> Euismod </dt> <dd> Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. </dd> <dd> Donec id elit non mi porta gravida at eget metus. </dd> <dt> Malesuada porta </dt> <dd> Etiam porta sem malesuada magna mollis euismod. </dd> <dt> Felis euismod semper eget lacinia </dt> <dd> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </dd> </dl> </div> </div> </div> </div> </div> <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"> Demo </button> <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button> </div> </div> </div> </div>';
+    var maarganDemoFilter = '<div class="container-fluid"> <div class="row"> <div class="col-md-12"> <!-- <a id="modal-513404" href="#modal-container-513404" role="button" class="btn" data-toggle="modal"></a> --> <div class="modal fade" id="modal-container-513404" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div id="subtle"> </div> </div> </div> </div> </div> <div class="add-modal-test"> <div class="modal-dialog modal-lg" role="document"> <div class="modal-content"> <div class="modal-header"> <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <h1 class="modal-title" id="myModalLabel"> <span class="hear-from-us"> Hear From Us </span> </h1> </div> <div class="col-md-12"> <h3 class="modal-title" id="myModalLabel"> </h3> </div> </div> </div> <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button> </div> <div class="modal-body hear-from-us"> <form> <div class="form-group"> <label for="exampleFormControlInput1">Your Name</label> <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="DataKalp"> </div> <div class="form-group"> <label for="exampleFormControlInput1">Email address</label> <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> </div> <div class="form-group"> <label for="maargan">Product</label> <input type="name" class="form-control" id="maargan" placeholder="DataKalp" value="Maargan"></div> <!-- <div class="form-group"> <label for="exampleFormControlSelect1">Our Product</label> <select class="form-control" id="exampleFormControlSelect1"> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> </select> </div> --> <!-- <div class="form-group"> <label for="exampleFormControlSelect2">Example multiple select</label> <select multiple class="form-control" id="exampleFormControlSelect2"> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> </select> </div> --> <div class="form-group"> <label for="exampleFormControlTextarea1">Your Message</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> </div> </form> </div> <div class="alert alert-success demo-modal-success-message">Your Form Submitted <strong>Successfully !</strong> </div> <div class="modal-footer"> <!-- <button type="button" class="btn btn-primary"> Save changes </button>  --> <button type="button" class="btn btn-primary" id="demo_submit_button"> Submit </button> <button type="button" class="btn btn-primary" data-dismiss="modal"> Cancel </button> </div> </div> </div> </div>';
+      $(document).ready(function () {
+        $(".navbar-active-child").click(function () {
+          var value = $(this).attr('data-filter');
+          console.log(value)
+          $(".navbar-active-child").removeClass("navbar-active");
+          $(".navbar-active-child[data-filter=" + value + "]").addClass("navbar-active");
+        });
+      });
+
+      $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+              var value = $(this).attr('data-filter');
+              $(".filter-button").removeClass("active-filter");
+
+              $(".filter-button[data-filter=" + value + "]").addClass("active-filter");
+              if (value == "all") {
+                $('.filter').delay('500').show('500');
+              }
+              else {
+                $(".filter").not('.' + value).delay('500').fadeOut('500');
+                $('.filter').filter('.' + value).delay('500').fadeIn('2000');
+              }
+          });
+    });
+
+    $("#dk-navbar-title").fadeIn(2000).css('background-color', 'white'); // if yes, then change the color of class "navbar-toggler " to white (#f8f8f8)
+		  $(".navlinks-white").css('color', '#00004c');
+		  $(".navlink-active").css({'border-bottom': 'solid 1px #00004c'});
+
+    $(document).ready(function () {
+        var ViewFilter = '';
+        $(".modal-view-filter").click(function () {
+            var local = $(this).attr('data-filter');
+            switch (local) {
+              case 'maarganViewFilter':
+                  ViewFilter = maarganViewFilter
+                break;
+                case  'maarganCaseStudiesFilter':
+                ViewFilter = maarganCaseStudiesFilter
+                break;
+              case 'maarganDemoFilter':
+              $(document).ready(function () {
+                $(".demo-modal-success-message").hide();
+                $("#demo_submit_button").click(function () {
+                  $(".demo-modal-success-message").fadeIn('slow').delay(1000).fadeOut('slow');
+                  setTimeout(function() {$('.modal').modal('hide');}, 1500);
+                });
+              });
+                ViewFilter = maarganDemoFilter
+
+                break;
+              default:
+                break;
+            }
+            $('#subtle').html(ViewFilter);
+        });
+    });
+
+
+ 
+</script>
+
+</body>
+</html>
