@@ -138,6 +138,11 @@
     max-width: 250px;
 }
 
+.hdwr {
+    box-shadow: 0 0 6px black;
+    padding: 5%;
+}
+
     </style>
 </head>
 
@@ -242,6 +247,11 @@ nav {
 	-webkit-transition: .25s ease-in-out 3s;
    	transition: .25s ease-in-out 0s; 
 }
+.nav-after-scroll-regular {
+	background-color: white;
+	-webkit-transition: .25s ease-in-out 3s;
+   	transition: .25s ease-in-out 0s; 
+}
 .home-image {
     width: 100%;
     height: 100%;
@@ -256,7 +266,7 @@ nav {
 </div>
 
 <!-- <div class="parallax"></div> -->
-<video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4"></video>
+<video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4" muted></video>
 
 <!--test-->
 
@@ -294,73 +304,73 @@ nav {
 
 
     <div class="container-fluid" style="max-width: 1200px;">
-        <div class="row">
+        <div class="row ">
 
                 <div class="col-md-3 text-center slide-from-bottom-2">
-                    <img src="../asset/wwr-data.png" width="70" height="70">
-                    <h4 class="blue-1 filter-1">
-                        Data Experts
-                    </h4>
-                    <hr>
-                    <div class="service-al-ml">
-                        <ul>
-                            <p>We are experts in going on a date with 'data', and harnessing the power of machine learning.</p>
-                        </ul>
+                    <div class="data-experts hdwr h-100">
+                        <img src="../asset/wwr-data.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1">
+                            Data Experts
+                        </h4>
+                        <br>
+                        <div class="service-al-ml text-justify">
+                                <p>We are experts in going on a date with 'data', and harnessing the power of machine learning.</p>
+                        </div>
+                        <br>
                     </div>
-                    <hr>
-                    
                 </div>
 
                 <div class="col-md-3 text-center slide-from-bottom-3">
-                    <img src="../asset/wwr-algo.png" width="70" height="70">
-                    <h4 class="blue-1 filter-1">
-                        Algorithm
-                    </h4>
-                    <hr>
-                    <div class="service-al-ml">
-                        <ul>
-                            <p>We strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
-                                The resulting deeply flexible technology stack makes our offerings uniquely versatile.</p>
-                        </ul>
+                    <div class="Algorithm hdwr h-100">
+                        <img src="../asset/wwr-algo.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1">
+                            Algorithm
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify">
+                                <p>We strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
+                                    The resulting deeply flexible technology stack makes our offerings uniquely versatile.</p>
+                        </div>
+    
+                        <br>
                     </div>
- 
-                    <hr>
-
                 </div>
 
                 <div class="col-md-3 text-center slide-from-bottom-4">
-                    <img src="../asset/wwr-holistic.png" width="70" height="70">
-                    <h4 class="blue-1 filter-1">
-                        Holistic Systems
-                    </h4>
-                    <hr>
-                    <div class="service-al-ml">
-                        <ul>
-                            <p>We build holistic systems that leverage all types of relevant data for a given problem, for example -
-                            video, audio, images, sensor waveforms, tables, networks etc. This uniquely enables us in building the
-                            most effective solution for a given problem.</p>
-                        </ul>
+                    <div class="holistic hdwr h-100">
+                        <img src="../asset/wwr-holistic.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1">
+                            Holistic Systems
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify">
+                                <p>We build holistic systems that leverage all types of relevant data for a given problem, for example -
+                                video, audio, images, sensor waveforms, tables, networks etc. This uniquely enables us in building the
+                                most effective solution for a given problem.</p>
+                        </div>
+    
+                        <br>
                     </div>
- 
-                    <hr>
 
                 </div>
  
                 <div class="col-md-3 text-center slide-from-bottom-5">
-                    <img src="../asset/wwr-team.png" width="70" height="70">
-                    <h3 class="blue-1 filter-1">
-                        30+ years Experience
-                    </h3>
-                    <hr>
-                    <div class="service-al-ml">
-                        <ul>
-                           <p>Multi-domain experience with AI; leverage cross-pollination of concepts from one domain to another.</p>
-                        </ul>
+                    <div class="experience hdwr h-100">
+                        <img src="../asset/wwr-team.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1">
+                            30+ years Experience
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify">
+                            <p>Multi-domain experience with AI; leverage cross-pollination of concepts from one domain to another.</p>
+                        </div>
+    
+                        <br>
                     </div>
- 
-                    <hr>
-
-
                 </div>
  
         </div>
@@ -436,15 +446,15 @@ nav {
         </div>
     </div>
       </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
@@ -539,7 +549,6 @@ nav {
 		</div>
 	</div>
 </div>
-
 <br>
 <br>
 <br>
@@ -640,14 +649,15 @@ nav {
       </div>
     </div>
     <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -825,10 +835,12 @@ nav {
 
         	$(document).ready(function(){
                 $(window).scroll(function() { // check if scroll event happened
+                    $('nav').addClass('nav-after-scroll-regular');
                     if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
                         $('nav').addClass('nav-after-scroll');
                     } else {
                         $('nav').removeClass('nav-after-scroll');
+
                     }
                 });
             });
