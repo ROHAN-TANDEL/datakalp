@@ -136,11 +136,33 @@
       }
     }
 
+	@keyframes slideInFromBottom {
+		0% {
+        transform: translateY(500%);
+      }
+	  30% {
+        transform: translateY(500%);
+      }
+	  50% {
+        transform: translateY(500%);
+      }
+	  
+      100% {
+        transform: translateY(0);
+      }
+    }
+
 
     .slide-from-left {
       transition-delay: 8s;
       animation: 3s ease-out 0s 1 speedbreak;
     }
+
+	.slide-from-bottom {
+      transition-delay: 6s;
+      animation: 3s ease-out 0s 1 slideInFromBottom;
+    }
+
 
     .slide-from-top {
       animation: 2s ease-out 0s 1 slideInFromTop;
