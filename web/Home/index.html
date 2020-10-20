@@ -822,15 +822,7 @@ nav {
     <script type="text/javascript">
 
         	$(document).ready(function(){
-                $(window).scroll(function() { // check if scroll event happened
                     $('nav').addClass('nav-after-scroll-regular');
-                    if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
-                        $('nav').addClass('nav-after-scroll');
-                    } else {
-                        $('nav').removeClass('nav-after-scroll');
-
-                    }
-                });
             });
 
         $(document).ready(function(){       
