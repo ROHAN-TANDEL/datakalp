@@ -29,201 +29,6 @@
     <script src="../js/scripts.js"></script>
     </script>
     <style>
-        /* --------------------------------------------------------------------------------------- */
-        /* scroll bar */
-        ::-webkit-scrollbar {
-            width: 10px
-        }
-
-        ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #0275d8;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #0275d8
-        }
-
-        /* scroll bar END*/
-
-        /*navbar */
-        :root {
-            --rt-min-width-100: 100px;
-            --rt-min-width-150: 150px;
-            --rt-min-width-200: 200px;
-            --rt-min-width-dynamic: 0px;
-            --rt-width-40: 40% !important;
-            --rt-filter-black: drop-shadow(2px 4px 6px black);
-            --rt-filter-blue-1: drop-shadow(2px 4px 6px blue);
-            --rt-filter-blue-2: drop-shadow(2px 4px 16px blue);
-            --rt-filter-grey-1: drop-shadow(0px 0px 2px grey);
-            --rt-color-blue:  #0167cc;
-            --rt-box-grey-1: inset 0 0 5px grey;
-        }
-
-        .min-w-120 {
-            min-width: var(--rt-min-width-150);
-        }
-
-        .w-40 {
-            width: var(--rt-width-40);
-        }
-
-        .filter-1 {
-            filter: var(--rt-filter-grey-1);
-        }
-
-        .light-transparent-grey {
-            background: white;
-        }
-
-        .nav-link>span {
-            color: #0275d8;
-            font-size: 1rem;
-            /* filter: var(--rt-filter-grey-1); */
-            font-weight: 600;
-        }
-
-        .nav-link:hover {
-            transform: scale(1.2);
-            -webkit-transition: .30s ease-in-out 3s;
-            transition: .30s ease-in-out 0s;
-        }
-
-        .nav-link>span:hover {
-            border-bottom: 2px solid;
-        }
-
-        /** h7 tag*/
-        h7 {
-            display: block;
-            font-size: 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
-
-        h7 {
-            font-size: 2em;
-            margin: .67em 0;
-        }
-
-        h7,
-        h8 {
-            margin-top: 0;
-            margin-bottom: .5rem;
-        }
-
-        .h7,
-        .h8,
-        h7,
-        h8 {
-            margin-bottom: .5rem;
-            font-family: inherit;
-            font-weight: 500;
-            line-height: 1.1;
-            color: inherit;
-        }
-
-        .h7,
-        h7 {
-            font-size: 3.5rem;
-        }
-
-        .white {
-            color: white;
-
-        }
-
-        .blue-1 {
-            color: #0167cc;
-        }
-
-        .white-border {
-            border: solid 2px white;
-        }
-
-        .bg-black {
-            background-color: black;
-        }
-
-        .border-0 {
-            border: 0px;
-        }
-
-        .translateY-40-bar {
-            transform: translateY(-40%);
-        }
-
-        .translateY-100-bar {
-            transform: translateY(-100%);
-        }
-
-        .translateY-200-bar {
-            transform: translateY(-200%);
-        }
-
-        .translateY-500-bar {
-            transform: translateY(-500%);
-        }
-        
-
-        .translateY-70-bar {
-            transform: translateY(-70%);
-        }
-
-        .translateY-100 {
-            transform: translateY(100%);
-        }
-
-        .translateY-20 {
-            transform: translateY(20%);
-        }
-
-        .border-radius-40 {
-            border-radius: 40px;
-        }
-
-        .border-double-2-white {
-            border: double 2px white;
-        }
-
-        .contact-button-1:hover {
-            background-color: white;
-            color: darkblue;
-            border: solid 2px darkblue;
-            filter: var(--rt-filter-black);
-        }
-
-        .form-all-inputs-contact>.form-group>input {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid;
-            border-radius: 0;
-        }
-
-        .form-all-inputs-contact {
-            padding: 4%;
-        }
-
-        .form-contact {
-            background-image: linear-gradient(45deg, #01010d, #1e1c43);
-            filter: drop-shadow(2px 4px 6px black);
-            color: white;
-        }
-
-        .footer-main {
-            background: #080000;
-        }
-
-        /* --------------------------------------------------------------------------------------- */
 
         a:not([href]):not([tabindex]) {
             color: white;
@@ -423,10 +228,10 @@
   min-height: 700px; 
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 nav {
 	background-color: transparent;
@@ -437,13 +242,29 @@ nav {
 	-webkit-transition: .25s ease-in-out 3s;
    	transition: .25s ease-in-out 0s; 
 }
+.home-image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+}
+.visibility-hidden {
+    visibility: hidden;
+}
 </style>
+<div class="visibility-hidden" style="min-height: 15vh;">
 
-<div class="parallax"></div>
-<div class="container-fluid translateY-500-bar filter-1 white">
+</div>
+
+<!-- <div class="parallax"></div> -->
+<video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4"></video>
+
+<!--test-->
+
+
+<div class="container-fluid translateY-500-bar filter-1 white" style="transform: translateY(-850%);">
         <div class="row">
             <div class="col">
-                <h3 class="text-center black">
+                <h3 class="text-center black ">
                     We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
                 </h3>
 
@@ -470,88 +291,89 @@ nav {
     </div>
     <br>
     <br>
-    <div class="container">
-        <div class="row">
-    
-            <div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
-    
-                <div style="background-image: url(../asset/diff1.jpg); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
-    
-                </div>
-                <!-- <img alt="Bootstrap Image Preview" src="../asset/diff1.jpg" style="max-width: 250px; max-height: 250px;"/> -->
-    
-                <div class="what-we-do-all-texts">
-                    <p class="text-center blue" style="
-                            padding-top: 10px;
-                        ">
-                        Multi-domain experience with AI; leverage cross-pollination of concepts from one domain to another.
-                </p>
-    
-                <div>
-                </div>
-                </div>
-    
-    </div>
-    
-    
-    <div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
-    
-        <div style="background-image: url(../asset/diff2.png); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
-    
-        </div>
-        <!-- <img alt="Bootstrap Image Preview" src="../asset/diff2.png" style="max-width: 250px; max-height: 250px;"/> -->
-        <div class="what-we-do-all-texts">
-            <p class="text-center blue" style="
-        padding-top: 10px;
-    ">
-                We strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
-                The resulting deeply flexible technology stack makes our offerings uniquely versatile.
-        </p>
-    
-        <div>
-            <!-- <p class="">
-                Natural Language Query Interface to Large DB
-            </p>
-            <p class="">
-                Text Classification
-            </p>
-            <p class="">
-                Document Clustering
-            </p>
-            <p class="">
-                Sentiment Mining
-            </p>
-     -->
-        </div>
-    
-    </div>
-    </div>
-    
-    
-    <div class="col text-center img-fluid mx-auto what-we-do-cols" style="box-shadow: 1px 1px 12px #737373;">
-    
-        <div style="background-image: url(../asset/diff3.jpg); border-radius: 10px; background-size: 100% 100%; min-width: 100px; min-height: 200px;" >
-    
-        </div>
-        <!-- <img alt="Bootstrap Image Preview" src="../asset/diff3.jpg" style="max-width: 250px; max-height: 250px;"/> -->
-        <div class="what-we-do-all-texts">
-            <p class="text-center blue" style="
-        padding-top: 10px;
-    ">
-                We build holistic systems that leverage all types of relevant data for a given problem, for example -
-                video, audio, images, sensor waveforms, tables, networks etc. This uniquely enables us in building the
-                most effective solution for a given problem.
-        </p>
-    
-        <div>
 
+
+    <div class="container-fluid" style="max-width: 1200px;">
+        <div class="row">
+
+                <div class="col-md-3 text-center">
+                    <img src="../asset/wwr-data.png" width="70" height="70">
+                    <h4 class="blue-1 filter-1">
+                        Data Experts
+                    </h4>
+                    <hr>
+                    <div class="service-al-ml">
+                        <ul>
+                            <li>Niche Algorithm Development in AI / ML</li>
+                            <li>You retain the IP</li>
+                            <li>Time & Material + Milestone based Engagement</li>
+                            <li>Open to engage in a revenue-share model to minimize your cash outlay and risk</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="../asset/wwr-algo.png" width="70" height="70">
+                    <h4 class="blue-1 filter-1">
+                        Algorithm
+                    </h4>
+                    <hr>
+                    <div class="service-al-ml">
+                        <ul>
+                            <li>Supervise and guide your developers</li>
+                            <li>Review code, design documents, results</li>
+                            <li>Help build technology roadmap aligned with your business objectives</li>
+                            <li>Hourly engagement or retainer model.</li>
+                        </ul>
+                    </div>
+ 
+                    <hr>
+
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="../asset/wwr-holistic.png" width="70" height="70">
+                    <h4 class="blue-1 filter-1">
+                        Holistic System Modeling
+                    </h4>
+                    <hr>
+                    <div class="service-al-ml">
+                        <ul>
+                            <li>Check if your model is Privacy compliant</li>
+                            <li>Discover hidden biases & failure modes</li>
+                            <li>Discover ways to speedup model execution</li>
+                            <li>Applicable to any kind of AI / ML model that you may have. You may or maynot share the training data with us.</li>
+                        </ul>
+                    </div>
+ 
+                    <hr>
+
+                </div>
+ 
+                <div class="col-md-3 text-center">
+                    <img src="../asset/wwr-team.png" width="70" height="70">
+                    <h3 class="blue-1 filter-1">
+                        experience
+                    </h3>
+                    <hr>
+                    <div class="service-al-ml">
+                        <ul>
+                            <li>Curriculum customized to align with your business objectives</li>
+                            <li>Right mix of practical hands-on tasks with theoretical foundations tailored to suit your requirements</li>
+                            <li>Delivered in person, or via video conference</li>
+                        </ul>
+                    </div>
+ 
+                    <hr>
+
+
+                </div>
+ 
         </div>
     </div>
     
-    </div>
-    
-        </div>
-    </div>
     <br>
     <br>
     <br>
@@ -599,20 +421,20 @@ nav {
 
     <br>
     <br>
-    <section class="lazy slider" data-sizes="25vw">
+    <section class="lazy slider home-awards-slider mx-auto mx-fluid text-center" data-sizes="25vw">
         <div>
             <h5 class="text-center blue-1"> Promising StartUp </h5> <br>
-            <img class="img-fluid mx-auto" style="width: 99%; max-height: 325px" data-lazy="../asset/award1.jpg" data-srcset="../asset/award1.jpg 650w, ../asset/award1.jpg 960w" >
+            <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px" data-lazy="../asset/award1.jpg" data-srcset="../asset/award1.jpg 650w, ../asset/award1.jpg 960w" >
         </div>
         <div>
             <h5 class="text-center blue-1"> Defence India StartUp Chanllenge </h5> <br>
     
-          <img class="img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="../asset/award2.jpeg" data-srcset="../asset/award2.jpeg 650w, ../asset/award2.jpeg 960w" >
+          <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="../asset/award2.jpeg" data-srcset="../asset/award2.jpeg 650w, ../asset/award2.jpeg 960w" >
         </div>
         <div>
             <h5 class="text-center blue-1"> Karnataka Eleveted - II </h5> <br>
     
-            <img class="img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="../asset/award3.jpeg" data-srcset="../asset/award3.jpeg 650w, ../asset/award3.jpeg 960w" >
+            <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="../asset/award3.jpeg" data-srcset="../asset/award3.jpeg 650w, ../asset/award3.jpeg 960w" >
         </div>
     </div>
       </section>
@@ -667,11 +489,11 @@ nav {
 				<div class="col-md-4 img text-center img-fluid mx-auto blue">
 					<blockquote class="blockquote">
 						S. Saravana N Reddy, Co-Founder
-						<h3 class="blue-1">&quot;StarBeat&quot;</h3>
+						<h4 class="blue-1">&quot;StarBeat&quot;</h4>
 					</blockquote>
 					<!-- <img class="" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="img-thumbnail" /> -->
 				</div>
-				<div class="col-md-8 img text-center img-fluid mx-auto">
+				<div class="col-md-8 img text-left img-fluid mx-auto">
 					<p>
 						<em>We hired Datakalp to solve a set of problems with News Articles - <strong class="blue-1">clustering, classification, related</strong> 
 							article search, duplicate article identification etc. Datakalp were quick to understand the problem
@@ -700,11 +522,11 @@ nav {
 					<!-- <img class="" alt="Bootstrap Image Preview" src="../asset/testi1.webp" class="img-thumbnail" /> -->
 					<blockquote class="blockquote">
 						Indrayudh Ghoshal, Founder
-						<h3 class="blue-1">&quot;Scribble Data&quot;</h3>
+						<h4 class="blue-1">&quot;Scribble Data&quot;</h4>
 					</blockquote>
 				</div>
 
-				<div class="col-md-8 img text-center img-fluid mx-auto">
+				<div class="col-md-8 img text-left img-fluid mx-auto">
 					<p>
 						<em>Kalpit and his team at Datakalp have been excellent <strong class="blue-1">partners for Scribble Data</strong>. in tackling a
 						variety of data science problems. Their depth of understanding of each problem, as well as
@@ -855,7 +677,7 @@ nav {
 
 <br>
 <br>
-    <section class="lazy slider" data-sizes="25vw">
+    <section class="lazy slider mx-auto" data-sizes="25vw" style="max-width: 800px;">
         <div>
             <img class="img-fluid mx-auto" style="width: 99%; max-height: 125px" data-lazy="../asset/partner1.png" data-srcset="../asset/partner1.png 650w, ../asset/partner1.png 960w" >
         </div>
@@ -1001,7 +823,8 @@ nav {
         </div>
     </footer>
     <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
+    <script type="text/javascript">
+
         	$(document).ready(function(){
                 $(window).scroll(function() { // check if scroll event happened
                     if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window

@@ -31,195 +31,6 @@
 
     <style>
         /* --------------------------------------------------------------------------------------- */
-        /* scroll bar */
-        ::-webkit-scrollbar {
-            width: 10px
-        }
-
-        ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #0275d8;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #0275d8
-        }
-
-        /* scroll bar END*/
-
-        /*navbar */
-        :root {
-            --rt-min-width-100: 100px;
-            --rt-min-width-150: 150px;
-            --rt-min-width-200: 200px;
-            --rt-min-width-dynamic: 0px;
-            --rt-width-40: 40% !important;
-            --rt-filter-black: drop-shadow(2px 4px 6px black);
-            --rt-filter-blue-1: drop-shadow(2px 4px 6px blue);
-            --rt-filter-blue-2: drop-shadow(2px 4px 16px blue);
-            --rt-filter-grey-1: drop-shadow(0px 0px 2px grey);
-            --rt-color-blue:  #0167cc;
-            --rt-box-grey-1: inset 0 0 5px grey;
-        }
-
-        .min-w-120 {
-            min-width: var(--rt-min-width-150);
-        }
-
-        .w-40 {
-            width: var(--rt-width-40);
-        }
-
-        .filter-1 {
-            filter: var(--rt-filter-grey-1);
-        }
-
-        .light-transparent-grey {
-            background: white;
-        }
-
-        .nav-link>span {
-            color: #0275d8;
-            font-size: 1rem;
-            /* filter: var(--rt-filter-grey-1); */
-            font-weight: 600;
-        }
-
-        .nav-link:hover {
-            transform: scale(1.2);
-            -webkit-transition: .30s ease-in-out 3s;
-            transition: .30s ease-in-out 0s;
-        }
-
-        .nav-link>span:hover {
-            border-bottom: 2px solid;
-        }
-
-        /** h7 tag*/
-        h7 {
-            display: block;
-            font-size: 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
-
-        h7 {
-            font-size: 2em;
-            margin: .67em 0;
-        }
-
-        h7,
-        h8 {
-            margin-top: 0;
-            margin-bottom: .5rem;
-        }
-
-        .h7,
-        .h8,
-        h7,
-        h8 {
-            margin-bottom: .5rem;
-            font-family: inherit;
-            font-weight: 500;
-            line-height: 1.1;
-            color: inherit;
-        }
-
-        .h7,
-        h7 {
-            font-size: 3.5rem;
-        }
-
-        .white {
-            color: white;
-
-        }
-
-        .blue-1 {
-            color: #0167cc;
-        }
-
-        .white-border {
-            border: solid 2px white;
-        }
-
-        .bg-black {
-            background-color: black;
-        }
-
-        .border-0 {
-            border: 0px;
-        }
-
-        .translateY-40-bar {
-            transform: translateY(-40%);
-        }
-
-        .translateY-100-bar {
-            transform: translateY(-100%);
-        }
-
-        .translateY-200-bar {
-            transform: translateY(-200%);
-        }
-
-        .translateY-70-bar {
-            transform: translateY(-70%);
-        }
-
-        .translateY-100 {
-            transform: translateY(100%);
-        }
-
-        .translateY-20 {
-            transform: translateY(20%);
-        }
-
-        .border-radius-40 {
-            border-radius: 40px;
-        }
-
-        .border-double-2-white {
-            border: double 2px white;
-        }
-
-        .contact-button-1:hover {
-            background-color: white;
-            color: darkblue;
-            border: solid 2px darkblue;
-            filter: var(--rt-filter-black);
-        }
-
-        .form-all-inputs-contact>.form-group>input {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid;
-            border-radius: 0;
-        }
-
-        .form-all-inputs-contact {
-            padding: 4%;
-        }
-
-        .form-contact {
-            background-image: linear-gradient(45deg, #01010d, #1e1c43);
-            filter: drop-shadow(2px 4px 6px black);
-            color: white;
-        }
-
-        .footer-main {
-            background: #080000;
-        }
-
-        /* --------------------------------------------------------------------------------------- */
 
         a:not([href]):not([tabindex]) {
             color: white;
@@ -462,24 +273,29 @@
     <div class="container-fluid">
         <div class="row" style="padding: 3%;">
 
-            <div class="col cursor-pointer filter-child" data-filter="all" style=" background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4a.png); min-height: 200px; min-width: 200px;  max-width: 345px;max-height: 345px;">
+            <div class="col cursor-pointer filter-child" data-filter="all" style=" background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4a.png); min-height: calc(100px + 30vh);
+    min-width: calc(100px + 30vh);  max-width: 345px;max-height: 345px;">
                     <h5 class="text-center filter-1">All</h5>
                 </div>
 
 
-            <div class="col cursor-pointer filter-child" data-filter="healthcare" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters3.jpg); min-height: 200px; min-width: 200px; max-width: 345px;max-height: 345px;">
+            <div class="col cursor-pointer filter-child" data-filter="healthcare" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters3.jpg); min-height: calc(100px + 30vh);
+    min-width: calc(100px + 30vh); max-width: 345px;max-height: 345px;">
                 <h5 class="text-center filter-1">HealthCare</h5>
             </div>
 
-            <div class="col cursor-pointer filter-child" data-filter="manufacturing" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters5.png); min-height: 200px; min-width: 200px; max-width: 345px;max-height: 345px;">
+            <div class="col cursor-pointer filter-child" data-filter="manufacturing" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters5.png); min-height: calc(100px + 30vh);
+    min-width: calc(100px + 30vh); max-width: 345px;max-height: 345px;">
                 <h5 class="text-center filter-1">Process & Manufacturing</h5>
             </div>
 
-            <div class="col cursor-pointer filter-child" data-filter="defense" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters7.png); min-height: 200px; min-width: 200px; max-width: 345px;max-height: 345px;">
+            <div class="col cursor-pointer filter-child" data-filter="defense" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters7.png); min-height: calc(100px + 30vh);
+    min-width: calc(100px + 30vh); max-width: 345px;max-height: 345px;">
                 <h5 class="text-center filter-1">Aerospace & Defense</h5>
             </div>
 
-            <div class="col cursor-pointer filter-child" data-filter="retail" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: 200px; min-width: 200px; max-width: 345px;max-height: 345px;">
+            <div class="col cursor-pointer filter-child" data-filter="retail" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: calc(100px + 30vh);
+    min-width: calc(100px + 30vh); max-width: 345px;max-height: 345px;">
                 <h5 class="text-center filter-1">Retail</h5>
             </div>
  
@@ -812,7 +628,7 @@
                                   <div class="col-md-12">
                                     <div class="row">
                                       <div class="col-md-6" style="padding: 0px">
-                                        <a href="../Products/Hygeine-AI/index.html" class="modal-view-filter" data-filter="maarganViewFilter" role="button">
+                                        <a id="modal-513404" href="../Products/Hygeine-AI/index.html" class="modal-view-filter" data-filter="maarganViewFilter" role="button">
                                         <button type="button" class="btn btn-primary btn-block" style="border-radius: 0px;">
                                             view
                                           </button>
@@ -1074,7 +890,7 @@
                                   <div class="col-md-12">
                                     <div class="row">
                                       <div class="col-md-6" style="padding: 0px">
-                                        <a href="../Products/HygieneAI-SafeHands/index.html" >
+                                        <a id="modal-513404" href="../Products/HygieneAI-SafeHands/index.html" >
                                         <button type="button" class="btn btn-primary btn-block" style="border-radius: 0px;">
                                             view
                                           </button>
