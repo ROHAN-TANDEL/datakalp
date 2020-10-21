@@ -217,8 +217,20 @@
     border: none;
 }
 .card-footer>*>button {
-
+    cursor: pointer;
     background-color: transparent;
+}
+a:hover,a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.09);
+  -webkit-transition: .30s ease-in-out 3s;
+  transition: .30s ease-in-out 0s;
+
 }
 
 .footer-main > .container-fluid > .row > .col-md-12 > .row > .col-md-12 > h3 {
@@ -358,3 +370,7 @@
     animation: 2s ease-out 0s 1 slideInFromTop;
   }
 /* /sliders/ */
+
+p {
+  font-size: calc(0.75rem + 1vh);
+}
