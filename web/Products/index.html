@@ -165,10 +165,21 @@
             color: black;
             -webkit-transition: .30s ease-in-out 3s;
             transition: .30s ease-in-out 0s;   
+            filter: drop-shadow(0 0 25px #5375d8f2);
 }
 
 .mx-width-500 {
     max-width: 500px;
+}
+
+.vv {
+  color: inherit;
+  box-shadow:0 0 10px grey;
+  background-color: white;
+}
+
+body {
+  background-color: #f7f7f9;
 }
     </style>
 </head>
@@ -270,6 +281,117 @@
     <br>
     <br>
 
+<!-- 
+
+    <div class="container-fluid text-center  mx-auto mx-fluid" style="max-width: 1500px;">
+      <div class="row text-center mx-auto mx-fluid img-fluid" style="padding: 3%;">
+
+          <div class="text-center mx-auto mx-fluid img-fluid col cursor-pointer filter-child" data-filter="all" style=" background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4a.png); min-height: 200px;
+  min-width: 200px;  max-width: 180px;max-height: 180px;">
+                  <h5 class="text-center filter-1">All</h5>
+              </div>
+
+
+          <div class="col cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="healthcare" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters3s.jpg); min-height: 200px;
+  min-width: 200px; max-width: 180px;max-height: 180px;">
+              <h5 class="text-center filter-1">HealthCare</h5>
+              <img src="../asset/filters3.jpg" width="50" height="50" style="height: 140px;
+              width: 140px;    
+              filter: blur(2px);">
+              <img src="../asset/filters3.jpg" width="50" height="50" style="width: 80px;
+              height: 80px;
+              transform: translateY(-127%); filter: drop-shadow(0px 0px 1px black);">
+          </div>
+
+            
+          <div class="col cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="manufacturing" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters5s.png); min-height: 200px;
+  min-width: 200px; max-width: 180px;max-height: 180px;">
+              <h5 class="text-center filter-1">Process & Manufacturing</h5>
+              <img src="../asset/filters5.png" width="50" height="50" style="height: 140px;
+              width: 140px;    transform: translateY(-9%);
+              filter: blur(2px);">
+              <img src="../asset/filters5.png" width="50" height="50" style="width: 80px;
+              height: 80px;
+              transform: translateY(-150%); filter: drop-shadow(0px 0px 1px black);">
+          </div>
+
+          <div class="col cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters5s.png); min-height: 200px;
+  min-width: 200px; max-width: 180px;max-height: 180px;">
+              <h5 class="text-center filter-1">Aerospace & Defense</h5>
+              <img src="../asset/filters7.png" width="50" height="50" style="    height: 120px;
+              width: 120px;
+              filter: blur(4px);">
+              <img src="../asset/filters7.png" width="50" height="50" style="width: 80px;
+              height: 80px;
+              transform: translateY(-127%);">
+          </div>
+
+          <div class="col cursor-pointer filter-child" data-filter="retail" style="background-position: center; background-size: 50% 50%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: 200px;
+  min-width: 200px; max-width: 180px;max-height: 180px;">
+              <h5 class="text-center filter-1">Retail</h5>
+          </div>
+
+      </div>
+  </div> -->
+
+
+
+  <div class="container-fluid text-center  mx-auto mx-fluid" style="max-width: 1500px;">
+    <div class="row text-center mx-auto mx-fluid img-fluid" style="padding: 3%;">
+
+      <div class="col">
+          <div class="vv h-100">
+                      <h5 class="text-center filter-1">All</h5>
+
+                        <div class="text-center mx-auto mx-fluid img-fluid cursor-pointer filter-child" data-filter="all" style=" background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters4a.png); min-height: 200px;
+                          min-width: 200px;  max-width: 180px;max-height: 180px;">
+                            </div>
+      </div>
+    </div>
+      <div class="col">
+        <div class="vv h-100">
+          
+        <h5 class="text-center filter-1">HealthCare</h5>
+        <div class="cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="healthcare" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters8.png); min-height: 200px;
+min-width: 200px; max-width: 180px;max-height: 180px;">
+        </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="vv h-100">
+        <h5 class="text-center filter-1">Process & Manufacturing</h5>
+        <div class="cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="manufacturing" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters5.png); min-height: 200px;
+min-width: 200px; max-width: 180px;max-height: 180px;">
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="vv h-100">
+  
+        <h5 class="text-center filter-1">Aerospace & Defense</h5>
+        <div class=" cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="defense" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters7.png); min-height: 200px;
+min-width: 200px; max-width: 180px;max-height: 180px; ">
+        </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="vv h-100">
+  
+        <h5 class="text-center filter-1">Retail</h5>
+        <div class=" cursor-pointer filter-child" data-filter="retail" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: 200px;
+min-width: 200px; max-width: 180px;max-height: 180px;">
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- 
     <div class="container-fluid text-center  mx-auto mx-fluid" style="max-width: 1500px;">
         <div class="row text-center mx-auto mx-fluid img-fluid" style="padding: 3%;">
 
@@ -300,7 +422,7 @@
             </div>
  
         </div>
-    </div>
+    </div> -->
 <!-- /////////////////////////////////////////////////////////////////////////////// -->        
 
 
