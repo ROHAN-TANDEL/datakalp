@@ -144,6 +144,10 @@
 .translateY-30-bar {
     transform: translateY(-30%);
 }
+
+.cursor-pointer:hover {
+    filter: opacity(0.79);
+}
     </style>
 </head>
 
@@ -242,6 +246,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+ 
+
 </style>
 
 <div class="parallax"></div>
@@ -284,12 +290,12 @@
 
 
 
-    <div class="container full-blog translateY-30-bar" style="border: solid 1px white;
-    box-shadow: 0px 0px 12px black;
+    <div class="container full-blog box-shadow-panel mx-auto mx-fluid" style="border: solid 1px white;
     width: 96%;
     border-radius: 10px;
-    margin-top: -4%;
-    background-color: white;">
+    min-height: 300px;
+    margin: -120px 30px 0;
+    background-color: white; max-width: 1400px;">
     <br>
                 <div class="col-md-3 pull-right">
                     <form action="" class="" id="selected-form">
@@ -319,7 +325,7 @@
                         <label for="exampleFormControlSelect1"><h5>Category</h5></label>
                         <select class="form-control" id="blog-form-select-options">
                             
-                            <option id="Vertical" class="blue-1"><h6>Select Vertical</h6></option>
+                            <option id="Vertical" class="blue-1"><h6>Select All Vertical</h6></option>
                             <option id="Aerospace" class="blue-1">Aerospace</option>
                             <option id="HealthCare" class="blue-1">HealthCare</option>
                             <option id="Retail" class="blue-1">Retail</option>
@@ -333,8 +339,8 @@
                     <h5>
                         Tags
                     </h5>
-                    <div class="blue-1 cursor-pointer">
-                        <small> <a><strong class="blue-1" id="major-tags-all"> All </strong> </a> <a><strong id="major-tags-defense" class="blue-1">Defense </strong></a>
+                    <div class="blue-1">
+                        <small> <a class="cursor-pointer"><strong class="blue-1 cursor-pointer" id="major-tags-all" style=" cursor: pointer "> All </strong> </a> <a><strong id="major-tags-defense" class="blue-1 cursor-pointer" style=" cursor: pointer ">Defense </strong></a>
                         </small>
                     </div>
     
@@ -357,11 +363,11 @@
         
                         <div class="col" style="padding-left: 4%; padding-right: 4%;">
                             <div  class="blog-tags category-item blue cursor-pointer">
-                                <small><strong class="blog-search">data scientist</strong></small>
+                                <small><strong class="blog-search" style="cursor: pointer">data scientist</strong></small>
                             </div>
                             <div id="title" class="blog-title blog-header blue">
-                                <a style="cursor:pointer">
-                                    <h3 class="blue-1">
+                                <a style="cursor:pointer" href="../Blogs/blog1/index.html">
+                                    <h3 class="blue-1 cursor-pointer">
                                         How can a data scientist bring value?
                                     </h3>
                                 </a>
@@ -383,7 +389,7 @@
                                     border-bottom: solid; cursor: pointer;
                                 ">read more...</a>
                                 </div>
-                                <small> __ <strong  class="blog-author blog-search blue-1 cursor-pointer" >Dr. Kalpit Desai</strong> 1 days ago</small>
+                                <small style="cursor: pointer;"> __ <strong  class="blog-author blog-search blue-1 cursor-pointer" style="cursor: pointer;" >Dr. Kalpit Desai</strong> <a class="cursor-pointer" href="../Blogs/blog1/index.html" style="color: black">1 days ago</a></small>
                             </div>
         
                         </div>
@@ -422,6 +428,8 @@ $(document).ready(function() {
         console.log(searched);
         if(searched !='') {
             searchingBlog(searched);
+        } else {
+            searchingBlog('all');
         }
     });
 
@@ -462,6 +470,11 @@ $(document).ready(function() {
         searchingBlog(val);
     });
 
+    if(sessionStorage.getItem('blog-search') != '')
+    {
+        searchingBlog(sessionStorage.getItem('blog-search'));
+        sessionStorage.setItem('blog-search','');
+    }
 
 	$('#blog-form-select-options').change(function(){
   		var myselectedtxt = $(this).find("option:selected").text();
@@ -480,7 +493,7 @@ $(document).ready(function() {
                   case 'Aerospace':
                   searchingBlog('defense');
                   break;
-                  case 'Select Vertical':
+                  case 'Select All Vertical':
                   searchingBlog('all');
                   break;
 

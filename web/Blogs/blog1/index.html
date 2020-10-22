@@ -339,6 +339,20 @@
 .translateY-30-bar {
     transform: translateY(-30%);
 }
+.fa-circle-cus:hover {
+    box-shadow: 0px 0px 2px #0275d8;
+
+}
+
+
+.fa-circle-cus {
+    padding: 2%;
+    border-radius: 142px;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+}
     </style>
 </head>
 
@@ -441,12 +455,13 @@
 
 <div class="parallax"></div>
 
-    <div class="container-fluid translateY-500-bar filter-1 white">
+    <div class="container-fluid filter-1 white" style="    margin: -333px 10px 0;">
         <div class="row">
             <div class="col">
-                <h3 class="text-center black">
+                <h1 class="text-center black">
                     How can a data scientist bring value?
-                </h3>
+                </h1>
+                <h5 class="text-center black"><em>written by </em>- Dr. Kalpit Desai <small> on June 2016</small></h5>
 
             </div>
         </div>
@@ -479,18 +494,18 @@
 
 
 
-    <div class="container full-blog translateY-30-bar" style="border: solid 1px white;
-    box-shadow: 0px 0px 12px black;
+    <div class="container full-blog mx-auto mx-fluid box-shadow-panel" style="border: solid 1px white;
     width: 96%;
     border-radius: 10px;
-    transform: translateY(-10%);
-    background-color: white;">
+    min-height: 300px;
+    margin: 100px 30px 0;
+    background-color: white; max-width: 1400px;">
     <br>
                 <div class="col-md-3 pull-right">
                     <form action="" class="" id="selected-form">
                         <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
                         <div class="input-group">
-                            <input id="search-input" type="search" placeholder="What're you searching for?" aria-describedby="search-button" class="form-control border-0 bg-light" style="background: lightgrey;
+                            <input id="search-input" type="search" placeholder="What're you searching for?" aria-describedby="search-button" class="fa-circle-cus form-control border-0 bg-light" style="background: lightgrey;
                             border-radius: 120px;
                         ">
                             <div class="input-group-append cursor-pointer">
@@ -528,8 +543,8 @@
                     <h5>
                         Tags
                     </h5>
-                    <div class="blue-1 cursor-pointer">
-                        <small> <a><strong class="blue-1" id="major-tags-all"> All </strong> </a> <a><strong id="major-tags-defense" class="blue-1">Defense </strong></a>
+                    <div class="blue-1">
+                        <small> <a><strong class="blue-1 cursor-pointer" id="major-tags-all"> All </strong> </a> <a><strong id="major-tags-defense" class="blue-1 cursor-pointer">Defense </strong></a>
                         </small>
                     </div>
     
@@ -625,9 +640,9 @@
             <div class="col-md-4">
               tags
               <br>
-              <span class="badge badge-default">data scientist</span>
-              <span class="badge badge-default">tech</span>
-              <span class="badge badge-default">2016</span>
+              <span class="badge badge-default cursor-pointer" style="background: #0167cc;">data scientist</span>
+              <span class="badge badge-default cursor-pointer" style="background: #0167cc;">tech</span>
+              <span class="badge badge-default cursor-pointer" style="background: #0167cc;">2016</span>
             </div>
 
             <div class="col-md-4">
@@ -635,9 +650,10 @@
             <div class="col-md-4">
               Social Links
               <br>
-              <span style="padding: 2%; border-radius: 50px;" class="fa fa-facebook-official  fa-3x"></span>
-              <span style="padding: 2%; border-radius: 50px;" class="fa fa-linkedin  fa-3x"> </span>
-              <span style="padding: 2%; border-radius: 50px;" class="fa fa-twitter  fa-3x"> </span>
+
+              <span style="" class="fa-circle-cus fa fa-facebook-official blue-1  fa-2x cursor-pointer"></span>
+              <span style="" class="fa-circle-cus fa fa-linkedin blue-1 fa-2x cursor-pointer"> </span>
+              <span style="" class="fa-circle-cus cursor-pointer blue-1 fa fa-twitter  fa-2x"> </span>
             </div>
           </div>
           <hr>
@@ -646,18 +662,20 @@
         <div class="col-md-4">
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8" style="padding: 1%;">
         <style>
           .blogger-name:before {
-            border: solid 1px red;
+            border: solid 1px grey;
           }
         </style>
-        <strong class="blogger-name"> Dr Kalpit Desai </strong>
+        <strong class="blogger-name cursor-pointer"> Dr Kalpit Desai </strong>
 
       </div>
     </div>
 
   </div>
+
+
 
 
 
@@ -684,124 +702,140 @@
 
 
 
-
-<script>
-
-
-// search
-
-$(document).ready(function() {
-
-    $('#search-button').click(function(event) {
-        event.preventDefault();
-
-        var searched = $("#search-input").val();
-        console.log(searched);
-        if(searched !='') {
-            searchingBlog(searched);
-        }
-    });
-
-    console.log('boom');
-
-    $('#Vertical').click(function() {
-        searchingBlog('all');
-        console.log('boom');
-    });
-
-    $('#major-tags-defense').click(function() {
-        searchingBlog('efense');
-    });
-
-    $('#major-tags-all').click(function() {
-        searchingBlog('all');
-    });
-
-    $('#Aerospace').click(function() {
-        searchingBlog('erospace');
-    });
-
-    $('#HealthCare').click(function() {
-        searchingBlog('ealth');
-    });
-
-    $('#Retail').click(function() {
-        searchingBlog('etail');
-    });
-
-    $('#Manufactoring').click(function() {
-        searchingBlog('anufactoring');
-    });
+        <script>
 
 
-    $('.blog-search').click(function() {
-        var val = $('.blog-search').val();
-        searchingBlog(val);
-    });
+            // search
+            
+            $(document).ready(function() {
+            
+                $('#search-button').click(function(event) {
+                    event.preventDefault();
+            
+                    var searched = $("#search-input").val();
+                    console.log(searched);
+                    if(searched !='') {
+                        searchingBlog(searched);
+                    } else {
+                        searchingBlog('all');
+                    }
+                });
+            
+                console.log('boom');
+            
+                
 
+                $('.blogger-name').click(function() {
+                    searchingBlog($(this).val());
+                    console.log('boom');
+                });
 
-	$('#blog-form-select-options').change(function(){
-  		var myselectedtxt = $(this).find("option:selected").text();
-          console.log(myselectedtxt);
-          switch (myselectedtxt) {
+                $('#Vertical').click(function() {
+                    searchingBlog('all');
+                    console.log('boom');
+                });
+            
+                $('#major-tags-defense').click(function() {
+                    searchingBlog('efense');
+                });
+            
+                $('#major-tags-all').click(function() {
+                    searchingBlog('all');
+                });
+            
+                $('#Aerospace').click(function() {
+                    searchingBlog('erospace');
+                });
+            
+                $('#HealthCare').click(function() {
+                    searchingBlog('ealth');
+                });
+            
+                $('#Retail').click(function() {
+                    searchingBlog('etail');
+                });
+            
+                $('#Manufactoring').click(function() {
+                    searchingBlog('anufactoring');
+                });
+            
+            
+                $('.blog-search').click(function() {
+                    var val = $('.blog-search').val();
+                    searchingBlog(val);
+                });
+            
+            
+                $('#blog-form-select-options').change(function(){
+                      var myselectedtxt = $(this).find("option:selected").text();
+                      console.log(myselectedtxt);
+                      switch (myselectedtxt) {
+            
+                              case 'Manufactoring':
+                              searchingBlog('anufactoring');
+                              break;
+                              case 'Retail':
+                              searchingBlog('etail');
+                              break;
+                              case 'HealthCare':
+                              searchingBlog('ealth');
+                              break;
+                              case 'Aerospace':
+                              searchingBlog('defense');
+                              break;
+                              case 'Select All Vertical':
+                              searchingBlog('all');
+                              break;
+            
+                          default:
+                              break;
+                      }
+                  });
+            
+            });
+            
+            function searchingBlog(searchText)
+            {
+                var bloglist = ['blog1'];
+                console.log(searchText);
+                
+                var protocol = location.protocol;
+                var host = location.host;
 
-                  case 'Manufactoring':
-                  searchingBlog('anufactoring');
-                  break;
-                  case 'Retail':
-                  searchingBlog('etail');
-                  break;
-                  case 'HealthCare':
-                  searchingBlog('ealth');
-                  break;
-                  case 'Aerospace':
-                  searchingBlog('defense');
-                  break;
-                  case 'Select Vertical':
-                  searchingBlog('all');
-                  break;
-
-              default:
-                  break;
-          }
-  	});
-
-});
-
-function searchingBlog(searchText)
-{
-    var bloglist = ['blog1'];
-    console.log(searchText);
-
-    for(var i=0; i<bloglist.length; i++) {
-
-        var blog = '#'+bloglist[i];
-        
-        if(searchable == 'all') {
-
-            $(blog).show();
-
-        } else {
-
-
-            var searchable = $(blog).children().find('.blog-author').html() + $(blog).children().find('.blog-tags').html() + $(blog).children().find('.blog-title').html();
-
-            if(searchable.search(searchText) > 0) {
-                $(blog).show(1000).delay(1000).fadeIn(1000);
-            } else {
-                $(blog).hide(1000).delay(1000).fadeOut(1000);
+                var url =  protocol + '//' + host + '/new-kalp/web/Blogs/index.html';
+                console.log(url);
+                location.assign(url);
+                location.href = url;
+                sessionStorage.setItem('blog-search',searchText);
+                window.location=url;
+                return;
+                for(var i=0; i<bloglist.length; i++) {
+            
+                    var blog = '#'+bloglist[i];
+                    
+                    if(searchable == 'all') {
+            
+                        $(blog).show();
+            
+                    } else {
+            
+            
+                        var searchable = $(blog).children().find('.blog-author').html() + $(blog).children().find('.blog-tags').html() + $(blog).children().find('.blog-title').html();
+            
+                        if(searchable.search(searchText) > 0) {
+                            $(blog).show(1000).delay(1000).fadeIn(1000);
+                        } else {
+                            $(blog).hide(1000).delay(1000).fadeOut(1000);
+                        }
+            
+                        searchable = '';
+                    }
+            
+                    blog = '';
+                }
+            
             }
-
-            searchable = '';
-        }
-
-        blog = '';
-    }
-
-}
-</script>
-
-
+            </script>
 
 
 

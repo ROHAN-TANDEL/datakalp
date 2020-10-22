@@ -190,15 +190,29 @@
         }
 
         .form-contact {
-            background-image: linear-gradient(45deg, #01010d, #1e1c43);
-            filter: drop-shadow(2px 4px 6px black);
-            color: white;
+          /* background-image: linear-gradient(45deg, #009cff, #1f94de1f); */
+          background-color: white;
+            color: #1f94de;
+            -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+            box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
         }
-
-        .footer-main {
+        .form-contact > .form-all-inputs-contact > .form-group > input {
+          color: black;
+          border-bottom: solid 1px #1f94de;
+        }
+        .submit-button-bg-con, {
+        
+          background: #1f94de;
+        }
+          .footer-main {
             background: #080000;
         }
 
+
+        .navbar {
+          -webkit-box-shadow: 0 1px 10px -6px rgba(0,0,0,.42), 0 1px 10px 0 rgba(0,0,0,.12), 0 4px 5px -2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 10px -6px rgba(0,0,0,.42), 0 1px 10px 0 rgba(0,0,0,.12), 0 4px 5px -2px rgba(0,0,0,.1);
+        }
         /* --------------------------------------------------------------------------------------- */
 
 
@@ -214,6 +228,7 @@
 #modal-513404>button {
     background-color: transparent;
     color: #1f94de;
+    
     border: none;
 }
 .card-footer>*>button {
@@ -375,6 +390,27 @@ p {
   font-size: calc(0.75rem + 1vh);
 }
 
-.blockquote {
+.blockquoted {
   border-left: .25rem solid #0f6dca;
+}
+
+.box-shadow-panel {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-pointer:hover {
+  filter: opacity(0.79);
+}
+
+#search-button:hover {
+  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.5);
+  transition: .25s ease-in-out 0s;
+}
+
+.navbar-brand  {
+  max-width: 10%;
 }

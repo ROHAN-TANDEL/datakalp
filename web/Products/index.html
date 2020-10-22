@@ -150,22 +150,27 @@
     cursor: pointer;
 }
 .filter-child:hover {
-        
-            transform: scale(1.2);
-            transform: translateY(10%);
+
+            transform: scale(0.92);
+            /* transform: translateY(10%); */
             color: black;
             -webkit-transition: .30s ease-in-out 3s;
             transition: .30s ease-in-out 0s;
 
 }
+
+/* .filter-child {
+  -webkit-box-shadow: inset 0 16px 24px 2px rgb(0 0 0 / 14%), inset 0 6px 30px 5px rgb(255 255 255 / 12%), inset 0 8px 10px -5px rgb(255 253 253);
+    box-shadow: inset 0 16px 24px 2px rgb(0 0 0 / 14%), inset 0 6px 30px 5px rgb(255 255 255 / 12%), inset 0 8px 10px -5px rgb(255 253 253);
+} */
 .active-filter {
          
-    transform: scale(1.2);
+    /* transform: scale(0.9); */
             transform: translateY(10%);
             color: black;
             -webkit-transition: .30s ease-in-out 3s;
             transition: .30s ease-in-out 0s;   
-            filter: drop-shadow(0 0 25px #5375d8f2);
+            /* filter: drop-shadow(0 0 25px #5375d8f2); */
 }
 
 .mx-width-500 {
@@ -174,12 +179,19 @@
 
 .vv {
   color: inherit;
-  box-shadow:0 0 10px grey;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
   background-color: white;
 }
 
 body {
-  background-color: #f7f7f9;
+
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
 }
     </style>
 </head>
@@ -344,7 +356,7 @@ body {
 
       <div class="col">
           <div class="vv h-100">
-                      <h5 class="text-center filter-1">All</h5>
+                      <h5 class="text-center">All</h5>
 
                         <div class="text-center mx-auto mx-fluid img-fluid cursor-pointer filter-child" data-filter="all" style=" background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters4a.png); min-height: 200px;
                           min-width: 200px;  max-width: 180px;max-height: 180px;">
@@ -353,8 +365,8 @@ body {
     </div>
       <div class="col">
         <div class="vv h-100">
-          
-        <h5 class="text-center filter-1">HealthCare</h5>
+
+        <h5 class="text-center">HealthCare</h5>
         <div class="cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="healthcare" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters8.png); min-height: 200px;
 min-width: 200px; max-width: 180px;max-height: 180px;">
         </div>
@@ -362,7 +374,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
       </div>
       <div class="col">
         <div class="vv h-100">
-        <h5 class="text-center filter-1">Process & Manufacturing</h5>
+        <h5 class="text-center">Process & Manufacturing</h5>
         <div class="cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="manufacturing" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters5.png); min-height: 200px;
 min-width: 200px; max-width: 180px;max-height: 180px;">
         </div>
@@ -371,7 +383,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
       <div class="col">
         <div class="vv h-100">
   
-        <h5 class="text-center filter-1">Aerospace & Defense</h5>
+        <h5 class="text-center">Aerospace & Defense</h5>
         <div class=" cursor-pointer filter-child text-center mx-auto mx-fluid img-fluid" data-filter="defense" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters7.png); min-height: 200px;
 min-width: 200px; max-width: 180px;max-height: 180px; ">
         </div>
@@ -381,9 +393,9 @@ min-width: 200px; max-width: 180px;max-height: 180px; ">
       <div class="col">
         <div class="vv h-100">
   
-        <h5 class="text-center filter-1">Retail</h5>
-        <div class=" cursor-pointer filter-child" data-filter="retail" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: 200px;
-min-width: 200px; max-width: 180px;max-height: 180px;">
+        <h5 class="text-center">Retail</h5>
+        <div class=" cursor-pointer filter-child mx-auto mx-fluid img-fluid" data-filter="retail" style="background-position: center; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(../asset/filters4.png); min-height: 200px;
+        min-width: 200px; max-width: 180px;max-height: 180px;">
         </div>
         </div>
       </div>
@@ -461,7 +473,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Maargan <i style="color: white" class=" fa fa-plane"></i>
@@ -531,7 +543,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Vajra <i style="color: white" class=" fa fa-plane"></i>
@@ -597,7 +609,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 HygieneAI - SafeAir <i style="color: white" class=" fa fa-address-card"></i>
@@ -662,7 +674,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Vajra <i style="color: white" class=" fa fa-industry"></i>
@@ -728,7 +740,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 HygieneAI <i style="color: white" class=" fa fa-h-square"></i>
@@ -794,7 +806,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Touchless Attendance <i style="color: white" class=" fa fa-h-square"></i>
@@ -860,7 +872,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 MLibrarian <i style="color: white" class=" fa fa-h-square"></i>
@@ -925,7 +937,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Sensor Holmes <i style="color: white" class=" fa fa-industry"></i>
@@ -990,7 +1002,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 HygieneAI - SafeHands <i style="color: white" class=" fa fa-industry"></i>
@@ -1054,7 +1066,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 FastQA <i style="color: white" class=" fa fa-industry"></i>
@@ -1118,7 +1130,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Loyaltus <i style="color: white" class=" fa fa-address-card"></i>
@@ -1184,7 +1196,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Predictus <i style="color: white" class=" fa fa-address-card"></i>
@@ -1249,7 +1261,7 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                     <div class="container-fluid mx-width-500">
                       <div class="row">
                         <div class="col-md-12">
-                          <div class="card" style="border: solid 1px #0275d8;">
+                          <div class="card" style="border: none;border-radius: 100px;">
                             <div class="card-header" style="background-color: #0275d8; color: white">
                               <h5 class="">
                                 Convertus <i style="color: white" class=" fa fa-address-card"></i>
@@ -1553,20 +1565,22 @@ min-width: 200px; max-width: 180px;max-height: 180px;">
                 var value = $(this).attr('data-filter');
                     console.log(value);
                 $(".filter-child").removeClass("active-filter");
-                
-                $(".filter-child[data-filter=" + value + "]").addClass("active-filter");
-                    
+                $(".vv > h5").css('color', 'black');
+                $(".filter-child[data-filter=" + value + "]").parent('.vv').removeClass("active-filter");
+
 
                         if (value == "all") {
                             $('.filter').delay('500').show('500');
-                            var myclass = $(".filter-child[data-filter=" + value + "]").hasClass("active-filter"); 
+                            var myclass = $(".filter-child[data-filter=" + value + "]").parent('.vv').hasClass("active-filter"); 
                             if(myclass) {
-                                $(".filter-child[data-filter=" + value + "]").removeClass("active-filter");
+                                $(".filter-child[data-filter=" + value + "]").parent('.vv').removeClass("active-filter");
                             }   
                         }
                         else {
                                 $(".filter").not('.' + value).delay('500').fadeOut('500');
                                 $('.filter').filter('.' + value).delay('500').fadeIn('2000');
+                                $(".filter-child[data-filter=" + value + "]").siblings().css('color', '#0167cc');
+                                $(".filter-child[data-filter=" + value + "]").parent('.vv').removeClass("active-filter");
                         }
 
                 });

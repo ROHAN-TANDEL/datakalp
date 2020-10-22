@@ -139,12 +139,16 @@
 }
 
 .hdwr {
-    box-shadow: 0 0 6px black;
+    -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
     padding: 5%;
 }
 
 p {
     font-size: calc(0.75rem + 1vh);
+}
+video {
+  object-fit: fill;
 }
     </style>
 </head>
@@ -263,16 +267,16 @@ nav {
 .visibility-hidden {
     visibility: hidden;
 }
-.homepage-video {
-    width: 100%;
-}
+
 </style>
-<div class="visibility-hidden" style="min-height: 15vh;">
+<div class="visibility-hidden" style="min-height: 13vh;">
 
 </div>
 
 <!-- <div class="parallax"></div> -->
-<video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4" muted></video>
+<div class="video-container">
+    <video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4" muted></video>
+</div>
 <!-- <img class="homepage-video" src="../asset/home1.gif"> -->
 <!--test-->
 
@@ -316,7 +320,7 @@ nav {
         <div class="row ">
 
                 <div class="col-md-3 text-center slide-from-bottom-2">
-                    <div class="data-experts hdwr h-100">
+                    <div class="data-experts hdwr h-100 box-shadow">
                         <img src="../asset/wwr-data.png" width="70" height="70">
                         <br><br>
                         <h4 class="blue-1 filter-1">
@@ -331,7 +335,7 @@ nav {
                 </div>
 
                 <div class="col-md-3 text-center slide-from-bottom-3">
-                    <div class="Algorithm hdwr h-100">
+                    <div class="Algorithm hdwr h-100 box-shadow">
                         <img src="../asset/wwr-algo.png" width="70" height="70">
                         <br><br>
                         <h4 class="blue-1 filter-1">
@@ -348,7 +352,7 @@ nav {
                 </div>
 
                 <div class="col-md-3 text-center slide-from-bottom-4">
-                    <div class="holistic hdwr h-100">
+                    <div class="holistic hdwr h-100 box-shadow">
                         <img src="../asset/wwr-holistic.png" width="70" height="70">
                         <br><br>
                         <h4 class="blue-1 filter-1">
@@ -367,7 +371,7 @@ nav {
                 </div>
  
                 <div class="col-md-3 text-center slide-from-bottom-5">
-                    <div class="experience hdwr h-100">
+                    <div class="experience hdwr h-100 box-shadow">
                         <img src="../asset/wwr-team.png" width="70" height="70">
                         <br><br>
                         <h4 class="blue-1 filter-1">
@@ -591,7 +595,7 @@ nav {
     <div class="container-fluid"  style="max-width: 1400px;">
       <div class="row text-center">
         <div class="col-md-4 img-fluid mx-auto">
-                    <div class=" slide-from-left h-100" style="box-shadow: 0px 0px 6px black; padding: 4%;">
+                    <div class=" slide-from-left h-100 box-shadow-panel" style=" padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/kalpit.png"  />
                         <h5 class="blue-1"> DR. KALPIT DESAI</h5>
@@ -610,7 +614,7 @@ nav {
                     </div>
         </div>
         <div class="col-md-4 img-fluid mx-auto">
-                    <div class=" slide-from-bottom-2 h-100" style="box-shadow: 0px 0px 6px black;padding: 4%;">
+                    <div class=" slide-from-bottom-2 h-100 box-shadow-panel" style="padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/jayesh.png"  />
                         <h5 class="blue-1">JAYESH JAIN</h5>
@@ -623,7 +627,7 @@ nav {
         </div>
 
         <div class="col-md-4 img-fluid mx-auto">
-                    <div class=" slide-from-right h-100" style="box-shadow: 0px 0px 6px black; padding: 4%;">
+                    <div class=" slide-from-right h-100 box-shadow-panel" style=" padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width: 100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/payal.jpg" />
                         <h5 class="blue-1">PAYAL SHAH</h5>
@@ -896,7 +900,11 @@ nav {
             });
     
         });
+        var width = '100%';
+        var height = window.screen.availHeight - 220;
 
+        $('.video-container').css('width', width);
+        $('.video-container').css('height', height);
 
 	  </script>
       <script src="../packages/waypoints/src/waypoint.js"></script>
