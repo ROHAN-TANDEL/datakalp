@@ -271,6 +271,9 @@ button:hover {
     max-width: 1400px;
 }
 
+.service-al-ml {
+  padding: 0 12%;
+}
 
 /* sliders */
 
@@ -387,7 +390,7 @@ button:hover {
 /* /sliders/ */
 
 p {
-  font-size: calc(0.75rem + 1vh);
+  /* font-size: calc(0.75rem + 1vh); */
 }
 
 .blockquoted {
