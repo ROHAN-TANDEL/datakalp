@@ -479,3 +479,6 @@ p {
 .border-lt-1 {
   border-left: solid 1px black;
 }
+nav {
+  background-color: white !important;
+}
