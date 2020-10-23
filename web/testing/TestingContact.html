@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="https://datakalp.herokuapp.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://datakalp.herokuapp.com/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://datakalp.herokuapp.com/packages/waypoints/lib/noframework.waypoints.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://datakalp.herokuapp.com/js/jquery.min.js"></script>
+    <script src="https://datakalp.herokuapp.com/js/bootstrap.min.js"></script>
+    <script src="https://datakalp.herokuapp.com/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    </script>
+    <style>
+
+        /* --------------------------------------------------------------------------------------- */
+        
+        * {
+            font-family: 'Barlow', sans-serif;
+        }
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+
+
+        li[data-filter="contactus"]>.nav-link>span {
+            border-bottom: 2px solid;
+        }
+
+        /* Header Parallax Element Style*/
+        .paral {
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://datakalp.herokuapp.com/asset/map4.png);
+            background-size: 80% 60%;
+            min-height: 500px;  
+            background-repeat: no-repeat;
+            transform: scale(1.5);
+            width: 80%;
+            margin-left: 0%;
+            filter: blur(4px) brightness(0.65);
+        }
+
+        .black-border {
+            border: double 3px black;
+        }
+
+        /* Remove Bottom Margin from Jumbotron */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        .contact-hover-me:hover {
+            cursor: pointer;
+            border: double 3px #1f94de;
+            font-weight: bolder;
+            background-color: transparent;
+        }
+        .contact-hover:hover {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar fixed-top navbar-toggleable-lg light-transparent-grey">
+
+                    <!--brand-->
+                    <a class="col-md-4 navbar-brand mr-auto filter-1" href="https://datakalp.herokuapp.com/Home/index.html">
+                        <img class="navbar-brand w-40 min-w-120" src="https://datakalp.herokuapp.com/asset/logo.png">
+                    </a>
+
+                    <!--collapse button-->
+                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNav">
+
+                        <!--align left-->
+                        <ul class="navbar-nav ml-auto nav-fill w-100">
+
+                            <li class="nav-item navbar-element navbar-home" data-filter="home">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Home/index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-products" data-filter="products">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Products/index.html">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-services" data-filter="services">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Services/index.html">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-team" data-filter="terms">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Team/index.html">
+                                    <span>Team</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-blogs" data-filter="blogs">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Blogs/index.html">
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-contacts" data-filter="contactus">
+                                <a class="nav-link navlink-active" href="https://datakalp.herokuapp.com/Contacts/index.html">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--navbar ending-->
+
+
+
+    <div class="row jumbotron paral"></div>
+
+
+    <!--lets connect ends-->
+
+
+    <!--form and and map-->
+
+    <div class="container-fluid" style="    transform: translateY(-37%);">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center white" style="font-size: 3rem;">
+                    Let's Connect
+                </h1>
+
+            </div>
+        </div>
+
+        <div class="row text-center " style="transform: translateY(45%);">
+
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
+                 
+                <button type="button" class="btn btn-block btn-outline-primary btn-lg contact-hover" style="    border: solid white;
+                color: white; border-radius: 50px;">
+                    9591343150
+                </button>
+            </div>
+            <div class="col-md-3">
+                 
+                <button type="button" class="btn btn-outline-primary btn-block btn-lg contact-hover" style="    border: solid white;
+                color: white;  border-radius: 50px;">
+                    business@datakalp.com
+                </button>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        <div class="row translateY-20 mx-auto mx-fluid img-fluid" style="max-width: 2500px;">
+
+            <div class="col-md-6">
+                <form role="form" class="form-contact">
+
+                    <div class="form-all-inputs-contact">
+
+                        <div class="form-group">
+
+                            <label class="label-class" for="InputName">
+                                Name (required)
+                            </label>
+                            <input placeholder="" type="text" class=" contact-input form-control form-control-lg" id="username" />
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label class="label-class" for="InputEmail1">
+                                Email address (required)
+                            </label>
+                            <input placeholder="" type="email" class=" contact-input form-control form-control-lg" id="email" />
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label class="label-class" for="InputName">
+                                Products interested in
+                            </label>
+                            <input placeholder="" type="text" class=" contact-input form-control form-control-lg"
+                                id="product-form" />
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label class="label-class" for="InputName">
+                                Service interested in
+                            </label>
+                            <input placeholder="" type="text" class=" contact-input form-control form-control-lg"
+                                id="service" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea6"></label>
+                            <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+                                placeholder="Your Message"></textarea>
+                        </div>
+
+                        <div class="alert alert-success demo-modal-success-message" style="display: none;">Thank You for your <strong>request !</strong> </div>
+
+                        <button id="demo_submit_button" type="submit" class="btn btn-primary submit-button-bg-con border-0">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="map-parent" style="transform: translateY(calc(0% + 25vh));">
+                    <iframe class="border-0" tabindex="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9789423657944!2d77.67868091482136!3d12.909074890896909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13dfc2937bb7%3A0xdeee3b4c13b68f97!2sDatakalp!5e0!3m2!1sen!2sin!4v1584096376338!5m2!1sen!2sin"
+                        width="100%" height="450px" frameborder="0" allowfullscreen="allowfullscreen"
+                        aria-hidden="false"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--form and and map end-->
+
+    <footer class="footer-main white">
+        <br>
+
+        <br>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center blue-1">
+                            <h3>
+                                We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Know Us
+                            </h3>
+                            <p>
+                                Datakalp LLP is providing cutting edge services and products in the field of Artificial
+                                Technologies,
+                                Machine Learning, Computer vision and NLP.
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Address
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli,
+                                Bangalore –
+                                560035<br />
+                            </address>
+                        </div>
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Contact
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)6355762814">+91
+                                    63557
+                                    62814</a>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)8861636197">+91
+                                    88616
+                                    36197</a>
+                            </address>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>
+                                <div class=" roof-social style-two  roof-socials-5f838225a3331">
+
+                                    <h6>FOLLOW US ON:</h6>
+
+
+                                    <a href="http://www.facebook.com/datakalp" target="_blank"
+                                        class="icon-fa-facebook-official">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+
+
+                                    <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+
+                                    <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber"
+                                        target="_blank" class="icon-fa-youtube-play">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+
+
+                                    <a href="https://www.linkedin.com/company/datakalp" target="_blank"
+                                        class="icon-fa-linkedin"><i class="fa fa-linkedin"></i>
+                                    </a>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h6>
+                                Copyright © 2020. datakalp.com All rights reserved.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('input').on('focusin', function() {
+    $(this).parent().find('label').addClass('label-class-active');
+    $(this).parent().find('label').removeClass('label-class-inactive');
+  });
+   
+  $('input').on('focusout', function() {
+    if (!this.value) {
+      $(this).parent().find('label').removeClass('label-class-active');
+      $(this).parent().find('label').addClass('label-class-inactive');
+    }
+  });
+
+  
+
+                $(document).ready(function () {
+
+                    $('.demo-modal-success-message').hide();
+                    $('.demo-modal-success-message').removeClass('alert-danger');
+                    $('.demo-modal-success-message').html();
+                    $('#username').css('border-bottom', 'solid 1px #1f94de;');
+                    $('#email').css('border-bottom', 'solid 1px #1f94de;');
+                    $("form").submit(function(event) {
+                        event.preventDefault();
+                        console.log("clicked submit");
+                              $('.demo-modal-success-message').html();
+                              $('.demo-modal-success-message').removeClass('alert-danger');
+                              var username = $('#username').val();
+                              var email = $('#email').val();
+                              var textarea = $('#email').val();
+                              var product = $('#product-form').val();
+                              var service = $('#service').val();
+                              $('#username').css('border-bottom', 'solid 1px #1f94de;');
+                              $('#email').css('border-bottom', 'solid 1px #1f94de;');
+                              if(username == '' || email == '') {
+                                console.log("empty values");
+                                $('.demo-modal-success-message').addClass('alert-danger');
+                                $('.demo-modal-success-message').html('<spanp>please fill required fields</span>');
+                                $('.demo-modal-success-message').show(100);
+
+                                if(username == '') {
+                                  $('#username').css('border-bottom', 'solid 1px #a94442');
+                                } else {
+                                    $('#username').css('border-bottom', 'solid 1px #1f94de');
+                                }
+                                if(email == '') {
+                                  $('#email').css('border-bottom', 'solid 1px #a94442');
+                                } else {
+                                  $('#email').css('border-bottom', 'solid 1px #1f94de');
+                                }
+
+                              } else {
+                                $('#username').css('border-bottom', 'solid 1px #1f94de;');
+                                $('#email').css('border-bottom', 'solid 1px #1f94de');
+
+                                $('.demo-modal-success-message').removeClass('alert-danger');
+                                $('.demo-modal-success-message').addClass('alert-success');
+                                $('.demo-modal-success-message').html('<span>Thank your for your interest</span>');
+                                $('.demo-modal-success-message').show(100);
+                                setTimeout(function(){$('#modal-container-513404').modal('hide');}, 3000);
+                                $('#username').val('');
+                                $('#email').val('');
+                                $('#email').val('');
+                                $('#product-form').val('');
+                                $('#service').val('');
+                              }
+                            });
+                          });
+
+    </script>
+</body>
+
+</html>

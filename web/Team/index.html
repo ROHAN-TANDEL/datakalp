@@ -24,198 +24,21 @@
 	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/scripts.js"></script>
     </script>
     <style>
         /* --------------------------------------------------------------------------------------- */
-        /* scroll bar */
-        ::-webkit-scrollbar {
-            width: 10px
+        * {
+            font-family: 'Barlow', sans-serif;
         }
-
-        ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #0275d8;
-            border-radius: 10px
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #0275d8
-        }
-
-        /* scroll bar END*/
-
-        /*navbar */
-        :root {
-            --rt-min-width-100: 100px;
-            --rt-min-width-150: 150px;
-            --rt-min-width-200: 200px;
-            --rt-min-width-dynamic: 0px;
-            --rt-width-40: 40% !important;
-            --rt-filter-black: drop-shadow(2px 4px 6px black);
-            --rt-filter-blue-1: drop-shadow(2px 4px 6px blue);
-            --rt-filter-blue-2: drop-shadow(2px 4px 16px blue);
-            --rt-filter-grey-1: drop-shadow(0px 0px 2px grey);
-            --rt-color-blue:  #0167cc;
-            --rt-box-grey-1: inset 0 0 5px grey;
-        }
-
-        .min-w-120 {
-            min-width: var(--rt-min-width-150);
-        }
-
-        .w-40 {
-            width: var(--rt-width-40);
-        }
-
-        .filter-1 {
-            filter: var(--rt-filter-grey-1);
-        }
-
-        .light-transparent-grey {
-            background: white;
-        }
-
-        .nav-link>span {
-            color: #0275d8;
-            font-size: 1rem;
-            /* filter: var(--rt-filter-grey-1); */
-            font-weight: 600;
-        }
-
-        .nav-link:hover {
-            transform: scale(1.2);
-            -webkit-transition: .30s ease-in-out 3s;
-            transition: .30s ease-in-out 0s;
-        }
-
-        .nav-link>span:hover {
-            border-bottom: 2px solid;
-        }
-
-        /** h7 tag*/
-        h7 {
-            display: block;
-            font-size: 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
-
-        h7 {
-            font-size: 2em;
-            margin: .67em 0;
-        }
-
-        h7,
-        h8 {
-            margin-top: 0;
-            margin-bottom: .5rem;
-        }
-
-        .h7,
-        .h8,
-        h7,
-        h8 {
-            margin-bottom: .5rem;
-            font-family: inherit;
-            font-weight: 500;
-            line-height: 1.1;
-            color: inherit;
-        }
-
-        .h7,
-        h7 {
-            font-size: 3.5rem;
-        }
-
-        .white {
-            color: white;
-
-        }
-
-        .blue-1 {
-            color: #0167cc;
-        }
-
-        .white-border {
-            border: solid 2px white;
-        }
-
-        .bg-black {
-            background-color: black;
-        }
-
-        .border-0 {
-            border: 0px;
-        }
-
-        .translateY-40-bar {
-            transform: translateY(-40%);
-        }
-
-        .translateY-100-bar {
-            transform: translateY(-100%);
-        }
-
-        .translateY-200-bar {
-            transform: translateY(-200%);
-        }
-
-        .translateY-70-bar {
-            transform: translateY(-70%);
-        }
-
-        .translateY-100 {
-            transform: translateY(100%);
-        }
-
-        .translateY-20 {
-            transform: translateY(20%);
-        }
-
-        .border-radius-40 {
-            border-radius: 40px;
-        }
-
-        .border-double-2-white {
-            border: double 2px white;
-        }
-
-        .contact-button-1:hover {
-            background-color: white;
-            color: darkblue;
-            border: solid 2px darkblue;
-            filter: var(--rt-filter-black);
-        }
-
-        .form-all-inputs-contact>.form-group>input {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid;
-            border-radius: 0;
-        }
-
-        .form-all-inputs-contact {
-            padding: 4%;
-        }
-
-        .form-contact {
-            background-image: linear-gradient(45deg, #01010d, #1e1c43);
-            filter: drop-shadow(2px 4px 6px black);
-            color: white;
-        }
-
-        .footer-main {
-            background: #080000;
+        h2 {
+            font-size: -webkit-xxx-large;
+            font-size: xxx-large;
+            font-weight: 400;
         }
 
         /* --------------------------------------------------------------------------------------- */
@@ -296,7 +119,7 @@
     transition: all .5s;
     }
 
-    .team-name-hover {
+    .team-name-hover hover-opacity blue-1 {
         color: var(--rt-color-blue);
 
     }
@@ -314,19 +137,29 @@
     max-height: 120px;
     overflow: hidden;
 }
+.team-member-detail:hover {
+    filter: opacity(0.79);
+
+}
 
 .team-read-more-no-panel:hover > .team-read-more {
     font-size: 0.1rem;
     transition: 0.25s ease-in-out 0s;
+    filter: opacity(0.79);
 }
+
 .team-read-more:hover {
     display: block;
+    filter: opacity(0.79);
 }
 
 .slider-bottom-choice * > img {
     height: 200px;
     max-width: 250px;
 }
+
+
+
 
     </style>
 </head>
@@ -345,7 +178,7 @@
                     </a>
 
                     <!--collapse button-->
-                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                    <button class="navbar-toggler navbar-toggler-right fa fa-bars" data-toggle="collapse" data-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -426,6 +259,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.team-div {
+    filter: brightness(0.5);
+}
 </style>
 
 <!-- <div class="parallax"></div> -->
@@ -434,7 +270,7 @@
     <img src="../asset/team7.jpg">
 </div>
 
-<div class="container-fluid translateY-200-bar filter-1 white">
+<div class="container-fluid translateY-500-bar filter-1 white">
         <div class="row">
             <div class="col">
                 <h3 class="text-center black">
@@ -449,7 +285,7 @@
     <div class="container-fluid">
         <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>
+                    <h2 class="blue-1">
                         Our team
                     </h2>
                 </div>
@@ -466,7 +302,7 @@
                 </div>
                 <div class="col-md-2 text-center">
                     
-                    <h5 class="team-name-hover">
+                    <h5 class="team-name-hover hover-opacity blue-1">
                         Anirudh Marniganti
                     </h5>
                     <hr>
@@ -486,7 +322,7 @@
                 </div>
 
                 <div class="col-md-2 text-center">
-                    <h5 class="team-name-hover">
+                    <h5 class="team-name-hover hover-opacity blue-1">
                         Aswin Prabhakaran
                     </h5>
                     <hr>
@@ -509,8 +345,8 @@
                 </div>
 
                 <div class="col-md-2 text-center">
-                    <h5 class="team-name-hover">
-                        DR kalpit Desai
+                    <h5 class="team-name-hover hover-opacity blue-1">
+                        Dr. kalpit Desai
                     </h5>
                     <hr>
                     <div class="col-md-12 mx-fluid img-fluid mx-auto" style="max-width: 180px;">
@@ -540,8 +376,8 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-2 text-center">
-                <h5 class="team-name-hover">
-                    Jayesh
+                <h5 class="team-name-hover hover-opacity blue-1">
+                    Jayesh Jain
                 </h5>
                 <hr>
                 <div class="col-md-12 mx-fluid img-fluid mx-auto" style="max-width: 180px;">
@@ -565,7 +401,7 @@
 
             
             <div class="col-md-2 text-center">
-                <h5 class="team-name-hover">
+                <h5 class="team-name-hover hover-opacity blue-1">
                     Payal Shah
                 </h5>
                 <hr>
@@ -590,7 +426,7 @@
 
             
             <div class="col-md-2 text-center">
-                <h5 class="team-name-hover">
+                <h5 class="team-name-hover hover-opacity blue-1">
                     Vishal Vanam
                 </h5>
                 <hr>
@@ -625,9 +461,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 
     <section class="lazy slider-gallary mx-auto img-fluid" data-sizes="25vw" style="max-width: 1500px;">
@@ -635,43 +468,17 @@
             <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 225px" data-lazy="../asset/award1.jpg" data-srcset="../asset/award1.jpg 650w, ../asset/award1.jpg 960w" >
         </div>
 
-        <div>
-        <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 225px;" data-lazy="../asset/award2.jpeg" data-srcset="../asset/award2.jpeg 650w, ../asset/award2.jpeg 960w" >
-        </div>
 
-        <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 225px;" data-lazy="../asset/award3.jpeg" data-srcset="../asset/award3.jpeg 650w, ../asset/award3.jpeg 960w" >
-        </div>
-
-        <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px" 
-            data-lazy="../asset/gallary1.jpg" 
-            data-srcset="../asset/gallary1.jpg 650w, ../asset/gallary1.jpg 960w" >
-        </div>
-
-        <div>
-          <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
-          data-lazy="../asset/gallary2.jpg" 
-          data-srcset="../asset/gallary2.jpg 650w, ../asset/gallary2.jpg 960w" >
-        </div>
-    
-        <div>
+         <div>
             <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
             data-lazy="../asset/gallary3.jpeg" 
             data-srcset="../asset/gallary3.jpeg 650w, ../asset/gallary3.jpeg 960w" >
         </div>
 
         <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
-            data-lazy="../asset/gallary4.png" 
-            data-srcset="../asset/gallary4.png 650w, ../asset/gallary4.png 960w" >
-        </div>
+        <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 225px;" data-lazy="../asset/award2.jpeg" data-srcset="../asset/award2.jpeg 650w, ../asset/award2.jpeg 960w" >
+        </div> 
 
-        <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
-            data-lazy="../asset/gallary5.jpg" 
-            data-srcset="../asset/gallary5.jpg 650w, ../asset/gallary5.jpg 960w" >
-        </div>
 
         <div>
             <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
@@ -679,17 +486,6 @@
             data-srcset="../asset/gallary6.jpg 650w, ../asset/gallary6.jpg 960w" >
         </div>
 
-        <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
-            data-lazy="../asset/gallary7.jpg" 
-            data-srcset="../asset/gallary7.jpg 650w, ../asset/gallary7.jpg 960w" >
-        </div>
-
-        <div>
-            <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
-            data-lazy="../asset/gallary8.jpg" 
-            data-srcset="../asset/gallary8.jpg 650w, ../asset/gallary8.jpg 960w" >
-        </div>
 
         <div>
             <img class="img-fluid mx-auto" style="width: 99%; min-height:325px; object-fit: contain; max-height: 325px;" 
@@ -697,9 +493,6 @@
             data-srcset="../asset/gallary9.jpg 650w, ../asset/gallary9.jpg 960w" >
         </div>
     </section>
-
-
-
 
 
     <!--form and and map end-->
@@ -885,7 +678,7 @@
                 autoplay:true,
                 autoplaySpeed: 2000,
                 arrows:false,
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 asNav: '.slider-gallary',
                 responsive: [

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    </script>
+    <style>
+        /* --------------------------------------------------------------------------------------- */
+
+        a:not([href]):not([tabindex]) {
+            color: white;
+        }
+
+        li[data-filter="services"]>.nav-link>span  {
+            border-bottom: 2px solid;
+        }
+        li[data-filter="services"] {
+            transform: scale(1.2);
+        }
+
+        /* Header Parallax Element Style*/
+        .paral {
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 10%;
+            background-image: url(../asset/team7.jpg);
+            background-size: 100% 100%;
+            min-height: 500px;
+            transform: scale(1.5);
+            width: 80%;
+            margin-left: 0%;
+        }
+
+/* ------------------------------------------------------------------------------------------ */
+        /* Remove Bottom Margin from Jumbotron */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+                            .parent:hover .child, .parent:focus .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+    .parent:hover .child:before, .parent:focus .child:before {
+        display: block;
+    }
+    
+    .parent:hover a, .parent:focus a {
+        display: block;
+    }
+    
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52,73,94,0.75);
+    }
+    
+    
+    /* Image zoom on hover + Overlay colour */
+    .parent {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+    .child {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+
+    .team-name-hover {
+        color: var(--rt-color-blue);
+
+    }
+.filter-2 {
+    filter: drop-shadow(0px 0px 10px lightblue);
+}
+
+.team-read-more-no-panel:hover .team-member-detail {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: 1.0s ease-in-out 0.1s;
+}
+
+.team-member-detail {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.team-read-more-no-panel:hover > .team-read-more {
+    font-size: 0.1rem;
+    transition: 2.0s ease-in-out 1s;
+}
+.team-read-more:hover {
+    display: block;
+}
+
+.slider-bottom-choice * > img {
+    height: 200px;
+    max-width: 250px;
+}
+ul > li {
+    list-style: none;
+}
+.service-al-ml > ul {
+    padding: 5px 5px 5px 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar fixed-top navbar-toggleable-lg light-transparent-grey">
+
+                    <!--brand-->
+                    <a class="col-md-4 navbar-brand mr-auto filter-1" href="../Home/index.html">
+                        <img class="navbar-brand w-40 min-w-120" src="../asset/logo.png">
+                    </a>
+
+                    <!--collapse button-->
+                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNav">
+
+                        <!--align left-->
+                        <ul class="navbar-nav ml-auto nav-fill w-100">
+
+                            <li class="nav-item navbar-element navbar-home" data-filter="home">
+                                <a class="nav-link" href="../Home/index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-products" data-filter="products">
+                                <a class="nav-link" href="../Products/index.html">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-services" data-filter="services">
+                                <a class="nav-link" href="../Services/index.html">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-team" data-filter="teams">
+                                <a class="nav-link" href="../Team/index.html">
+                                    <span>Team</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-blogs" data-filter="blogs">
+                                <a class="nav-link" href="../Blogs/index.html">
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-contacts" data-filter="contactus">
+                                <a class="nav-link navlink-active" href="../Contacts/index.html">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--navbar ending-->
+
+
+
+    <!-- <div class="row jumbotron paral" style="filter: brightness(0.5);"></div> -->
+
+
+    <!--lets connect ends-->
+
+
+    <!--form and and map-->
+    <style>
+    .parallax {
+        /* The image used */
+        background-image: url("../asset/team7.jpg");
+        filter: brightness(0.5);
+    
+        /* Set a specific height */
+        min-height: 500px; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    
+    <!-- <div class="parallax"></div> -->
+    
+    <div class="team-div">
+        <img src="../asset/team7.jpg">
+    </div>
+        
+
+<!-- <div class="parallax"></div> -->
+
+    <br>
+    <br>
+ 
+    <div class="container-fluid" style="    margin-top: calc(50px + 11vh);">
+        <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>
+                        AI / ML Service Offerings for your business
+                    </h2>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container-fluid" style="max-width: 1400px;">
+        <div class="row ">
+
+                <div class="col-md-3 text-center slide-from-bottom-2">
+                    <div class="data-experts hdwr h-100">
+                        
+                        <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                            Contract R&D
+                        </h3>
+                        <div class="service-al-ml">
+                            <ul class="text-justify" style="padding-top: 1%;">
+                                <li><p>Niche Algorithm Development in AI / ML</p></li>
+                                <li><p>You retain the IP</p></li>
+                                <li><p>Time & Material + Milestone based Engagement</p></li>
+                                <li><p>Open to engage in a revenue-share model to minimize your cash outlay and risk</p></li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-3 text-center slide-from-bottom-3">
+                    <div class="Algorithm hdwr h-100">
+                        
+                        <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                            Consultancy
+                        </h3>
+                        <div class="service-al-ml">
+                            <ul class="text-justify" style="padding-top: 1%;">
+                                <li><p>Supervise and guide your developers</p></li>
+                                <li><p>Review code, design documents, results</p></li>
+                                <li><p>Help build technology roadmap aligned with your business objectives</p></li>
+                                <li><p>Hourly engagement or retainer model.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-3 text-center slide-from-bottom-4">
+                    <div class="holistic hdwr h-100">
+                        
+                        <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                            Model Audit
+                        </h3>
+                        <div class="service-al-ml">
+                            <ul class="text-justify" style="padding-top: 1%;">
+                                <li><p>Check if your model is Privacy compliant</p></li>
+                                <li><p>Discover hidden biases & failure modes</p></li>
+                                <li><p>Discover ways to speedup model execution</p></li>
+                                <li><p>Applicable to any kind of AI / ML model that you may have. You may or maynot share the training data with us.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+ 
+                <div class="col-md-3 text-center slide-from-bottom-5">
+                    <div class="experience hdwr h-100">
+                        
+                        <h3 class="blue-1 filter-1" style="padding-bottom: 1%;">
+                            Workshops
+                        </h3>
+                        <div class="service-al-ml">
+                            <ul class="text-justify" style="padding-top: 5%;">
+                                <li><p>Curriculum customized to align with your business objectives</p></li>
+                                <li><p>Right mix of practical hands-on tasks with theoretical foundations tailored to suit your requirements</p></li>
+                                <li><p>Delivered in person, or via video conference</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+ 
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+ 
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-12 text-center ">
+                <h2>
+                    Our Technical Expertise
+                </h2>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container-fluid" style="max-width: 1400px;">
+    <div class="row">
+
+            <div class="col-md-3 text-center">
+                <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                    Sensors Intelligence
+                </h3>
+                
+                <div class="service-tech-image mx-fluid img-fluid text-center" style="background-image: url(../asset/te1.png); background-repeat: no-repeat; background-position: center; min-width: 100px; min-height: 100px;">
+                </div>
+                
+                <div class="service-al-ml2">
+                    <ul class="text-justify" style="padding-top: 10%;">
+                        <li><p>Event detection from IoT Sensors</p></li>
+                        <li><p>Machine fault prognostics</p></li>
+                        <li><p>Vibration analytics</p></li>
+                        <li><p>Optimal process control</p></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                    Computer Vision
+                </h3>
+                
+                <div class="service-tech-image mx-fluid img-fluid text-center" style="background-image: url(../asset/te2.png); background-repeat: no-repeat; background-position: center; min-width: 100px; min-height: 100px;">
+                </div>
+                
+                <div class="service-al-ml2">
+                    <ul class="text-justify" style="padding-top: 10%;">
+                        <li><p>Real-time safety alarms </p></li>
+                        <li><p>Security alarms / audit </p></li>
+                        <li><p>Foot-fall heatmap from CCTV </p></li>
+                        <li><p>Manufacturing defects detection</p></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+
+
+            <div class="col-md-3 text-center">
+                <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                    Text Mining
+                </h3>
+                
+                <div class="service-tech-image mx-fluid img-fluid text-center" style="background-image: url(../asset/te3.png); background-repeat: no-repeat; background-position: center; min-width: 100px; min-height: 100px;">
+                </div>
+                
+                <div class="service-al-ml2">
+                    <ul class="text-justify" style="padding-top: 10%;">
+                        <li><p>Document / Email Clustering</p></li>
+                        <li><p>Document / Email Categorization</p></li>
+                        <li><p>Sentiment Analysis</p></li>
+                        <li><p>Topic and Trend Mining</p></li>
+                        <li><p>Named Entity Recognition</p></li>
+                    </ul>
+                </div>
+
+                
+
+            </div>
+
+
+            <div class="col-md-3 text-center">
+                <h3 class="blue-1 filter-1" style="padding-bottom: 5%;">
+                    Stats & Optimization
+                </h3>
+                
+                <div class="service-tech-image mx-fluid img-fluid text-center" style="background-image: url(../asset/te4.png); background-repeat: no-repeat; background-position: center; min-width: 100px; min-height: 100px;">
+                </div>
+
+                <div class="service-al-ml2">
+                    <ul class="text-justify" style="padding-top: 10%;">
+                        <li><p>Logistics</p></li>
+                        <li><p>Prod Recommendations</p></li>
+                        <li><p>Market Segmentation</p></li>
+                        <li><p>Propensity Analysis </p></li>
+                    </ul>
+                </div>
+
+                
+
+            </div>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>
+                    Client Testimonials
+                </h2>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+    <section class="lazy slider-gallary mx-auto img-fluid" data-sizes="25vw" style="max-width: 1400px;">
+        <div class="container text-center">
+            <p>“Datakalp were quick to understand the problem statement from business value lens, and translate the same to AI/Machine Learning problem statement. While our data was unique and challenging, they built cutting-edge algorithms from ground up in a very reasonable time yet achieved nearly the state-of-art results (where such comparison was available). They operated with transparency and excellent, proactive communication to ensure the success of the project. We felt they were our partners towards building the product, and not vendors. We wish them all the best, and would highly recommend them for any complex text mining or NLP development work.”</p>
+            <h5 class="blue-1">S. Saravana N Reddy</h5>
+            <h5 class="blue-1">Co-Founder, StarBeat Tech Pvt Ltd</h5>
+        </div>
+
+        <div class="container text-center">
+            <p>“Kalpit and his team at Datakalp have been excellent partners for Scribble Data in tackling a variety of data science problems. Their depth of understanding of each problem, as well as their thought-thoroughness, pragmatism and attention to detail were key in building production-ready data models, and we appreciated not just their diligence, but also their sense of working together with their clients as a team to deal with challenges that would crop up.We look forward to a long partnership with Datakalp, and wish them great success as they go from strength to strength.”</p>
+            <h5  class="blue-1">Indrayudh Ghoshal</h5>
+            <h5 class="blue-1">Founder, Scribble Data Pvt Ltd</h5>
+
+    </section>
+
+
+
+
+
+    <!--form and and map end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer class="footer-main white">
+        <br>
+
+        <br>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center blue-1">
+                            <h3>
+                                We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Know Us
+                            </h3>
+                            <p>
+                                Datakalp LLP is providing cutting edge services and products in the field of Artificial
+                                Technologies,
+                                Machine Learning, Computer vision and NLP.
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Address
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli,
+                                Bangalore –
+                                560035<br />
+                            </address>
+                        </div>
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Contact
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)6355762814">+91
+                                    63557
+                                    62814</a>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)8861636197">+91
+                                    88616
+                                    36197</a>
+                            </address>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>
+                                <div class=" roof-social style-two  roof-socials-5f838225a3331">
+
+                                    <h6>FOLLOW US ON:</h6>
+
+
+                                    <a href="http://www.facebook.com/datakalp" target="_blank"
+                                        class="icon-fa-facebook-official">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+
+
+                                    <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+
+                                    <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber"
+                                        target="_blank" class="icon-fa-youtube-play">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+
+
+                                    <a href="https://www.linkedin.com/company/datakalp" target="_blank"
+                                        class="icon-fa-linkedin"><i class="fa fa-linkedin"></i>
+                                    </a>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h6>
+                                Copyright © 2020. datakalp.com All rights reserved.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="../packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+        $(document).ready(function(){       
+            $('.slider-gallary').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                asNav:'.slider-gallary-weist',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+
+
+            $('.slider-gallary-weist').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNav: '.slider-gallary',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+    
+        });
+
+	  </script>
+	  <script src="../packages/Glider.js-master/Glider.js-master/glider.js"></script>
+	  
+  </body>
+</html>

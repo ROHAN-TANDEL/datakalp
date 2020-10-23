@@ -47,7 +47,7 @@
         }
 
         .filter-1 {
-            filter: var(--rt-filter-grey-1);
+            /* filter: var(--rt-filter-grey-1); */
         }
 
         .light-transparent-grey {
@@ -219,7 +219,8 @@
 
 .navbar-toggler-icon
 {
-    border: double 5px #1f94de;
+
+    background-image: url('https://iconsetc.com/icons-watermarks/flat-rounded-square-white-on-blue/bfa/bfa_bars/bfa_bars_flat-rounded-square-white-on-blue_512x512.png');
 }
 
 .card-footer {
@@ -416,4 +417,65 @@ p {
 
 .navbar-brand  {
   max-width: 10%;
+}
+
+.floating {   
+  animation-name: floating; 
+  animation-duration: 10s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;  
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 15px); } 
+  100%   { transform: translate(0, -0px); }     
+}
+
+.form-contact > .form-all-inputs-contact > .form-group > label {
+  transform: translateY(150%);
+
+}
+.label-class-inactive {
+  transform: translateY(150%);
+  -webkit-transition: .30s ease-in-out 3s;
+  transition: .30s ease-in-out 0s;
+}
+
+   .label-class-active {
+  transform: translateY(0) !important;
+  -webkit-transition: .30s ease-in-out 3s;
+  transition: .30s ease-in-out 0s;
+}
+
+.first-char {
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.hover-opacity:hover {
+  filter: opacity(0.79);
+}
+
+.image-filter {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 2%;
+}
+.filter-text {
+  margin: 0;
+  padding: 4%;
+  background: #0275d8;
+  color: white;
+}
+.p0 {
+  padding: 0;
+}
+
+.border-rt-1 {
+  border-right: solid 1px black;
+}
+
+.border-lt-1 {
+  border-left: solid 1px black;
 }

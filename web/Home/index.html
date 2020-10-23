@@ -24,11 +24,21 @@
 	<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/scripts.js"></script>
     </script>
     <style>
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+h2 {
+    font-size: -webkit-xxx-large;
+    font-weight: 400;
+}
 
         a:not([href]):not([tabindex]) {
             color: white;
@@ -268,6 +278,14 @@ nav {
     visibility: hidden;
 }
 
+.hover-opacity:hover {
+    filter: opacity(0.79);
+}
+
+.first-char {
+    font-size: x-large;
+    font-weight: 300;
+}
 </style>
 <div class="visibility-hidden" style="min-height: 13vh;">
 
@@ -275,7 +293,7 @@ nav {
 
 <!-- <div class="parallax"></div> -->
 <div class="video-container">
-    <video autoplay="true" loop="loop" class="home-image" src="../asset/home1.mp4" muted plays-inline></video>
+    <video autoplay="true" loop="loop" class="home-image" src="../asset/home4.mp4" muted plays-inline></video>
 </div>
 <!-- <img class="homepage-video" src="../asset/home1.gif"> -->
 <!--test-->
@@ -287,7 +305,7 @@ nav {
 <div class="container-fluid translateY-500-bar filter-1 white" style="transform: translateY(-850%);">
         <div class="row">
             <div class="col">
-                <h3 class="text-center black slide-from-bottom">
+                <h3 class="text-center floating black slide-from-bottom">
                     We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
                 </h3>
 
@@ -323,12 +341,12 @@ nav {
                     <div class="data-experts hdwr h-100 box-shadow">
                         <img src="../asset/wwr-data.png" width="70" height="70">
                         <br><br>
-                        <h4 class="blue-1 filter-1">
+                        <h4 class="blue-1 filter-1 hover-opacity">
                             Data Experts
                         </h4>
                         <br>
-                        <div class="service-al-ml text-justify">
-                                <p>We are experts in going on a date with 'data', and harnessing the power of machine learning.</p>
+                        <div class="service-al-ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e are experts in going on a date with 'data', and harnessing the power of machine learning.</p>
                         </div>
                         <br>
                     </div>
@@ -338,12 +356,12 @@ nav {
                     <div class="Algorithm hdwr h-100 box-shadow">
                         <img src="../asset/wwr-algo.png" width="70" height="70">
                         <br><br>
-                        <h4 class="blue-1 filter-1">
+                        <h4 class="blue-1 filter-1 hover-opacity">
                             Algorithm
                         </h4>
                         <br>
-                        <div class="service-al-ml ml text-justify">
-                                <p>We strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
                                     The resulting deeply flexible technology stack makes our offerings uniquely versatile.</p>
                         </div>
     
@@ -355,12 +373,12 @@ nav {
                     <div class="holistic hdwr h-100 box-shadow">
                         <img src="../asset/wwr-holistic.png" width="70" height="70">
                         <br><br>
-                        <h4 class="blue-1 filter-1">
+                        <h4 class="blue-1 filter-1 hover-opacity">
                             Holistic Systems
                         </h4>
                         <br>
-                        <div class="service-al-ml ml text-justify">
-                                <p>We build holistic systems that leverage all types of relevant data for a given problem, for example -
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e build holistic systems that leverage all types of relevant data for a given problem, for example -
                                 video, audio, images, sensor waveforms, tables, networks etc. This uniquely enables us in building the
                                 most effective solution for a given problem.</p>
                         </div>
@@ -374,12 +392,12 @@ nav {
                     <div class="experience hdwr h-100 box-shadow">
                         <img src="../asset/wwr-team.png" width="70" height="70">
                         <br><br>
-                        <h4 class="blue-1 filter-1">
+                        <h4 class="blue-1 filter-1 hover-opacity">
                             30+ years Experience
                         </h4>
                         <br>
-                        <div class="service-al-ml ml text-justify">
-                            <p>Multi-domain experience with AI; leverage cross-pollination of concepts from one domain to another.</p>
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                            <p><span class="first-char">M</span>ulti-domain experience with AI; leverage cross-pollination of concepts from one domain to another.</p>
                         </div>
     
                         <br>
@@ -501,15 +519,15 @@ nav {
 <div class="container-fluid" style="max-width: 1400px;">
     <div class="row">
         <div class="col-md-4 img text-center img-fluid mx-auto blue">
-            <blockquote class="blockquote slide-from-left-1 blockquoted">
+            <blockquote class="blockquote slide-from-left-1 blockquoted hover-opacity">
                 S. Saravana N Reddy, Co-Founder
                 <h4 class="blue-1">&quot;StarBeat&quot;</h4>
             </blockquote>
             <!-- <img class="" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="img-thumbnail" /> -->
         </div>
-        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-left">
+        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-left hover-opacity">
             <p>
-                <em>We hired Datakalp to solve a set of problems with News Articles - <strong class="blue-1">clustering, classification, related</strong> 
+                <em><span class="first-char">W</span>e hired Datakalp to solve a set of problems with News Articles - <strong class="blue-1">clustering, classification, related</strong> 
                     article search, duplicate article identification etc. Datakalp were quick to understand the problem
                     statement from business value lens, and translate the same to AI/Machine Learning problem
                     statement. While our data was unique and challenging, they built cutting-edge algorithms from
@@ -527,15 +545,15 @@ nav {
     <div class="row">
         <div class="col-md-4 img text-center img-fluid mx-auto blue">
             <!-- <img class="" alt="Bootstrap Image Preview" src="../asset/testi1.webp" class="img-thumbnail" /> -->
-            <blockquote class="blockquote slide-from-right blockquoted">
+            <blockquote class="blockquote slide-from-right blockquoted hover-opacity">
                 Indrayudh Ghoshal, Founder
                 <h4 class="blue-1">&quot;Scribble Data&quot;</h4>
             </blockquote>
         </div>
 
-        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-right-1">
+        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-right-1 hover-opacity">
             <p>
-                <em>Kalpit and his team at Datakalp have been excellent <strong class="blue-1">partners for Scribble Data</strong>. in tackling a
+                <em><span class="first-char">K</span>alpit and his team at Datakalp have been excellent <strong class="blue-1">partners for Scribble Data</strong>. in tackling a
                 variety of data science problems. Their depth of understanding of each problem, as well as
                 their thought-throughness, pragmatism and attention to detail were key in building
                 production-ready data models, and we appreciated not just their diligence, but also their
@@ -598,8 +616,10 @@ nav {
                     <div class=" slide-from-left h-100 box-shadow-panel" style=" padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/kalpit.png"  />
-                        <h5 class="blue-1"> DR. KALPIT DESAI</h5>
-                        <h6 style="min-height: 35px;"> FOUNDER, CEO & CHIEF DATA SCIENTIST</h6>
+                        <br>
+                        <br>
+                        <h5 class="blue-1 hover-opacity"> Dr. KALPIT DESAI</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> FOUNDER, CEO & CHIEF DATA SCIENTIST</h6>
                         <style>
                             .leader-text:hover {
                                 transform: scale(1.0345);
@@ -613,7 +633,7 @@ nav {
                         <br>
                         <!-- <hr style="border-top: solid 1px #0167cc"> -->
                         <p class="leader-text text-justify">
-                            Kalpit has <strong class="blue-1">14+ years of industry experience post PhD from the UNC-Chapel Hill USA.</strong>Passionate about people, data and algorithms. Known to build high-performance “data” teams and innovative products in organizations ranging from a 3-people pre-seed startup to a 400k strong global conglomerate. Ex GE Research, Bidgely, Tally Analytics.</em>
+                            <span class="first-char">K</span>alpit has <strong class="blue-1"> <span> 14+</span> years of industry experience post PhD from the UNC-Chapel Hill USA.</strong>Passionate about people, data and algorithms. Known to build high-performance “data” teams and innovative products in organizations ranging from a 3-people pre-seed startup to a 400k strong global conglomerate. Ex GE Research, Bidgely, Tally Analytics.</em>
                         </p>
                     </div>
         </div>
@@ -621,12 +641,14 @@ nav {
                     <div class=" slide-from-bottom-2 h-100 box-shadow-panel" style="padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/jayesh.png"  />
-                        <h5 class="blue-1">JAYESH JAIN</h5>
-                        <h6 style="min-height: 35px;"> HEAD – ENTERPRISE DIGITAL SOLUTIONS DEVELOPMENT & SALES</h6>
+                                                <br>
+                                                <br>
+                        <h5 class="hover-opacity blue-1">JAYESH JAIN</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> HEAD – ENTERPRISE DIGITAL SOLUTIONS DEVELOPMENT & SALES</h6>
                         <br>
                         <!-- <hr style="border-top: solid 1px #0167cc"> -->
                         <p class="leader-text text-justify">
-                            Jayesh brings <strong class="blue-1">15 years of rich experience in developing technology and products</strong>at varying setups from global conglomerates to an agile start-up. Known to solve problems by “Making complex simple” using the power of People & Digital. Ex IISc, GE, Lennox</em>
+                            <span class="first-char">J</span>ayesh brings <strong class="blue-1">15 years of rich experience in developing technology and products</strong>at varying setups from global conglomerates to an agile start-up. Known to solve problems by “Making complex simple” using the power of People & Digital. Ex IISc, GE, Lennox</em>
                         </p>
                     </div>
         </div>
@@ -635,12 +657,14 @@ nav {
                     <div class=" slide-from-right h-100 box-shadow-panel" style=" padding: 4%;">
                         <img class="rounded-circle img-fluid" style="border: solid 1px white;
                         box-shadow: 0px 0px 12px white;width: 100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="../asset/payal.jpg" />
-                        <h5 class="blue-1">PAYAL SHAH</h5>
-                        <h6 style="min-height: 35px;"> CO-FOUNDER & CFO</h6>
+                                                <br>
+                                                <br>
+                        <h5 class="blue-1 hover-opacity">PAYAL SHAH</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> CO-FOUNDER & CFO</h6>
                         <br>
                         <!-- <hr style="border-top: solid 1px #0167cc"> -->
                         <p class="leader-text text-justify">
-                            Payal <strong class="blue-1">has done MBA in Finance and has 3+ years and </strong><em> industry experience in banking and insurance sector. Ex KSBM, ICICI-Prudential.</em>
+                            <span class="first-char">P</span>ayal <strong class="blue-1">has done MBA in Finance and has 3+ years and </strong><em> industry experience in banking and insurance sector. Ex KSBM, ICICI-Prudential.</em>
                         </p>
                     </div>
         </div>

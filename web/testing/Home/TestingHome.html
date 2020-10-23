@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>datakalp</title>
+
+    <meta name="description" content="Source code generated using datakalp.com">
+    <meta name="author" content="datakalp!">
+
+    <link href="https://datakalp.herokuapp.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://datakalp.herokuapp.com/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://datakalp.herokuapp.com/packages/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://datakalp.herokuapp.com/packages/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://datakalp.herokuapp.com/js/jquery.min.js"></script>
+    <script src="https://datakalp.herokuapp.com/js/bootstrap.min.js"></script>
+    <script src="https://datakalp.herokuapp.com/js/scripts.js"></script>
+    </script>
+    <style>
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+        a:not([href]):not([tabindex]) {
+            color: white;
+        }
+
+        li[data-filter="home"]>.nav-link>span  {
+            border-bottom: 2px solid;
+        }
+        li[data-filter="home"] {
+            transform: scale(1.2);
+        }
+
+        /* Header Parallax Element Style*/
+        .paral {
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 10%;
+            background-image: url(https://datakalp.herokuapp.com/asset/home2.mp4);
+            background-size: 100% 100%;
+            min-height: 500px;
+            transform: scale(1.5);
+            width: 80%;
+            margin-left: 0%;
+        }
+
+/* ------------------------------------------------------------------------------------------ */
+        /* Remove Bottom Margin from Jumbotron */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+                            .parent:hover .child, .parent:focus .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+    .parent:hover .child:before, .parent:focus .child:before {
+        display: block;
+    }
+    
+    .parent:hover a, .parent:focus a {
+        display: block;
+    }
+    
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52,73,94,0.75);
+    }
+    
+    
+    /* Image zoom on hover + Overlay colour */
+    .parent {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+    .child {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+
+    .team-name-hover {
+        color: var(--rt-color-blue);
+
+    }
+.filter-2 {
+    filter: drop-shadow(0px 0px 10px lightblue);
+}
+
+.team-read-more-no-panel:hover .team-member-detail {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: 1.0s ease-in-out 0.1s;
+}
+
+.team-member-detail {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.team-read-more-no-panel:hover > .team-read-more {
+    font-size: 0.1rem;
+    transition: 2.0s ease-in-out 1s;
+}
+.team-read-more:hover {
+    display: block;
+}
+
+.slider-bottom-choice * > img {
+    height: 200px;
+    max-width: 250px;
+}
+
+.hdwr {
+    -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    padding: 5%;
+}
+
+p {
+    /* font-size: calc(0.75rem + 1vh); */
+}
+video {
+  object-fit: fill;
+}
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar fixed-top navbar-toggleable-lg">
+
+                    <!--brand-->
+                    <a class="col-md-4 navbar-brand mr-auto filter-1" href="https://datakalp.herokuapp.com/Home/index.html">
+                        <img class="navbar-brand w-40 min-w-120" src="https://datakalp.herokuapp.com/asset/logo.png">
+                    </a>
+
+                    <!--collapse button-->
+                    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNav">
+
+                        <!--align left-->
+                        <ul class="navbar-nav ml-auto nav-fill w-100">
+
+                            <li class="nav-item navbar-element navbar-home" data-filter="home">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Home/index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-products" data-filter="products">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Products/index.html">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-services" data-filter="services">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Services/index.html">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-team" data-filter="teams">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Team/index.html">
+                                    <span>Team</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-blogs" data-filter="blogs">
+                                <a class="nav-link" href="https://datakalp.herokuapp.com/Blogs/index.html">
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item navbar-element navbar-contacts" data-filter="contactus">
+                                <a class="nav-link navlink-active" href="https://datakalp.herokuapp.com/Contacts/index.html">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--navbar ending-->
+
+
+
+    <!-- <div class="row jumbotron paral" style="filter: brightness(0.5);"></div> -->
+
+
+    <!--lets connect ends-->
+
+
+    <!--form and and map-->
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("https://datakalp.herokuapp.com/asset/home3.gif");
+  filter: brightness(0.7);
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+nav {
+	background-color: transparent;
+}
+.nav-after-scroll {
+	transform: scale(1,0.8) translateY(-16%);
+	background-color: white;
+	-webkit-transition: .25s ease-in-out 3s;
+   	transition: .25s ease-in-out 0s; 
+}
+.nav-after-scroll-regular {
+	background-color: white;
+	-webkit-transition: .25s ease-in-out 3s;
+   	transition: .25s ease-in-out 0s; 
+}
+.home-image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+}
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.hover-opacity:hover {
+    filter: opacity(0.79);
+}
+
+.first-char {
+    font-size: x-large;
+    font-weight: 300;
+}
+</style>
+<div class="visibility-hidden" style="min-height: 13vh;">
+
+</div>
+
+<!-- <div class="parallax"></div> -->
+<div class="video-container">
+    <video autoplay="true" loop="loop" class="home-image" src="https://datakalp.herokuapp.com/asset/home1.mp4" muted plays-inline></video>
+</div>
+<!-- <img class="homepage-video" src="https://datakalp.herokuapp.com/asset/home1.gif"> -->
+<!--test-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="container-fluid translateY-500-bar filter-1 white" style="transform: translateY(-850%);">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center black slide-from-bottom">
+                    We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                </h3>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    
+    
+    
+    
+    
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-12 text-center blue-1">
+                    <h2 class="">
+                        How Different We are
+                    </h2>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container-fluid" style="max-width: 1400px;">
+        <div class="row ">
+
+                <div class="col-md-3 text-center slide-from-bottom-2">
+                    <div class="data-experts hdwr h-100 box-shadow">
+                        <img src="https://datakalp.herokuapp.com/asset/wwr-data.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1 hover-opacity">
+                            Data Experts
+                        </h4>
+                        <br>
+                        <div class="service-al-ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e are experts in going on a date with 'data', and harnessing the power of machine learning.</p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center slide-from-bottom-3">
+                    <div class="Algorithm hdwr h-100 box-shadow">
+                        <img src="https://datakalp.herokuapp.com/asset/wwr-algo.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1 hover-opacity">
+                            Algorithm
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e strive to build our algorithms from ground-up instead of relying on third-party closed-source APIs.
+                                    The resulting deeply flexible technology stack makes our offerings uniquely versatile.</p>
+                        </div>
+    
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center slide-from-bottom-4">
+                    <div class="holistic hdwr h-100 box-shadow">
+                        <img src="https://datakalp.herokuapp.com/asset/wwr-holistic.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1 hover-opacity">
+                            Holistic Systems
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                                <p><span class="first-char">W</span>e build holistic systems that leverage all types of relevant data for a given problem, for example -
+                                video, audio, images, sensor waveforms, tables, networks etc. This uniquely enables us in building the
+                                most effective solution for a given problem.</p>
+                        </div>
+    
+                        <br>
+                    </div>
+
+                </div>
+ 
+                <div class="col-md-3 text-center slide-from-bottom-5">
+                    <div class="experience hdwr h-100 box-shadow">
+                        <img src="https://datakalp.herokuapp.com/asset/wwr-team.png" width="70" height="70">
+                        <br><br>
+                        <h4 class="blue-1 filter-1 hover-opacity">
+                            30+ years Experience
+                        </h4>
+                        <br>
+                        <div class="service-al-ml ml text-justify hover-opacity">
+                            <p><span class="first-char">M</span>ulti-domain experience with AI; leverage cross-pollination of concepts from one domain to another.</p>
+                        </div>
+    
+                        <br>
+                    </div>
+                </div>
+ 
+        </div>
+    </div>
+    <br>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+    
+    
+
+
+
+        
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-12 text-center blue-1">
+                    <h2>
+                        Awards and Achievement
+                    </h2>
+                </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <section class="lazy slider home-awards-slider mx-auto mx-fluid text-center slide-from-bottom-3 data-sizes="25vw">
+        <div>
+            <h5 class="text-center blue-1"> Promising StartUp </h5> <br>
+            <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px" data-lazy="https://datakalp.herokuapp.com/asset/award1.jpg" data-srcset="https://datakalp.herokuapp.com/asset/award1.jpg 650w, https://datakalp.herokuapp.com/asset/award1.jpg 960w" >
+        </div>
+        <div>
+            <h5 class="text-center blue-1"> Defence India StartUp Chanllenge </h5> <br>
+    
+          <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="https://datakalp.herokuapp.com/asset/award2.jpeg" data-srcset="https://datakalp.herokuapp.com/asset/award2.jpeg 650w, https://datakalp.herokuapp.com/asset/award2.jpeg 960w" >
+        </div>
+        <div>
+            <h5 class="text-center blue-1"> Karnataka Eleveted - II </h5> <br>
+    
+            <img class="home-slider-image img-fluid mx-auto" style="width: 99%; max-height: 325px;" data-lazy="https://datakalp.herokuapp.com/asset/award3.jpeg" data-srcset="https://datakalp.herokuapp.com/asset/award3.jpeg 650w, https://datakalp.herokuapp.com/asset/award3.jpeg 960w" >
+        </div>
+    </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-12 text-center blue-1">
+                <h2>
+                    Testimonial
+                </h2>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+
+
+<div class="container-fluid" style="max-width: 1400px;">
+    <div class="row">
+        <div class="col-md-4 img text-center img-fluid mx-auto blue">
+            <blockquote class="blockquote slide-from-left-1 blockquoted hover-opacity">
+                S. Saravana N Reddy, Co-Founder
+                <h4 class="blue-1">&quot;StarBeat&quot;</h4>
+            </blockquote>
+            <!-- <img class="" alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="img-thumbnail" /> -->
+        </div>
+        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-left hover-opacity">
+            <p>
+                <em><span class="first-char">W</span>e hired Datakalp to solve a set of problems with News Articles - <strong class="blue-1">clustering, classification, related</strong> 
+                    article search, duplicate article identification etc. Datakalp were quick to understand the problem
+                    statement from business value lens, and translate the same to AI/Machine Learning problem
+                    statement. While our data was unique and challenging, they built cutting-edge algorithms from
+                    ground up in a very reasonable time yet achieved nearly the state-of-art results (where such
+                    comparison was available). They operated with transparency and excellent, proactive
+                    communication to ensure the success of the project. We felt they were our partners towards
+                    building the product, and not vendors. We wish them all the best, and would highly recommend
+                    them for any complex text mining or NLP development work.</em>
+            </p>
+        </div>
+    </div>
+    <br>
+<br>
+<br>
+    <div class="row">
+        <div class="col-md-4 img text-center img-fluid mx-auto blue">
+            <!-- <img class="" alt="Bootstrap Image Preview" src="https://datakalp.herokuapp.com/asset/testi1.webp" class="img-thumbnail" /> -->
+            <blockquote class="blockquote slide-from-right blockquoted hover-opacity">
+                Indrayudh Ghoshal, Founder
+                <h4 class="blue-1">&quot;Scribble Data&quot;</h4>
+            </blockquote>
+        </div>
+
+        <div class="col-md-8 img text-left img-fluid mx-auto slide-from-right-1 hover-opacity">
+            <p>
+                <em><span class="first-char">K</span>alpit and his team at Datakalp have been excellent <strong class="blue-1">partners for Scribble Data</strong>. in tackling a
+                variety of data science problems. Their depth of understanding of each problem, as well as
+                their thought-throughness, pragmatism and attention to detail were key in building
+                production-ready data models, and we appreciated not just their diligence, but also their
+                    sense of working together with their clients as a team to deal with challenges that would
+                    crop up.
+                </em>
+            </p>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-12 text-center blue-1">
+                    <h2>
+                        Our Leaderships
+                    </h2>
+                </div>
+        </div>
+    </div>
+
+<br>
+<br>
+
+    <!--testimonial end-->
+    <br>
+    <div class="container-fluid"  style="max-width: 1400px;">
+      <div class="row text-center">
+        <div class="col-md-4 img-fluid mx-auto">
+                    <div class=" slide-from-left h-100 box-shadow-panel" style=" padding: 4%;">
+                        <img class="rounded-circle img-fluid" style="border: solid 1px white;
+                        box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="https://datakalp.herokuapp.com/asset/kalpit.png"  />
+                        <br>
+                        <br>
+                        <h5 class="blue-1 hover-opacity"> DR. KALPIT DESAI</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> FOUNDER, CEO & CHIEF DATA SCIENTIST</h6>
+                        <style>
+                            .leader-text:hover {
+                                transform: scale(1.0345);
+                                -webkit-transition: transform 0.3s ease-in-out;
+                                /* border-bottom: solid 1px #0275d8;		 */
+                            }
+                            .leader-text {
+                                padding:0 14%;
+                            }
+                        </style>
+                        <br>
+                        <!-- <hr style="border-top: solid 1px #0167cc"> -->
+                        <p class="leader-text text-justify">
+                            <span class="first-char">K</span>alpit has <strong class="blue-1"> <span> 14+</span> years of industry experience post PhD from the UNC-Chapel Hill USA.</strong>Passionate about people, data and algorithms. Known to build high-performance “data” teams and innovative products in organizations ranging from a 3-people pre-seed startup to a 400k strong global conglomerate. Ex GE Research, Bidgely, Tally Analytics.</em>
+                        </p>
+                    </div>
+        </div>
+        <div class="col-md-4 img-fluid mx-auto">
+                    <div class=" slide-from-bottom-2 h-100 box-shadow-panel" style="padding: 4%;">
+                        <img class="rounded-circle img-fluid" style="border: solid 1px white;
+                        box-shadow: 0px 0px 12px white;width:100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="https://datakalp.herokuapp.com/asset/jayesh.png"  />
+                                                <br>
+                                                <br>
+                        <h5 class="hover-opacity blue-1">JAYESH JAIN</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> HEAD – ENTERPRISE DIGITAL SOLUTIONS DEVELOPMENT & SALES</h6>
+                        <br>
+                        <!-- <hr style="border-top: solid 1px #0167cc"> -->
+                        <p class="leader-text text-justify">
+                            <span class="first-char">J</span>ayesh brings <strong class="blue-1">15 years of rich experience in developing technology and products</strong>at varying setups from global conglomerates to an agile start-up. Known to solve problems by “Making complex simple” using the power of People & Digital. Ex IISc, GE, Lennox</em>
+                        </p>
+                    </div>
+        </div>
+
+        <div class="col-md-4 img-fluid mx-auto">
+                    <div class=" slide-from-right h-100 box-shadow-panel" style=" padding: 4%;">
+                        <img class="rounded-circle img-fluid" style="border: solid 1px white;
+                        box-shadow: 0px 0px 12px white;width: 100%; border:solid 2px white; max-width: 200px; max-height: 250px; min-width: 150px;" alt="Bootstrap Image Preview " src="https://datakalp.herokuapp.com/asset/payal.jpg" />
+                                                <br>
+                                                <br>
+                        <h5 class="blue-1 hover-opacity">PAYAL SHAH</h5>
+                        <h6 class="hover-opacity" style="min-height: 35px;"> CO-FOUNDER & CFO</h6>
+                        <br>
+                        <!-- <hr style="border-top: solid 1px #0167cc"> -->
+                        <p class="leader-text text-justify">
+                            <span class="first-char">P</span>ayal <strong class="blue-1">has done MBA in Finance and has 3+ years and </strong><em> industry experience in banking and insurance sector. Ex KSBM, ICICI-Prudential.</em>
+                        </p>
+                    </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-12 text-center blue-1">
+                <h2>
+                    Our Partners
+                </h2>
+            </div>
+    </div>
+</div>
+
+<br>
+<br>
+    <section class="lazy slider mx-auto" data-sizes="25vw" style="max-width: 800px;">
+        <div>
+            <img class="img-fluid mx-auto" style="width: 99%; max-height: 125px" data-lazy="https://datakalp.herokuapp.com/asset/partner1.png" data-srcset="https://datakalp.herokuapp.com/asset/partner1.png 650w, https://datakalp.herokuapp.com/asset/partner1.png 960w" >
+        </div>
+        <div >
+          <img class="img-fluid mx-auto" style="width: 99%; max-height: 125px;" data-lazy="https://datakalp.herokuapp.com/asset/partner2.jpg" data-srcset="https://datakalp.herokuapp.com/asset/partner2.jpg 650w, https://datakalp.herokuapp.com/asset/partner2.jpg 960w" >
+        </div>
+
+      </section>
+    
+
+
+
+    <!--form and and map end-->
+
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <footer class="footer-main white">
+        <br>
+
+        <br>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center blue-1">
+                            <h3>
+                                We are AI Algorithm Experts We are here to invigorate your businesses through AI tech.
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Know Us
+                            </h3>
+                            <p>
+                                Datakalp LLP is providing cutting edge services and products in the field of Artificial
+                                Technologies,
+                                Machine Learning, Computer vision and NLP.
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Address
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong><br /> 1st floor, Cowork Cafe, #28,<br /> Kaikondrahalli,
+                                Bangalore –
+                                560035<br />
+                            </address>
+                        </div>
+
+
+                        <div class="col-md-4 text-center">
+                            <h3>
+                                Contact
+                            </h3>
+                            <address>
+                                <strong>India, Inc.</strong>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)6355762814">+91
+                                    63557
+                                    62814</a>
+                                <br /> <abbr title="Phone"></abbr> <a class="white" href="tel:(91)8861636197">+91
+                                    88616
+                                    36197</a>
+                            </address>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>
+                                <div class=" roof-social style-two  roof-socials-5f838225a3331">
+
+                                    <h6>FOLLOW US ON:</h6>
+
+
+                                    <a href="http://www.facebook.com/datakalp" target="_blank"
+                                        class="icon-fa-facebook-official">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+
+
+                                    <a href="https://twitter.com/datakalp" target="_blank" class="icon-fa-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+
+                                    <a href="https://www.youtube.com/channel/UCpVmZ4evIC0M6KR6a3Deqnw?view_as=subscriber"
+                                        target="_blank" class="icon-fa-youtube-play">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+
+
+                                    <a href="https://www.linkedin.com/company/datakalp" target="_blank"
+                                        class="icon-fa-linkedin"><i class="fa fa-linkedin"></i>
+                                    </a>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h6>
+                                Copyright © 2020. datakalp.com All rights reserved.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://datakalp.herokuapp.com/packages/slick-1.8.1/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        	$(document).ready(function(){
+                    $('nav').addClass('nav-after-scroll-regular');
+            });
+
+        $(document).ready(function(){       
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                asNav:'.slider-gallary-weist',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+
+
+            $('.slider-gallary-weist').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                arrows:false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNav: '.slider-gallary',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+
+            ]
+            });
+    
+        });
+        var width = '100%';
+        var height = window.screen.availHeight - 220;
+
+        $('.video-container').css('width', width);
+        $('.video-container').css('height', height);
+
+	  </script>
+      <script src="https://datakalp.herokuapp.com/packages/waypoints/src/waypoint.js"></script>
+	  
+  </body>
+</html>
