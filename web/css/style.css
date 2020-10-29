@@ -482,3 +482,43 @@ p {
 nav {
   background-color: white !important;
 }
+
+@-webkit-keyframes zoomIn {
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  50%   {-webkit-transform: scale(1.2);transform: scale(1.2);}
+  100%   {-webkit-transform: scale(1);transform: scale(1);}
+
+} @keyframes zoomIn {
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  50%   {-webkit-transform: scale(1.2);transform: scale(1.2);}
+  100%   {-webkit-transform: scale(1);transform: scale(1);}
+  
+}
+
+.my-float {
+  -webkit-animation: zoomIn 2s infinite linear;
+  animation: zoomIn 2s infinite linear;
+}
+
+
+.nav-link>span {
+  font-size: calc(0.5rem + 1.2vh);
+}
+
+.nav-link:hover .nav-link>span, .nav-link>span:hover {
+  background-color: #4791da;
+  color: white;  
+  border-bottom: 0px;
+  /* border: 1px solid; */
+          border-radius: 12px;
+          padding: 5%;
+}
+
+.nav-item:hover .nav-link>span {
+  background-color: #4791da;
+  color: white;  
+  border-bottom: 0px;
+  /* border: 1px solid; */
+          border-radius: 12px;
+          padding: 5%;
+}
